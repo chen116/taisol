@@ -22,6 +22,8 @@ app.component('frame-comp', {
     /*html*/
     `
     <iframe class="content" :src="req" allowfullscreen sandbox='allow-scripts'>
+    
+    
     </iframe>
   
 
