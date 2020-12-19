@@ -3,10 +3,11 @@ const app = Vue.createApp({
         return {
             cart: [],
             premium: true,
-            req:  "http://w3.taisol.com.tw/important/"+window.location.href.split('?')[1]+".html"
+            focused_page:  window.location.href.split('?')[1]
             
         }
     },
+
     methods: {
         updateCart(id) {
             this.cart.push(id)
@@ -14,18 +15,3 @@ const app = Vue.createApp({
     }
 });
 
-app.component('frame-comp', {
-    props: {
-        req: String
-      },
-    template:
-    /*html*/
-    `
-    <iframe class="content" :src="req" allowfullscreen sandbox='allow-scripts'>
-    
-    
-    </iframe>
-  
-
-  `
-  });
