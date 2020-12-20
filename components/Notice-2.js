@@ -14,20 +14,17 @@ app.component('notice-2', {
       <img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span> 本公司之董事、監察人含2名女性、7名男性；分別在電子零組件或周邊產品業、橡膠業、銀行業、光電業、玻璃陶瓷業、通信網路業、水泥工業、證券業、電信業等，具有行銷企劃、經營管理、領導決策、產業知識、財務會計之專業經驗與素養。
       </h5>
 
-
-
-
       <div class="accordion " id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header " id="flush-headingOne">
           <button   class=" accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          董事(含獨立董事)及監察人資料(1)
+          <img class="rounded" src="./assets/images/smalllogo.jpg"/><span>&nbsp;&nbsp;</span> 董事(含獨立董事)及監察人資料(1)
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
 
- 
+ <!-- https://css-tricks.com/complete-guide-table-element/ -->
           <table  class="table table-bordered table-hover">
              <thead>
                <tr>
@@ -109,7 +106,7 @@ app.component('notice-2', {
       <div class="accordion-item">
       <h2 class="accordion-header " id="flush-headingOne">
       <button     class=" accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-      董事(含獨立董事)及監察人資料(2)
+      <img class="rounded" src="./assets/images/smalllogo.jpg"/><span>&nbsp;&nbsp;</span> 董事(含獨立董事)及監察人資料(2)
       </button>
     </h2>
         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" >
@@ -206,10 +203,17 @@ app.component('notice-2', {
     </li>
     
     <li class="list-group-item">四、績效評估結果： 
-    
-    <ul class="list-group list-group-flush ">
-    <li class="list-group-item">108年度 : <a href="./assets/docs/board.pdf" target="_blank"> 董事會 </a> <span>&nbsp;</span>  <a href="./assets/docs/payout_member.pdf" target="_blank"> 薪酬委員會 </a></li>
-  </ul>
+      <ul class="list-group list-group-flush ">
+        <li class="list-group-item">108年度 :
+          <a href="./assets/docs/board.pdf" target="_blank">  董事會 
+            <i class="bi bi-box-arrow-up-right"></i>
+          </a> 
+          <span>&nbsp;</span>  
+          <a href="./assets/docs/payout_member.pdf" target="_blank"> 薪酬委員會 
+            <i class="bi bi-box-arrow-up-right"></i>
+          </a>
+        </li>
+      </ul>
     </li>
     
 
