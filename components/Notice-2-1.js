@@ -444,7 +444,7 @@ app.component('notice-2-1', {
                                             </li>
                                             <li class="list-group-item">
                                                 <ul class="list-group list-group-flush " v-for="(meeting,index) in meetings" >
-                                                    <li class="list-group-item">{{ index+1 }}. 薪酬委員會日期： {{ meeting.date }}
+                                                    <li class="list-group-item ">{{ index+1 }}. 薪酬委員會日期： {{ meeting.date }}
                                                         <li class="list-group-item" v-for="(content, index2) in meeting.contents">
                                                             <ul class="list-group list-group-flush ">({{ index2+1}})議案內容： {{ content.summary }}
                                                                 <li class="list-group-item">決議結果：{{ content.result }}
