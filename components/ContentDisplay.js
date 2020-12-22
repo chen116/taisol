@@ -29,6 +29,14 @@ app.component('content-display', {
             <notice-2-E  v-if="focusedPage === 'notice-2-E'"></notice-2-E>
             <notice-2-1  v-if="focusedPage === 'notice-2-1'"></notice-2-1>
             <notice-2-2  v-if="focusedPage === 'notice-2-2'"></notice-2-2>
+            <notice-2-3  v-if="focusedPage === 'notice-2-3'"></notice-2-3>
+            <notice-2-4  v-if="focusedPage === 'notice-2-4'"></notice-2-4>
+            <notice-2-5  v-if="focusedPage === 'notice-2-5'"></notice-2-5>
+            <notice-2-7  v-if="focusedPage === 'notice-2-7'"></notice-2-7>
+            <notice-2-8  v-if="focusedPage === 'notice-2-8'"></notice-2-8>
+            <notice-2-10  v-if="focusedPage === 'notice-2-10'"></notice-2-10>
+            <notice-2-9  v-if="focusedPage === 'notice-2-9'"></notice-2-9>
+            <notice-2-6  v-if="focusedPage === 'notice-2-6'"></notice-2-6>
 
         </div>
     `,

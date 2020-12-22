@@ -2,10 +2,11 @@ app.component('notice-2', {
   data() {
     return {
       table1 : [
-         { "title": "read", "from": "from", "name": "json", "sex": "file" ,"start_date":"sd", "duration": "du", "first_start_date": "fsd", "stock1": "s1", "stock_per1":"p1","stock2": "s2", "stock_per2":"p2" ,"stock3": "s3", "stock_per3":"p3" ,"stock4": "s4", "stock_per4":"p4" ,"exp":"exp","other_title": "ot","relative_title":"rt","relative_name":"rn","relative_relation":"rr"},
-         { "title": "ti", "from": "fr", "name": "bna", "sex": "se" ,"start_date":"sd", "duration": "du", "first_start_date": "fsd", "stock1": "s1", "stock_per1":"p1","stock2": "s2", "stock_per2":"p2" ,"stock3": "s3", "stock_per3":"p3" ,"stock4": "s4", "stock_per4":"p4" ,"exp":"exp","other_title": "ot","relative_title":"rt","relative_name":"rn","relative_relation":"rr"},
-         { "title": "ti", "from": "fr", "name": "vna", "sex": "se" ,"start_date":"sd", "duration": "du", "first_start_date": "fsd", "stock1": "s1", "stock_per1":"p1","stock2": "s2", "stock_per2":"p2" ,"stock3": "s3", "stock_per3":"p3" ,"stock4": "s4", "stock_per4":"p4" ,"exp":"exp","other_title": "ot","relative_title":"rt","relative_name":"rn","relative_relation":"rr"},
-         { "title": "ti", "from": "fr", "name": "vsna", "sex": "se" ,"start_date":"sd", "duration": "du", "first_start_date": "fsd", "stock1": "s1", "stock_per1":"p1","stock2": "s2", "stock_per2":"p2" ,"stock3": "s3", "stock_per3":"p3" ,"stock4": "s4", "stock_per4":"p4" ,"exp":"exp","other_title": "ot","relative_title":"rt","relative_name":"rn","relative_relation":"rr"}
+        { "title": "write", "from": "from", "name": "json", "sex": "file" ,"start_date":"sd", "duration": "du", "first_start_date": "fsd", "stock1": "s1", "stock_per1":"p1","stock2": "s2", "stock_per2":"p2" ,"stock3": "s3", "stock_per3":"p3" ,"stock4": "s4", "stock_per4":"p4" ,"exps":["exp1","exp2"],"other_titles": ["ot","eee"],"relative_title":"rt","relative_name":"rn","relative_relation":"rr"},
+        { "title": "write", "from": "from", "name": "json", "sex": "file" ,"start_date":"sd", "duration": "du", "first_start_date": "fsd", "stock1": "s1", "stock_per1":"p1","stock2": "s2", "stock_per2":"p2" ,"stock3": "s3", "stock_per3":"p3" ,"stock4": "s4", "stock_per4":"p4" ,"exps":["exp1","exp2"],"other_titles": ["ot","eee"],"relative_title":"rt","relative_name":"rn","relative_relation":"rr"},
+        { "title": "write", "from": "from", "name": "json", "sex": "file" ,"start_date":"sd", "duration": "du", "first_start_date": "fsd", "stock1": "s1", "stock_per1":"p1","stock2": "s2", "stock_per2":"p2" ,"stock3": "s3", "stock_per3":"p3" ,"stock4": "s4", "stock_per4":"p4" ,"exps":["exp1","exp2"],"other_titles": ["ot","eee"],"relative_title":"rt","relative_name":"rn","relative_relation":"rr"},
+        { "title": "write", "from": "from", "name": "json", "sex": "file" ,"start_date":"sd", "duration": "du", "first_start_date": "fsd", "stock1": "s1", "stock_per1":"p1","stock2": "s2", "stock_per2":"p2" ,"stock3": "s3", "stock_per3":"p3" ,"stock4": "s4", "stock_per4":"p4" ,"exps":["exp1","exp2"],"other_titles": ["ot","eee"],"relative_title":"rt","relative_name":"rn","relative_relation":"rr"},
+
       ],
       table2 : [
         {"name":"a","pro_exp1":"b","pro_exp2":"c","pro_exp3":"d","fit_item1":"1","fit_item2":"2","fit_item3":"3","fit_item4":"4","fit_item5":"5","fit_item6":"6","fit_item7":"7","fit_item8":"8","fit_item9":"9","fit_item10":"10","num_company":"z"},
@@ -66,8 +67,8 @@ app.component('notice-2', {
                 </thead>
                 <tbody>
                   <tr v-for="user in table1" :key="user.name">
-                    <td v-for="key in Object.keys(user)">{{ user[key] }}</td>
-                    <!--<td>{{user.title}}</td>
+                    <!--<td v-for="key in Object.keys(user)">{{ user[key] }}</td>-->
+                    <td>{{user.title}}</td>
                     <td>{{user.from}}</td>
                     <td>{{user.name}}</td>
                     <td>{{user.sex}}</td>
@@ -82,11 +83,19 @@ app.component('notice-2', {
                     <td>{{user.stock_per3}}</td>
                     <td>{{user.stock4}}</td>
                     <td>{{user.stock_per4}}</td>
-                    <td>{{user.exp}}</td>
-                    <td>{{user.other_title}}</td>
+                    <td>   
+                      <ul class="list-group list-group-flush " v-for="exp in user.exps">
+                        <li class="list-group-item">{{exp}}</li>
+                      </ul>
+                    </td>
+                    <td>   
+                      <ul class="list-group list-group-flush " v-for="other_title in user.other_titles">
+                        <li class="list-group-item">{{other_title}}</li>
+                      </ul>
+                    </td>
                     <td>{{user.relative_title}}</td>
                     <td>{{user.relative_name}}</td>
-                    <td>{{user.relative_relation}}</td>-->
+                    <td>{{user.relative_relation}}</td>
                   </tr> 
                 </tbody>
               </table>
@@ -164,11 +173,12 @@ app.component('notice-2', {
           <ul class="list-group list-group-flush ">
             <li class="list-group-item">108年度 :
               <a href="./assets/docs/board.pdf" target="_blank">  董事會 
-                <i class="bi bi-box-arrow-up-right"></i>
+                <img class="rounded" src="./assets/images/investor04_7.jpg"/>
               </a> 
               <span>&nbsp;</span>  
               <a href="./assets/docs/payout_member.pdf" target="_blank"> 薪酬委員會 
-                <i class="bi bi-box-arrow-up-right"></i>
+                <img class="rounded" src="./assets/images/investor04_7.jpg"/>
+                <!--<i class="bi bi-box-arrow-up-right"></i>-->
               </a>
             </li>
           </ul>
