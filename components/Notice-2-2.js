@@ -50,6 +50,9 @@ app.component('notice-2-2', {
     /*html*/
     `
     <div class="content">
+        <h5 style="color:blue;"><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>組織及職掌 </h5>
+        <p><span>&nbsp;&nbsp;</span></p>
+    
         <div class="accordion " id="accordionFlushExample">
             <div class="accordion-item">
                 <h2 class="accordion-header " id="flush-headingOne">
@@ -149,7 +152,7 @@ app.component('notice-2-2', {
 
                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" >
                     <div class="accordion-body">
-                        <p>109 年 4 月 7 日  單位：股</p>
+                        <p style="text-align:right;">109 年 4 月 7 日  單位：股</p>
                         <table  class="table table-bordered table-hover">
                         <thead>
                         <tr>
@@ -161,20 +164,19 @@ app.component('notice-2-2', {
                             <th rowspan="2">備註</th>
                         </tr>
                         <tr>
-                            <th>ss1</th>
-                            <th>ss2</th>
-                            <th>ss3</th>
-                            <th>ss4</th>
-                            <th>ss5</th>
-                            <th>ss6</th>
-                            <th>ss7</th>
-                            <th>ss8</th>
-                    
+                            <th>股數</th>
+                            <th>持股比率(%)</th>
+                            <th>股數</th>
+                            <th>持股比率(%)</th>
+                            <th>股數</th>
+                            <th>持股比率(%)</th>
+                            <th>名稱(或姓名)</th>
+                            <th>關係</th>
+                        </tr>
                         </thead>
                         <tbody>
                         <tr v-for="row in table4">
                             <td v-for="key in Object.keys(row)">{{ row[key] }}</td>
-                        </td>
                         </tr> 
                         </tbody>
                         </table>

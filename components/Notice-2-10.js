@@ -24,7 +24,8 @@ app.component('notice-2-10', {
 
   <h6><b>本公司股權比例占前十大之股東：   </b></h6>
 
-  <p>109 年 4 月 7 日  單位：股</p>
+  <p style="text-align:right;">109 年 4 月 7 日  單位：股</p>
+
   
   <table  class="table table-bordered table-hover">
     <thead>
@@ -37,20 +38,21 @@ app.component('notice-2-10', {
         <th rowspan="2">備註</th>
     </tr>
     <tr>
-      <th>ss1</th>
-      <th>ss2</th>
-      <th>ss3</th>
-      <th>ss4</th>
-      <th>ss5</th>
-      <th>ss6</th>
-      <th>ss7</th>
-      <th>ss8</th>
+
+      <th>股數</th>
+      <th>持股比率(%)</th>
+      <th>股數</th>
+      <th>持股比率(%)</th>
+      <th>股數</th>
+      <th>持股比率(%)</th>
+      <th>名稱(或姓名)</th>
+      <th>關係</th>
+    </tr>
 
     </thead>
     <tbody>
     <tr v-for="row in table1">
       <td v-for="key in Object.keys(row)">{{ row[key] }}</td>
-    </td>
     </tr> 
     </tbody>
   </table>

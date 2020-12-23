@@ -55,9 +55,10 @@ app.component('notice-2-5', {
   /*html*/
   `
   <div class="content">
-
-  <h5 style="color:blue;"><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>環境永續 </h5>
-
+  
+  <h5 style="color:blue;"><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span> 企業社會責任</h5>
+  <p><span>&nbsp;&nbsp;</span></p>  
+  <h6><b>環境永續:</b></h6>
   <ul class="list-group list-group-flush" >
       <li class="list-group-item" >
         <img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span><b>ISO14001 環境管理體系</b> 
@@ -82,12 +83,6 @@ app.component('notice-2-5', {
       <li class="list-group-item" v-for="item in list1">
         <img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span>{{item}}
       </li>
-
-
-
-
-
-
   </ul>
   <p><span>&nbsp;&nbsp;</span></p>
 
@@ -132,6 +127,7 @@ app.component('notice-2-5', {
         <img src="http://w3.taisol.com.tw/image/notice2-5/D.JPG" class="card-img-top" alt="...">
       </div>
     </div>
+
   </div>
 
   <p><span>&nbsp;&nbsp;</span></p>
@@ -153,7 +149,6 @@ app.component('notice-2-5', {
 
   </div>
 
-</div>
   
   
   </div>

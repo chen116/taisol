@@ -29,6 +29,8 @@ app.component('notice-2-3', {
   `
   <div class="content">
   <h5 style="color:blue;"><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>規章 </h5>
+  <p><span>&nbsp;&nbsp;</span></p>  
+
     <ul class="list-group " v-for="link in links">
       <li class="list-group-item" ><img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span>
         <a v-bind:href="link.href" target="_blank"> {{link.title}} 
