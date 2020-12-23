@@ -2,7 +2,11 @@ app.component('notice-2-10', {
   data() {
     return {
 
-
+      table1:[
+        {name: 'namee',self_stock:'ss',self_stock_per:"eee", fam_stock:"ff",fam_stock_per:"ee",other_stock:"oof",other_stock_pre:'dddd', name2:'ee2',relation:'eee'},
+        {name: 'namee',self_stock:'ss',self_stock_per:"eee", fam_stock:"ff",fam_stock_per:"ee",other_stock:"oof",other_stock_pre:'dddd', name2:'ee2',relation:'eee'},
+        {name: 'namee',self_stock:'ss',self_stock_per:"eee", fam_stock:"ff",fam_stock_per:"ee",other_stock:"oof",other_stock_pre:'dddd', name2:'ee2',relation:'eee'},
+      ]
 
       
     }
@@ -45,23 +49,11 @@ app.component('notice-2-10', {
     </thead>
     <tbody>
     <tr v-for="row in table1">
-        <td> {{row.person}}</td>
-        <td> {{row.topic}}</td>
-        <td> {{row.job}}</td>
-        <td> 
-          <ul class="list-group list-group-flush" v-for="result in row.results">
-            <li class="list-group-item list-group-flush" >
-              <a :href="result.href" >{{result.txt}} </a>
-            </li>
-          </ul>
-        </td>
-
+      <td v-for="key in Object.keys(row)">{{ row[key] }}</td>
     </td>
     </tr> 
     </tbody>
   </table>
-
-  <img src="http://w3.taisol.com.tw/image/notice-2-10.jpg" class=rounded />
 
 
   </div>
