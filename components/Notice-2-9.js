@@ -41,15 +41,27 @@ app.component('notice-2-9', {
         ],
 
         table1: [
-          {date: "ssdf", content:"wwwoo"},
-          {date: "ssdf", content:"wwwoo"},
-          {date: "ssdf", content:"wwwoo"},
+          {date: "108年06月12日", content:"消防自我檢查"},
+          {date: "108年07月25日", content:"急救訓練及消防逃生訓練"},
+          {date: "108年09月17日", content:"大樓修繕消防缺失"},
+          {date: "108年09月27日", content:"	市府消防隊安全復檢"},
         ],
         table2: [
-          {date: "qqssdf", content:"wwmmwoo"},
-          {date: "sswdf", content:"wwwhoo"},
-          {date: "ssdbbbf", content:"wwwaaoo"},
+
+          {date:"107年04月10日",content:	"1樓台中銀行--台北市消防局檢測"},
+          {date:"107年05月11日",content:	"大樓及各公司自我檢測"},
+          {date:"107年07月23日",content:	"大樓及各公司消防演練"},
+          {date:"107年10月12日",content:	"大樓及各公司--台北市消防局檢測"},
+          {date:"107年12月07日",content:	"1樓郵局自我檢測"},
+          {date:"107年12月14日",content:	"1樓郵局--台北市消防局檢測"},
+          {date:"108年01月14日",content:	"大樓及各公司消防演練"}
+        
         ],
+
+
+
+
+
         list4:[
 
           {
@@ -80,7 +92,7 @@ app.component('notice-2-9', {
 
 
 
-  <h5 style="color:blue;"><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>投資人關係 </h5>
+  <h5 style="color:blue;"><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>人力資源 </h5>
 
   <p><span>&nbsp;&nbsp;</span></p>  
   <h6><b>福利制度:</b></h6>
@@ -155,10 +167,10 @@ app.component('notice-2-9', {
 
   <div class="row justify-content-md-center">
     <div class="col">
-      <img src="http://w3.taisol.com.tw/image/Notice2-9A.JPG" class="card-img-top" alt="...">
+      <img src="http://w3.taisol.com.tw/image/Notice2-9A.JPG" class="card-img-top rounded" alt="...">
     </div>
     <div class="col">
-      <img src="http://w3.taisol.com.tw/image/Notice2-9B.JPG" class="card-img-top" alt="...">
+      <img src="http://w3.taisol.com.tw/image/Notice2-9B.JPG" class="card-img-top rounded" alt="...">
     </div>
   </div>
 
@@ -177,15 +189,15 @@ app.component('notice-2-9', {
   </ul>
   <div class="row justify-content-md-center">
     <div class="col-md-auto">
-      <img src="http://w3.taisol.com.tw/important/notice-2-9.jpg" class="card-img-top" alt="...">
+      <img src="http://w3.taisol.com.tw/important/notice-2-9.jpg" class="card-img-top rounded" alt="...">
     </div>
   </div>
   <p><b>亞洲科技大樓108年消防及安全檢測計畫：</b></p>
   <table  class="table table-bordered table-hover">
     <thead>
       <tr>
-          <th rowspan="1">檢測時間</th>
-          <th rowspan="1">計畫內容</th>
+          <th rowspan="1" style="width: 50%">檢測時間</th>
+          <th rowspan="1" style="width: 50%">計畫內容</th>
       </tr>
 
     </thead>
@@ -200,8 +212,8 @@ app.component('notice-2-9', {
   <table  class="table table-bordered table-hover">
     <thead>
       <tr>
-          <th rowspan="1">檢測時間</th>
-          <th rowspan="1">計畫內容</th>
+          <th rowspan="1" style="width: 50%">檢測時間</th>
+          <th rowspan="1" style="width: 50%">計畫內容</th>
       </tr>
 
     </thead>
