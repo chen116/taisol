@@ -1,4 +1,4 @@
-app.component('notice-2-6', {
+Vue.component('notice-2-6', {
   data() {
     return {
 
@@ -140,11 +140,13 @@ app.component('notice-2-6', {
   <h5 style="color:blue;"><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span> 檢舉信箱作業辦法</h5>
 
   <ul class="list-group list-group-flush" >
-      <li class="list-group-item list-group-flush" v-for="item in list1">
-        {{item.title}}
-          <li class="list-group-item list-group-flush" v-for="sub_item in item.content">
-            <img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span>{{sub_item}}
-          </li>
+      <li class="list-group-item list-group-flush" v-for="entry in list1" >
+        {{entry.title}}
+         <ul class="list-group list-group-flush" >
+            <li class="list-group-item list-group-flush" v-for="sub_item in entry.content">
+              <img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span>{{sub_item}}
+            </li>
+        </ul>
       </li>
   </ul>
 

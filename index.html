@@ -15,15 +15,15 @@
     <link href="./assets/styles/bootstrap.min.css" rel="stylesheet">
     <script src="./assets/js/bootstrap.bundle.js"></script>   
    
-    <!-- Import Vue.js thru network
-       <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script> 
-    -->
-    <script src="./assets/js/vue.global.js"></script>
+    <!-- Import Vue.js thru network 
+       {{/*  <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>   */}}
+    {{/*  <script src="./assets/js/vue.global.js"></script>  */}} -->
  
-    
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 
     <link rel="stylesheet" href="./assets/styles/bootstrap-icons.css">
+
+
 
   </head>
   <body>
@@ -127,6 +127,7 @@
     
     </div>
     <script src="./main.js"></script>
+   
     <script src="./components/Notice-2.js"></script>
     <script src="./components/Notice-2-E.js"></script>
     <script src="./components/Notice-2-1.js"></script>
@@ -146,7 +147,9 @@
 
     <!-- Mount App -->
     <script>
-      const mountedApp = app.mount('#app')
+      console.log(app)
+      app.$mount('#app')
+     //const mountedApp = app.mount('#app')  
     </script>
 
 

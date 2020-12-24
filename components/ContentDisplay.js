@@ -1,4 +1,4 @@
-app.component('content-display', {
+Vue.component('content-display', {
     props: {
         focused_page: {
           type: String,

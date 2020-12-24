@@ -1,4 +1,4 @@
-app.component('notice-2-7', {
+Vue.component('notice-2-7', {
   data() {
     return {
       list1:[

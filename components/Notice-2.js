@@ -1,4 +1,4 @@
-app.component('notice-2', {
+Vue.component('notice-2', {
   data() {
     return {
       table1 : [
