@@ -100,8 +100,6 @@ app.component('notice-2-2', {
             {"title": "董事長","name":"余清松","exps":["大同工學院工商管理系畢"]},
             {"title": "總經理","name":"梁俊興","exps":["東海大學經濟系","信邦電子股份有限公司總經理","信邦電子股份有限公司監察人","數碼醫療器材股份有限公司執行長"]}
         ],
-
-
         table3:[
             {name: '余清松',self_stock:'14,155,046',self_stock_per:"16.22", fam_stock:"773,431",fam_stock_per:"0.89",other_stock:"2,698,000",other_stock_pre:'3.09', name2:'隆昕實業',relation:'關係人',note:''},
             {name: '隆昕實業股份有限公司法人代表：葉麗娟',self_stock:'2,698,000',self_stock_per:"3.09", fam_stock:"-",fam_stock_per:"-",other_stock:"-",other_stock_pre:'-', name2:'余清松',relation:'關係人',note:''},
