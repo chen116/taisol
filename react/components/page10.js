@@ -104,8 +104,7 @@ function Page10(props) {
                 </li>
                 <li class="list-group-item list-group-flush"><b>二、員工認股</b>
                   <li class="list-group-item list-group-flush" >
-                  <img class="rounded" src="./assets/images/menu01.jpg"  /><span>&nbsp;&nbsp;</span>本公司為追求企業永續成長與員工共同分享企業經營成果，推行員工認股與分紅入股辦法，落
-                  　　實『員工即股東』之理念。
+                  <img class="rounded" src="./assets/images/menu01.jpg"  /><span>&nbsp;&nbsp;</span>本公司為追求企業永續成長與員工共同分享企業經營成果，推行員工認股與分紅入股辦法，落實『員工即股東』之理念。
                   </li>
                 </li>
                 <li class="list-group-item list-group-flush"><b>三、退休制度</b>
