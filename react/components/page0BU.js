@@ -29,74 +29,7 @@ function Page0(props) {
     };
 
  
-    var data_eng = {
-        table1 : [
-            {title:"Chairman",from:"R.O.C",name:"Ching-Sung, Yu",sex:"M",start_date:"06/19/2018",duration:"3years",first_start_date:"11/06/1999",
-            stock1:"11,799,516",stock_per1:"16.9",stock2:"14,155,046",stock_per2:"16.22",stock3:"773.431",stock_per3:"0.89",stock4:"3151000",stock_per4:"3.09",
-            exps:["Bachelor Degree in Business Administration, Tatung University"],
-            other_titles:["Director, TaiSol Electronics Co., Ltd., HongKong","Director, Techmaster Electronics CO., Ltd., HongKong","Director, TAISOL ELEC, JAPAN","Director, VSELL ENTERPRISE CO., LTD."],
-            relative_title:"-",relative_name:"-",relative_relation:"-"},
-    
-            {title:"Director",from:"R.O.C",name:"Jaan-Lieh, Lin",sex:"M",start_date:"06/19/2018",duration:"3years",first_start_date:"04/22/2013",
-            stock1:"-",stock_per1:"-",stock2:"104.000",stock_per2:"0.12",stock3:"-",stock_per3:"-",stock4:"-",stock_per4:"-",
-            exps:["Associate Degree in Mechanical Engineering, National Tainan Industrial High School","CEO, Wanshih Electronic Co., Ltd.","Director, Wanshih Electronic Co., Ltd."],
-            other_titles:["Consultant, Wanshih Electronic Co., Ltd.","Director, Wanshih Electronic Co., Ltd.","Independent Director, Hu Lane Associate Inc.","Supervisor, APAQ TECHNOLOGY CO., LTD.",
-            "Director, TAISOL ELEC, JAPAN","Director, Suzhou TaiSol Electronics Co., Ltd.","Director/COO, TaiSol Electronics Co., Ltd.","Legal representative and director, Siyang TaiSol Electronics Co., Ltd."],relative_title:"-",relative_name:"-",relative_relation:"-"},
-    
-            {title:"Director",from:"R.O.C",name:"Chun-Hsin, Liang ",sex:"M",start_date:"06/19/2018",duration:"3years",first_start_date:"06/19/2018",
-            stock1:"38000",stock_per1:"0.05",stock2:"98.813",stock_per2:"0.11",stock3:"-",stock_per3:"-",stock4:"-",stock_per4:"-",
-            exps:["Bachelor Degree in Economics, Tunghai University","CEO/COO/Consultant, SINBON Electronics Co., Ltd."],
-            other_titles:["Director, DongGuan TaiSol Electronics Co., Ltd.","CEO, TaiSol Electronics Co., Ltd.","Director, Siyang TaiSol Electronics Co., Ltd.","Director, Suzhou TaiSol Electronics Co., Ltd."],relative_title:"-",relative_name:"-",relative_relation:"-"},
-    
-            {title:"Director",from:"Japan",name:"Kingo, Ashihara",sex:"M",start_date:"06/19/2018",duration:"3years",first_start_date:"06/19/2018",
-            stock1:"-",stock_per1:"-",stock2:"-",stock_per2:"-",stock3:"-",stock_per3:"-",stock4:"-",stock_per4:"-",
-            exps:["Bachelor Degree in Land Economics, National Chung Hsing University","Director, SINBON Electronics Co., Ltd."],
-            other_titles:["Oriental Computer Inc.  President"],relative_title:"-",relative_name:"-",relative_relation:"-"},
-    
-            {title:"Independent Director",from:"R.O.C",name:"Wen-Tien, Chang",sex:"M",start_date:"06/19/2018",duration:"3years",first_start_date:"04/22/2013 (Note5)",
-            stock1:"-",stock_per1:"-",stock2:"-",stock_per2:"-",stock3:"-",stock_per3:"-",stock4:"-",stock_per4:"-",
-            exps:["Master Degree in International Business Administration , Chinese Culture University","Assistant Manager, Bank of Communications Co., Ltd.",
-            "Vice President and Spokesman, FEDERAL CORPORATION","Assistant Vice President/R&D Director/Adm Manager/Secretary Director, Good Bank","Adjunct Instructor,  Chinese Culture University and Feng Chia University","Adjunct Instructor,  Shih Chien University","Independent Director, Oasis Technology Co., Ltd."],
-            other_titles:["None"],relative_title:"-",relative_name:"-",relative_relation:"-"},
-    
-            {title:"Independent Director",from:"R.O.C",name:"Tien-Yun, Tsen",sex:"M",start_date:"06/19/2018",duration:"3years",first_start_date:"06/19/2018",
-            stock1:"-",stock_per1:"-",stock2:"-",stock_per2:"-",stock3:"-",stock_per3:"-",stock4:"-",stock_per4:"-",
-            exps:["Master Degree in Law , National Chung Hsing University","Financial Vice President, Champion Building Materials Co. Ltd.","Financial Vice President, Wonderful Hi Tech Co., Ltd.","Remuneration Committee Member, Wanshih Electronic Co., Ltd. "],
-            other_titles:["Co-Owner Accountant, 大哲Certified Public Accounting Firm","Arbitrator, Chinese Arbitration Association","Independent Director, Wonderful Hi Tech Co., Ltd."],relative_title:"-",relative_name:"-",relative_relation:"-"},
-    
-            {title:"Independent Director",from:"R.O.C",name:"Chih-Hung, Chen",sex:"M",start_date:"06/19/2018",duration:"3years",first_start_date:"06/19/2018",
-            stock1:"-",stock_per1:"-",stock2:"-",stock_per2:"-",stock3:"-",stock_per3:"-",stock4:"-",stock_per4:"-",
-            exps:["Bachelor Degree in Business Management, Tatung University","Executive Assistant to Vice President/Chief of Director Office and QA Managerin Factory/Deputy Factory","Director of Adm in Kaohsiung/Factory Director of Adm in Kaohsiung/Executive Assistant to President in Factory , Southeast Cement Corporation"],
-            other_titles:["CEO, PENGHU CABLE TV. CO., LTD."],relative_title:"-",relative_name:"-",relative_relation:"-"},
-    
-            {title:"Supervisor",from:"R.O.C",name:"Chun-san, Hsieh",sex:"M",start_date:"06/19/2018",duration:"3years",first_start_date:"04/22/2013 (Note6)",
-            stock1:"1205197",stock_per1:"1.73",stock2:"1,571,276",stock_per2:"1.82",stock3:"288466",stock_per3:"0.33",stock4:"-",stock_per4:"-",
-            exps:["Associate Degree, Provincial Tainan Industrial High School","Consultant, COOLPC COMPUTER CO., LTD","Director, TaiSol Electronics Co., Ltd."],
-            other_titles:["None"],relative_title:"-",relative_name:"-",relative_relation:"-"},
-    
-            {title:"Supervisor",from:"R.O.C",name:"Cien-Ya, Lin",sex:"F",start_date:"06/19/2018",duration:"3years",first_start_date:"05/15/2015 (Note7)",
-            stock1:"1818316",stock_per1:"2.6",stock2:"2,074,321",stock_per2:"2.4",stock3:"-",stock_per3:"-",stock4:"-",stock_per4:"-",
-            exps:["Bachelor Degree in Land Resources, Chinese Culture University","Financial Junior Manager, Fubon Securities Co.,Ltd."],
-            other_titles:["Financial Junior Manager, LONG-THIN ENTERPRISE CO., LTD."],relative_title:"-",relative_name:"-",relative_relation:"-"},
-    
-            {title:"Supervisor",from:"R.O.C",name:"Ming-Chun, Chang",sex:"F",start_date:"06/19/2018",duration:"3years",first_start_date:"07/05/2013",
-            stock1:"-",stock_per1:"-",stock2:"-",stock_per2:"-",stock3:"-",stock_per3:"-",stock4:"-",stock_per4:"-",
-            exps:["Master Degree in International Business of College of Management, National Taiwan University","President of HTC Japan Branch Office, HTC Corporation"],
-            other_titles:["COO, Noodoe Corporation"],relative_title:"-",relative_name:"-",relative_relation:"-"}
-            ],
-            table2 : [
-                {name:"Ching-Sung,Yu",pro_exp1:"✔",pro_exp2:"✔",pro_exp3:"✔",fit_item1:" ",fit_item2:" ",fit_item3:" ",fit_item4:"✔",fit_item5:"✔",fit_item6:"✔",fit_item7:"✔",fit_item8:"✔",fit_item9:"✔",fit_item10:"✔",num_company:"None"},
-                {name:"Jaan-Lieh, Lin",pro_exp1:"✔",pro_exp2:"✔",pro_exp3:"✔",fit_item1:" ",fit_item2:" ",fit_item3:"✔",fit_item4:"✔",fit_item5:"✔",fit_item6:"✔",fit_item7:"✔",fit_item8:"✔",fit_item9:"✔",fit_item10:"✔",num_company:"1"},
-                {name:"Chun-Hsin, Liang",pro_exp1:"✔",pro_exp2:"✔",pro_exp3:"✔",fit_item1:" ",fit_item2:" ",fit_item3:"✔",fit_item4:"✔",fit_item5:"✔",fit_item6:"✔",fit_item7:"✔",fit_item8:"✔",fit_item9:"✔",fit_item10:"✔",num_company:"None"},
-              {name:"Kingo, Ashihara",pro_exp1:"✔",pro_exp2:"✔",pro_exp3:"✔",fit_item1:" ",fit_item2:" ",fit_item3:"✔",fit_item4:"✔",fit_item5:"✔",fit_item6:" ",fit_item7:"✔",fit_item8:"✔",fit_item9:"✔",fit_item10:"✔",num_company:"None"},
-                {name:"Wen-Tien, Chang",pro_exp1:"-",pro_exp2:"✔",pro_exp3:"✔",fit_item1:"✔",fit_item2:"✔",fit_item3:"✔",fit_item4:"✔",fit_item5:"✔",fit_item6:"✔",fit_item7:"✔",fit_item8:"✔",fit_item9:"✔",fit_item10:"✔",num_company:"1"},
-                {name:"Tien-Yun, Tseng",pro_exp1:"✔",pro_exp2:"-",pro_exp3:"✔",fit_item1:"✔",fit_item2:"✔",fit_item3:"✔",fit_item4:"✔",fit_item5:"✔",fit_item6:"✔",fit_item7:"✔",fit_item8:"✔",fit_item9:"✔",fit_item10:"✔",num_company:"None"},
-                {name:"Chih-Hung, Chen",pro_exp1:"✔",pro_exp2:"✔",pro_exp3:"✔",fit_item1:"✔",fit_item2:"✔",fit_item3:"✔",fit_item4:"✔",fit_item5:"✔",fit_item6:"✔",fit_item7:"✔",fit_item8:"✔",fit_item9:"✔",fit_item10:"✔",num_company:"None"},
-                {name:"Chun-san, Hsieh",pro_exp1:"✔",pro_exp2:"✔",pro_exp3:"✔",fit_item1:"✔",fit_item2:"✔",fit_item3:" ",fit_item4:"✔",fit_item5:"✔",fit_item6:"✔",fit_item7:"✔",fit_item8:"✔",fit_item9:"✔",fit_item10:"✔",num_company:"None"},
-                {name:"Cien-Ya, Lin",pro_exp1:"✔",pro_exp2:"✔",pro_exp3:"✔",fit_item1:" ",fit_item2:"✔",fit_item3:" ",fit_item4:"✔",fit_item5:"✔",fit_item6:"✔",fit_item7:"✔",fit_item8:"✔",fit_item9:"✔",fit_item10:"✔",num_company:"None"},
-                {name:"Ming-Chun, Chang",pro_exp1:"✔",pro_exp2:"✔",pro_exp3:"✔",fit_item1:"✔",fit_item2:"✔",fit_item3:"✔",fit_item4:"✔",fit_item5:"✔",fit_item6:"✔",fit_item7:"✔",fit_item8:"✔",fit_item9:"✔",fit_item10:"✔",num_company:"None"},
-              ],
-    };
+
  
 
     class ActiveTable1 extends React.Component {
@@ -104,7 +37,7 @@ function Page0(props) {
             super(props);
             this.state={
             tableExpanded: 0,
-            showExpandedTableButton: ['全部展開(Expand All)','全部收起(Shrink All)'],
+            showExpandedTableButton: ['全部展開(Expand)','全部收起(Shrink)'],
             expandList:{},
 
             
@@ -156,23 +89,7 @@ function Page0(props) {
             </button>
         }
 
-        multiLangTable(lang){
-            var data = this.props.data;
-
-            if (lang=='eng'){
-                data=this.props.data_eng;
-
-            }
-            console.log(this.props.lang)
-
-        }
-
-
-        
         render() {
-
-
-            
 
             
 
@@ -226,11 +143,10 @@ function Page0(props) {
                       {/* <button class="btn btn-secondary btn-sm" type="button"   onClick={this.toggleExpandTable}> 
                     {this.state.showExpandedTableButton[this.state.tableExpanded]}
                     </button> */}
-                    <table  class="table table-bordered table-hover"  style={{width:`2000px`}} >
-                        {this.props.lang=='ch'?                 
+                    <table  class="table table-bordered table-hover"  style={{width:`1650px`}} >
                         <thead>
                             <tr>
-                                <th rowspan="2" style={{width: `1%`}}>職稱（註一</th>
+                                <th rowspan="2" style={{width: `1%`}}>職稱（註一）</th>
                                 <th rowspan="2" style={{width: `3%`}}>國籍或註冊地</th>
                                 <th rowspan="2" >姓名</th>
                                 <th rowspan="2" >性別</th>
@@ -259,42 +175,7 @@ function Page0(props) {
                                 <th>姓名</th>
                                 <th>關係</th>
                             </tr>
-                        </thead> :
-                        <thead>
-                        <tr>
-                            <th rowspan="2">Title (Note1) </th>
-                            <th rowspan="2">Nationality or Place of registration</th>
-                            <th rowspan="2">Name</th>
-                            <th rowspan="2">Gender</th>
-                            <th rowspan="2">Date Elected</th>
-                            <th rowspan="2">Term</th>
-                            <th rowspan="2">Date First Elected (Note2)</th>
-                            
-                            <th colspan="2">Shares Held When Elected</th>
-                            <th colspan="2">Shares Currently Held</th>
-                            <th colspan="2">Shares held by spouse and underage children Current shareholding</th>
-                            <th colspan="2">Shares held by proxy</th>
-                            <th rowspan="2">Major career (academic) achievements (Note3)</th>
-
-                            <th rowspan="2">Selected Current Position sheldcon currently in the company and/or anyother companies</th>
-                            <th colspan="3">Spouse or relatives of second degree or closer acting as Directors, Supervisors, or department heads</th>
-                        </tr>
-
-                        <tr>
-                            <th>Shares</th>
-                            <th>%</th>
-                            <th>Shares</th>
-                            <th>%</th>                
-                            <th>Shares</th>
-                            <th>%</th>                
-                            <th>Shares</th>
-                            <th>%</th>
-                            <th>Title</th>
-                            <th>Name</th>
-                            <th>Relationship</th>
-                        </tr>
-                    </thead>
-                        }
+                        </thead>
                         <tbody>
                             {table}
                         </tbody>
@@ -373,8 +254,7 @@ function Page0(props) {
                     </div>
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" >
                         <div class="card-body"  style={{overflow: `auto`}}>
-                            {props.lang=='ch'? <ActiveTable1  data={data.table1} lang={props.lang} />: <ActiveTable1  data={data_eng.table1} lang={props.lang} />}
-                            
+                            <ActiveTable1  data={data.table1} />
                         </div>
                         <p><span>&nbsp;&nbsp;</span></p>
 
