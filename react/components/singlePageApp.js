@@ -13,6 +13,7 @@
         console.log("FoucusThisPage:",this.state.foucusedPage);
       });
     };
+
     render(){
       const navItems = this.state.navItems.map( (item,index) =>
       <li class="nav-item">

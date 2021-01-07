@@ -25,13 +25,14 @@ def insert_to_file(file_name,pattern,content):
                 lineNum_to_insert=idx
                 break
         print(pattern,lineNum_to_insert)
-        with open("index.html", "w+",encoding="utf8") as f1:
-            widx=0
-            for line in lines[0:lineNum_to_insert+1]:
-                f1.writelines(line)
-            f1.write(content)
-            for line in lines[lineNum_to_insert+1:]:
-                f1.writelines(line)
+        if lineNum_to_insert>0 :
+            with open("index.html", "w+",encoding="utf8") as f1:
+                widx=0
+                for line in lines[0:lineNum_to_insert+1]:
+                    f1.writelines(line)
+                f1.write(content)
+                for line in lines[lineNum_to_insert+1:]:
+                    f1.writelines(line)
 
 
 for eachFile in onlyfiles:

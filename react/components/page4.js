@@ -31,9 +31,9 @@ function Page4(props) {
       }
       render() {
           const list =  this.props.data.map( (link,index) => [
-                <li class="list-group-item" ><img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span>
-                    <a href={link.href} target="_blank"> {link.title}
-                        <img class="rounded" src="./assets/images/investor04_7.jpg"/>
+                <li class="list-group-item" ><img class="rounded" src="./assets/images/menu01.jpg"/> <span>&nbsp;&nbsp;</span>
+                    <a href={link.href} target="_blank">{link.title}
+                        {/* <img class="rounded" src="./assets/images/investor04_7.jpg"/> */}
                     </a>
                 </li>
             ]);

@@ -73,7 +73,7 @@ function Page6(props) {
             <li class="list-item list-unstyled  col-4 border-bottom py-2 ">
               <img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span>
               <a href={item.href} target="_blank">   
-                {item.title}<img class="rounded" src="./assets/images/investor04_7.jpg"/>
+               {item.title} {/* <img class="rounded" src="./assets/images/investor04_7.jpg"/> */}
               </a> 
             </li>
             ])
@@ -94,14 +94,14 @@ function Page6(props) {
               <li class="list-group-item" >
                 <img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span><b>ISO14001 環境管理體系 </b> 
                   <a href="http://w3.taisol.com.tw/important/EMS-ARES-ISO14001.pdf" target="_blank">   
-                  (證書<img class="rounded" src="./assets/images/investor04_7.jpg"/>)
+                  (證書)
                   </a>: <br/ >
                   為致力於提升各項資源之利用效率，積極使用再生物料，並對空氣、噪音、水資源等各項汙染防制進行管理，已制定多項相關作業辦法，以資遵循。
               </li>
               <li class="list-group-item" >
                 <img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span><b>EICC 電子產業行為準則 </b> 
                   <a href="http://cn.taisol.com.cn/eicc" target="_blank">   
-                  (EICC專區<img class="rounded" src="./assets/images/investor04_7.jpg"/>)
+                  (EICC專區)
                   </a> :<br />
                   工作環境均已列入規範管理，並設有專人管理或推動EICC相關規範。
               </li>

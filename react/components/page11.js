@@ -108,7 +108,7 @@ function Page11(props) {
                     <td>
                                 {this.props.data[index].results.map(     (result) =>
                                     <li style={{listStyleType:`none`}} >
-                                        <a href={result.href} >{result.txt} <img class="rounded" src="./assets/images/investor04_7.jpg"/></a>
+                                        <a href={result.href} >{result.txt}</a>
                                     </li >
                                 )}
 
@@ -205,10 +205,10 @@ function Page11(props) {
         </p>
         <p>基於對員工的承諾，泰碩相信每位員工皆應受到公平的對待與尊重； 保障國際公認人權，致力維護與尊重聯合國世界人權宣言和國際勞動 組織基本公約的核心勞動標準。 
         </p>
-        <p>為了保障您的權益、讓您更安心工作，泰碩特別設置提供專責的員工 意見申訴管道。
+        <p>為了保障您的權益、讓您更安心工作，泰碩特別設置提供專責的員工 意見申訴管道。<img src="./assets/images/investor04_6.jpg"  /> : <a href="mailto:talk@taisol.com">talk@taisol.com</a>
         </p>
 
-        <p><img src="./assets/images/investor04_6.jpg"  /> : <a href="mailto:talk@taisol.com">talk@taisol.com</a> </p>
+        {/* <p><img src="./assets/images/investor04_6.jpg"  /> : <a href="mailto:talk@taisol.com">talk@taisol.com</a> </p> */}
         <p><span>&nbsp;&nbsp;</span></p>  
         
 
