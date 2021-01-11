@@ -281,17 +281,17 @@ function Page10(props) {
         <p><span>&nbsp;&nbsp;</span></p>
         <p>泰碩重視員工安全，並致力提供一個安全、衛生與舒適的工作環境予全體同仁，工作環境與員工人身安全保護措施彙整如下：  </p>
         <ActiveList3 data={data.list3} />
-        <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          <img src="http://w3.taisol.com.tw/important/notice-2-9.jpg" class="card-img-top img-thumbnail rounded " alt="..." />
-        </div>
-        </div>
-        <p><span>&nbsp;&nbsp;</span></p>
+
 
         <p><b>亞洲科技大樓108年消防及安全檢測計畫：</b></p>
           <ActiveTable1 data={data.table1} />
         <p><b>亞洲科技大樓107年消防及安全檢測計畫：</b></p>
           <ActiveTable1 data={data.table2} />
+          <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <img src="http://w3.taisol.com.tw/important/notice-2-9.jpg" class="card-img-top img-thumbnail rounded " alt="..." />
+        </div>
+        </div>
         <p><span>&nbsp;&nbsp;</span></p>
         <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>人權政策 </h5>
         <p><span>&nbsp;&nbsp;</span></p>
