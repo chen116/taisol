@@ -2544,11 +2544,12 @@ function Page10(props) {
   
           list2:[
   
-            "新人訓練",
-            "專業職能培訓",
-            "管理職能培訓",
-            "共通職能培訓",
-            "派外訓練補助",
+            {title:"新人訓練"},
+            {title:"專業職能培訓" },
+            {title:"管理職能培訓"},
+            {title:"共通職能培訓"},
+            {title:"派外訓練補助"},
+            {title:"誠信經營與內線交易防範培訓",content:"本公司除定期對全體同仁進行誠信經營與內線交易防範培訓外，針對所有新進同仁更於到職即進行相關訓練宣導，以徹底落實誠信經營政策。"}
           ],
   
           list3: [ 
@@ -2681,7 +2682,9 @@ function Page10(props) {
             const list =  this.props.data.map( (item,index) => [
               
               <li class="list-group-item " >
-              <img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span>{item}
+              <img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span>{item["title"]}
+              {item["content"]!=null? <span> : </span> : null}
+                   {item["content"]!=null? <ul ><li class=" list-group-flush">{item["content"]}</li></ul> : null}
               </li>
               ]);
             return (
