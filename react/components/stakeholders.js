@@ -192,6 +192,41 @@ function Page_stakeholders(props) {
         <p>企業追求永續發展，必須瞭解利害關係人的想法。透明的溝通不僅會減少公司內部管理成本，亦是追求永續發展的重要參考。我們相信，開放、無障礙的溝通方式，更能充分瞭解利害關係人的需求。
         </p>
         <ActiveTable1 data={data.table1} />
+
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span> 聯絡窗口</h5>
+         <div class="container">
+          
+        <div class="row">
+          <div class="col-sm">
+           投資人
+           <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:talk@taisol.com">talk@taisol.com</a></li> </ul>
+            
+          </div>
+          <div class="col-sm">
+          客戶
+          <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:sales@taisol.com">sales@taisol.com</a></li> </ul>
+          </div>
+          <div class="col-sm">
+            供應商
+            <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:sales@taisol.com">sales@taisol.com</a></li> </ul>
+          </div>
+          <div class="col-sm">
+            員工
+            <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:talk@taisol.com">talk@taisol.com</a></li> </ul>
+          </div>
+        </div>
+      </div> 
+{/* 
+      <ul class="list-group list-group-flush "> 
+        <li class="list-group-item list-group-flush">投資人:<li class="list-group-item list-group-flush"><a href="mailto:talk@taisol.com">talk@taisol.com</a></li></li>
+        <li class="list-group-item list-group-flush">客戶:<li class="list-group-item list-group-flush"><a href="mailto:sales@taisol.com">sales@taisol.com</a></li></li>
+        <li class="list-group-item list-group-flush">供應商:<li class="list-group-item list-group-flush"><a href="mailto:sales@taisol.com">sales@taisol.com</a></li></li>
+        <li class="list-group-item list-group-flush">員工:<li class="list-group-item list-group-flush"><a href="mailto:talk@taisol.com">talk@taisol.com</a></li></li>
+      
+      </ul> */}
+
+
+
         <p><span>&nbsp;&nbsp;</span></p>
         <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span> 檢舉信箱作業辦法</h5>
         <p><span>&nbsp;&nbsp;</span></p>
