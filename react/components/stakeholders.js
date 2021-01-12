@@ -1,5 +1,5 @@
-function Page11(props) {
-    const myPage = 11;
+function Page_stakeholders(props) {
+    const myPage = "stakeholders";
     if (myPage != props.currentPage){return null;}
 
       var data =  {      

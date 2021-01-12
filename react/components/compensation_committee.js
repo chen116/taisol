@@ -1,5 +1,5 @@
-function Page2(props) {
-    const myPage = 2;
+function Page_compensation_committee(props) {
+    const myPage = "compensation_committee";
     var data = {
       salary_regulations: [
         {   

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Taisol 公司治理</title>
+  <title>TaiSol 公司治理</title>
   <script type="application/javascript" src="./assets/js/react.production.min.js"></script>
   <script type="application/javascript" src="./assets/js/react-dom.production.min.js"></script>
   <script type="application/javascript" src="./assets/js/babel.min.js"></script>
@@ -26,7 +26,7 @@
 </head>
 
 <body > <!--style="width:2200px;overflow:auto;" -->
-    <!-- python-header.html -->
+    <!-- header.html -->
 <!-- <div class="navbar">
 
 <div class="btn-group" role="group" aria-label="Basic example" style="float:right;padding-right:300px;">
@@ -118,7 +118,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark fixedTopHeader" >
      
     <a class="navbar-brand" href="https://www.taisol.com"><img src='./assets/images/logo.png' /></a>
-    <h3 style="color: white; "> <span>&nbsp;&nbsp;</span>公司治理 </h3>
+    <!-- <h3 style="color: white; "> <span>&nbsp;&nbsp;</span>公司治理 </h3> -->
 
    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -233,7 +233,7 @@
 
 <script type="text/babel">
     const rootElement = document.getElementById('app')
-  //python-singlePageApp.js
+  //singlePageApp.js
 
   class SinglePageApp extends React.Component {
     constructor(props){
@@ -241,11 +241,14 @@
       this.state ={
         init:false,
         foucusedPage : 0,
-        navItems : ['董事會','董事會(Board of Directors)','薪酬委員會','組織及職掌','規章','內部稽核','企業社會責任','供應商管理','客戶服務','投資人關係','人力資源','與利害關係人對話'],
+        navItems : ['公司治理','董事會','董事會(Board of Directors)','薪酬委員會','組織及職掌','規章','內部稽核','企業社會責任','供應商管理','客戶服務','投資人關係','人力資源','與利害關係人對話'],
+        navItemsPageFile : ["corporate_governance","board_of_directors_ch","board_of_directors_eng","compensation_committee","organization","regulations","internal_audit",
+        "social","suppliers","customer_service","investor_relations","human_resources","stakeholders"]
       };
     }
     focusThisPage(index){
-      this.setState({foucusedPage: index},function(){
+      var page = this.state.navItemsPageFile[index];
+      this.setState({foucusedPage: page},function(){
         console.log("FoucusThisPage:",this.state.foucusedPage);
       });
     };
@@ -259,8 +262,8 @@
       if (!this.state.init)
       {
         var initFoucusedPage=window.location.href.split('?')[1];
-        if (initFoucusedPage==null){initFoucusedPage=0}
-        else {initFoucusedPage=parseInt(initFoucusedPage) }
+        if (initFoucusedPage==null){initFoucusedPage=this.state.navItemsPageFile[0]}
+        else {initFoucusedPage=initFoucusedPage }
         this.state.foucusedPage=initFoucusedPage;
         console.log("initFoucusedPage:",this.state.foucusedPage)
         this.state.init=true
@@ -274,18 +277,19 @@
               </ul>
             </div>
           </nav>
-          <Page0 currentPage={this.state.foucusedPage}/>
-          <Page1 currentPage={this.state.foucusedPage}/>
-          <Page2 currentPage={this.state.foucusedPage}/>
-          <Page3 currentPage={this.state.foucusedPage}/>
-          <Page4 currentPage={this.state.foucusedPage}/>
-          <Page5 currentPage={this.state.foucusedPage}/>
-          <Page6 currentPage={this.state.foucusedPage}/>
-          <Page7 currentPage={this.state.foucusedPage}/>
-          <Page8 currentPage={this.state.foucusedPage}/>
-          <Page9 currentPage={this.state.foucusedPage}/>
-          <Page10 currentPage={this.state.foucusedPage}/>
-          <Page11 currentPage={this.state.foucusedPage}/>
+          <Page_corporate_governance currentPage={this.state.foucusedPage}/>
+          <Page_board_of_directors_ch currentPage={this.state.foucusedPage}/>
+          <Page_board_of_directors_eng currentPage={this.state.foucusedPage}/>
+          <Page_compensation_committee currentPage={this.state.foucusedPage}/>
+          <Page_organization currentPage={this.state.foucusedPage}/>
+          <Page_regulations currentPage={this.state.foucusedPage}/>
+          <Page_internal_audit currentPage={this.state.foucusedPage}/>
+          <Page_social currentPage={this.state.foucusedPage}/>
+          <Page_suppliers currentPage={this.state.foucusedPage}/>
+          <Page_customer_service currentPage={this.state.foucusedPage}/>
+          <Page_investor_relations currentPage={this.state.foucusedPage}/>
+          <Page_human_resources currentPage={this.state.foucusedPage}/>
+          <Page_stakeholders currentPage={this.state.foucusedPage}/>
 
         </div>  
       )
@@ -294,12 +298,13 @@
 
 
 
-  //python-page0.js
-class Page0 extends React.Component {
+
+  //board_of_directors_ch.js
+class Page_board_of_directors_ch extends React.Component {
     constructor(props){
         super(props);
         this.state={
-        myPage : 0,
+        myPage : "board_of_directors_ch",
         data : {
             table1 : [
                 {title:"董事長",from:"臺灣",name:"余清松",sex:"男",start_date:"107.06.19",duration:"3年",first_start_date:"88.11.06",stock1:"11,799,516",stock_per1:"16.9",stock2:"14,155,046",stock_per2:"16.37",stock3:"773.431",stock_per3:"0.89",stock4:"3151000",stock_per4:"3.64",exps:["大同工學院工商管理系畢"],other_titles:["泰碩電子(香港)有限公司 董事","世窗電子(香港)有限公司 董事","TAISOL ELEC. JAPAN 董事","衡國企業(股)公司 董事長"],relative_title:"-",relative_name:"-",relative_relation:"-"},
@@ -710,9 +715,9 @@ class Page0 extends React.Component {
 
 }
 
-  //python-page1.js
-function Page1(props) {
-    const myPage = 1;
+  //board_of_directors_eng.js
+function Page_board_of_directors_eng(props) {
+    const myPage ="board_of_directors_eng";
     var data = {
         table1 : [
             {title:"Chairman",from:"R.O.C",name:"Ching-Sung, Yu",sex:"M",start_date:"06/19/2018",duration:"3years",first_start_date:"11/06/1999",
@@ -1083,9 +1088,9 @@ function Page1(props) {
 
 }
 
-  //python-page2.js
-function Page2(props) {
-    const myPage = 2;
+  //compensation_committee.js
+function Page_compensation_committee(props) {
+    const myPage = "compensation_committee";
     var data = {
       salary_regulations: [
         {   
@@ -1649,9 +1654,9 @@ function Page2(props) {
 
 }
 
-  //python-page3.js
-function Page3(props) {
-    const myPage = 3;
+  //organization.js
+function Page_organization(props) {
+    const myPage = "organization";
     if (myPage != props.currentPage){return null;}
 
       var data = {
@@ -1955,9 +1960,9 @@ function Page3(props) {
       ];
 
     }
-      //python-page4.js
-function Page4(props) {
-    const myPage = 4;
+      //regulations.js
+function Page_regulations(props) {
+    const myPage = "regulations";
     var data = {
         links: [
 
@@ -2028,9 +2033,9 @@ function Page4(props) {
 
 }
 
-  //python-page5.js
-function Page5(props) {
-    const myPage = 5;
+  //internal_audit.js
+function Page_internal_audit(props) {
+    const myPage = "internal_audit";
     var data = {
         table1 : [
             {date: "109.06.05", type: "座談會", items: ["1. 109年1~4月稽核業務執行情形、查核追蹤報告。","2. 就現行內控運作情形報告。"], results:["獨立董事、監察人洽悉。"]},
@@ -2142,9 +2147,9 @@ function Page5(props) {
 
 }
 
-  //python-page6.js
-function Page6(props) {
-    const myPage = 6;
+  //social.js
+function Page_social(props) {
+    const myPage = "social";
     var data = {
       list1 : [
         "遵守相關勞動法規並尊重國際公認基本勞動人權原則，保障員工之合法權益，雇用政策並無差別待遇，並已建立相關管理機制。",
@@ -2337,9 +2342,9 @@ function Page6(props) {
 
 }
 
-  //python-page7.js
-function Page7(props) {
-    const myPage = 7;
+  //suppliers.js
+function Page_suppliers(props) {
+    const myPage = "suppliers";
     if (myPage != props.currentPage){return null;}
 
       var data =  {          list1:[
@@ -2428,9 +2433,9 @@ function Page7(props) {
    
     
   }
-  //python-page8.js
-function Page8(props) {
-    const myPage = 8;
+  //customer_service.js
+function Page_customer_service(props) {
+    const myPage = "customer_service";
     if (myPage != props.currentPage){return null;}
 
       var data =  {      
@@ -2493,9 +2498,9 @@ function Page8(props) {
    
     
   }
-  //python-page9.js
-function Page9(props) {
-    const myPage = 9;
+  //investor_relations.js
+function Page_investor_relations(props) {
+    const myPage = "investor_relations";
     if (myPage != props.currentPage){return null;}
 
       var data =  {      
@@ -2579,9 +2584,9 @@ function Page9(props) {
    
     
   }
-  //python-page10.js
-function Page10(props) {
-  const myPage = 10;
+  //human_resources.js
+function Page_human_resources(props) {
+  const myPage = "human_resources";
   if (myPage != props.currentPage){return null;}
 
     var data =  {      
@@ -2890,9 +2895,9 @@ function Page10(props) {
  
   
 }
-  //python-page11.js
-function Page11(props) {
-    const myPage = 11;
+  //stakeholders.js
+function Page_stakeholders(props) {
+    const myPage = "stakeholders";
     if (myPage != props.currentPage){return null;}
 
       var data =  {      
@@ -3128,6 +3133,86 @@ function Page11(props) {
    
     
   }
+  //corporate_governance.js
+function Page_corporate_governance(props) {
+    const myPage = "corporate_governance";
+    var data = {
+        items: [
+
+            {item: '一、協助董事、監察人執行職務：',
+                content: ['（一）依法令規章之修訂，協助訂定公司相關作業辦法，俾以提供董事知悉、參考。',
+                '（二）協助維持董事、監察人與公司各項業務主管之溝通、交流。',
+                '（三）協助維持董事、監察人與簽證會計師之溝通、交流。']},
+             {item: '二、協助董事會、股東會之召開、議程及其他相關事宜：',
+                content:['（一）協助董事會、股東會之通知、召開、議程等均遵循法令及公司治理之規範。',
+                '（二）協助提供董事會、股東會之議事資料。',
+                '（三）確認董事會、股東會後各項重要決議之重大訊息公告均正確且遵循法令。',
+                '（四）依法令規定期限內完成董事會、股東會後之議事錄等相關資料。',
+                '（五）不定期向董事會成員宣導包括不應從事內線交易等法令及公司治理之規定。']},
+              {item: '三、協助董事依法令規定及職務需要，安排進修課程。',
+                content:[]
+                }           
+
+
+       
+    
+          ]
+    };
+
+    class ActiveList1 extends React.Component {
+      constructor(props){
+          super(props);
+          this.state={
+          };
+      }
+      render() {
+          const list =  this.props.data.map( (item,index) => [
+                <li class="list-group-item list-group-flush " ><img class="rounded" src="./assets/images/menu01.jpg"/> <span>&nbsp;&nbsp;</span>
+                    {item.item}
+                    {item.content.map(function(detail, index2) {
+                    return [
+                      <li class="list-group-item list-group-flush " >
+                        {detail}
+                      </li>
+                    ]
+                    
+                    })}
+                </li>
+            ]);
+          return (
+            <ul class="list-group list-group-flush ">
+              {list}
+            </ul>
+
+          )
+      }
+    }  
+
+    if (myPage != props.currentPage){return null;}
+    return [
+        <div class="content">
+            <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>公司治理 </h4>
+            <p><span>&nbsp;&nbsp;</span></p> 
+
+            <img class="rounded" src="./assets/images/investor04_8.png"/>
+
+            <p>本公司以管理部、財務部為公司治理之主要兼職單位，其部門主管已具備公開發行公司從事財務等管理工作經驗達三年以上；以協助提供董事、監察人執行業務所需之資料、協助董監事 遵循法令、依法辦理董事會及股東會之會議相關事宜等為職責。 </p>
+            <p>本年度業務執行情形如下： </p>
+            <ActiveList1 data={data.items} />
+
+
+
+
+
+
+        </div>
+
+
+    ];
+
+}
+
+
 
   // Create a function to wrap up your component
   function App(){
@@ -3143,7 +3228,7 @@ function Page11(props) {
     )
 </script>
 
-<!-- python-footer.html -->
+<!-- footer.html -->
 
   
   <nav class="footer  navbar  navbar-expand-lg fixed-bottom  navbar-dark fixedfooter">
@@ -3159,7 +3244,7 @@ function Page11(props) {
           </div>
           
         </div>
-        <div class="col-4">
+        <!-- <div class="col-4">
             <div class="footer-nav collapse navbar-collapse " id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
@@ -3173,7 +3258,7 @@ function Page11(props) {
                 </li>
               </ul>
             </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </nav>

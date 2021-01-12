@@ -6,10 +6,13 @@
         init:false,
         foucusedPage : 0,
         navItems : ['公司治理','董事會','董事會(Board of Directors)','薪酬委員會','組織及職掌','規章','內部稽核','企業社會責任','供應商管理','客戶服務','投資人關係','人力資源','與利害關係人對話'],
+        navItemsPageFile : ["corporate_governance","board_of_directors_ch","board_of_directors_eng","compensation_committee","organization","regulations","internal_audit",
+        "social","suppliers","customer_service","investor_relations","human_resources","stakeholders"]
       };
     }
     focusThisPage(index){
-      this.setState({foucusedPage: index},function(){
+      var page = this.state.navItemsPageFile[index];
+      this.setState({foucusedPage: page},function(){
         console.log("FoucusThisPage:",this.state.foucusedPage);
       });
     };
@@ -23,8 +26,8 @@
       if (!this.state.init)
       {
         var initFoucusedPage=window.location.href.split('?')[1];
-        if (initFoucusedPage==null){initFoucusedPage=0}
-        else {initFoucusedPage=parseInt(initFoucusedPage) }
+        if (initFoucusedPage==null){initFoucusedPage=this.state.navItemsPageFile[0]}
+        else {initFoucusedPage=initFoucusedPage }
         this.state.foucusedPage=initFoucusedPage;
         console.log("initFoucusedPage:",this.state.foucusedPage)
         this.state.init=true
@@ -38,18 +41,19 @@
               </ul>
             </div>
           </nav>
-          <Page0 currentPage={this.state.foucusedPage}/>
-          <Page1 currentPage={this.state.foucusedPage}/>
-          <Page2 currentPage={this.state.foucusedPage}/>
-          <Page3 currentPage={this.state.foucusedPage}/>
-          <Page4 currentPage={this.state.foucusedPage}/>
-          <Page5 currentPage={this.state.foucusedPage}/>
-          <Page6 currentPage={this.state.foucusedPage}/>
-          <Page7 currentPage={this.state.foucusedPage}/>
-          <Page8 currentPage={this.state.foucusedPage}/>
-          <Page9 currentPage={this.state.foucusedPage}/>
-          <Page10 currentPage={this.state.foucusedPage}/>
-          <Page11 currentPage={this.state.foucusedPage}/>
+          <Page_corporate_governance currentPage={this.state.foucusedPage}/>
+          <Page_board_of_directors_ch currentPage={this.state.foucusedPage}/>
+          <Page_board_of_directors_eng currentPage={this.state.foucusedPage}/>
+          <Page_compensation_committee currentPage={this.state.foucusedPage}/>
+          <Page_organization currentPage={this.state.foucusedPage}/>
+          <Page_regulations currentPage={this.state.foucusedPage}/>
+          <Page_internal_audit currentPage={this.state.foucusedPage}/>
+          <Page_social currentPage={this.state.foucusedPage}/>
+          <Page_suppliers currentPage={this.state.foucusedPage}/>
+          <Page_customer_service currentPage={this.state.foucusedPage}/>
+          <Page_investor_relations currentPage={this.state.foucusedPage}/>
+          <Page_human_resources currentPage={this.state.foucusedPage}/>
+          <Page_stakeholders currentPage={this.state.foucusedPage}/>
 
         </div>  
       )

@@ -1,5 +1,5 @@
-function Page1(props) {
-    const myPage = 1;
+function Page_board_of_directors_eng(props) {
+    const myPage ="board_of_directors_eng";
     var data = {
         table1 : [
             {title:"Chairman",from:"R.O.C",name:"Ching-Sung, Yu",sex:"M",start_date:"06/19/2018",duration:"3years",first_start_date:"11/06/1999",

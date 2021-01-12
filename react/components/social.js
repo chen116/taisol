@@ -1,5 +1,5 @@
-function Page6(props) {
-    const myPage = 6;
+function Page_social(props) {
+    const myPage = "social";
     var data = {
       list1 : [
         "遵守相關勞動法規並尊重國際公認基本勞動人權原則，保障員工之合法權益，雇用政策並無差別待遇，並已建立相關管理機制。",

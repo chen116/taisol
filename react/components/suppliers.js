@@ -1,5 +1,5 @@
-function Page7(props) {
-    const myPage = 7;
+function Page_suppliers(props) {
+    const myPage = "suppliers";
     if (myPage != props.currentPage){return null;}
 
       var data =  {          list1:[

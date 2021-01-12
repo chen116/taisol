@@ -1,5 +1,5 @@
-function Page10(props) {
-  const myPage = 10;
+function Page_human_resources(props) {
+  const myPage = "human_resources";
   if (myPage != props.currentPage){return null;}
 
     var data =  {      
