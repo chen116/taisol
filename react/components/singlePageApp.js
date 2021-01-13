@@ -14,10 +14,10 @@
         },
         
         navItemsPageFile : {
-          // ch: ["corporate_governance","board_of_directors","compensation_committee","organization","regulations","internal_audit",
-          //   "social","suppliers","customer_service","investor_relations","human_resources","stakeholders"],
-          // eng:["corporate_governance_eng","board_of_directors_eng","compensation_committee_eng","organization_eng","regulations_eng","internal_audit_eng",
-          //   "social_eng","suppliers_eng","customer_service_eng","investor_relations_eng","human_resources_eng","stakeholders_eng"  ]
+          ch: ["corporate_governance_ch","board_of_directors_ch","compensation_committee_ch","organization_ch","regulations_ch","internal_audit_ch",
+            "social_ch","suppliers_ch","customer_service_ch","investor_relations_ch","human_resources_ch","stakeholders"],
+          eng:["corporate_governance_eng","board_of_directors_eng","compensation_committee_eng","organization_eng","regulations_eng","internal_audit_eng",
+            "social_eng","suppliers_eng","customer_service_eng","investor_relations_eng","human_resources_eng","stakeholders_eng"  ]
       }
 
 
@@ -26,15 +26,18 @@
     focusThisPage(index){
       var page = this.state.navItemsPageFile[this.state.lang][index];
       this.setState({foucusedPage: page},function(){
-        console.log("FoucusThisPage:",this.state.foucusedPage);
-        this.setState({foucusedPageIndex: index});
+        this.setState({foucusedPageIndex: index}, function(){
+          console.log("FoucusThisPage:",this.state.foucusedPage,"FoucusThisPageIndex:",this.state.foucusedPageIndex);
+
+        });
         
       });
     };
     changeLang(lang){
       this.setState({lang: lang},function(){
-        console.log("language:",this.state.lang);
-        this.setState({foucusedPage: this.state.navItemsPageFile[this.state.lang][this.state.foucusedPageIndex]});
+        this.setState({foucusedPage: this.state.navItemsPageFile[this.state.lang][this.state.foucusedPageIndex]},function(){
+          console.log("change lang to:",this.state.lang,"FoucusThisPage:",this.state.foucusedPage,"FoucusThisPageIndex:",this.state.foucusedPageIndex);
+        });
       });
     };
 
@@ -68,22 +71,36 @@
         // this.state.foucusedPage=initFoucusedPage;
         // console.log("initFoucusedPage:",this.state.foucusedPage)
 
-
-        var foo = this.getParameterByName('foo'); 
-        console.log("foo:",foo)
-
         var lang =  this.getParameterByName('lang'); 
         if (lang==null){this.state.lang="ch"}
         else{this.state.lang=lang}
         console.log("initLang:",this.state.lang)
 
         var page =  this.getParameterByName('page'); 
-        if (page==null){this.state.foucusedPage=this.state.navItemsPageFile[lang][]}
+        if (page==null){
+          this.state.foucusedPage=this.state.navItemsPageFile[this.state.lang][0];
+          this.state.foucusedPageIndex=0;     
+          console.log("initFoucusedPage:",this.state.foucusedPage)
+          console.log("initFoucusedPageIndex:",this.state.foucusedPageIndex)   
+        }
+        else{
+          if(this.state.lang=="ch"){
+            page=page+"_ch";
+          }
+          if(this.state.lang=="eng"){
+            page=page+"_eng";
+          }
+            this.setState({foucusedPage: page},function(){
+              var initPageIndex=this.state.navItemsPageFile[this.state.lang].indexOf(page);
+                  this.setState({foucusedPageIndex:initPageIndex},function(){
+                    console.log("initFoucusedPage:",this.state.foucusedPage)
+                    console.log("initFoucusedPageIndex:",this.state.foucusedPageIndex)
+                  } )
+          });
+
+        }
 
 
-        this.state.foucusedPage=this.state.navItemsPageFile[this.state.lang][0];
-        this.state.foucusedPageIndex=0;
-        console.log("initFoucusedPage:",this.state.foucusedPage)
 
 
         this.state.init=true
@@ -182,18 +199,18 @@
               </ul>
             </div>
           </nav> */}
-          <Page_corporate_governance currentPage={this.state.foucusedPage}/>
-          <Page_board_of_directors currentPage={this.state.foucusedPage}/>
-          <Page_compensation_committee currentPage={this.state.foucusedPage}/>
-          <Page_organization currentPage={this.state.foucusedPage}/>
-          <Page_regulations currentPage={this.state.foucusedPage}/>
-          <Page_internal_audit currentPage={this.state.foucusedPage}/>
-          <Page_social currentPage={this.state.foucusedPage}/>
-          <Page_suppliers currentPage={this.state.foucusedPage}/>
-          <Page_customer_service currentPage={this.state.foucusedPage}/>
-          <Page_investor_relations currentPage={this.state.foucusedPage}/>
-          <Page_human_resources currentPage={this.state.foucusedPage}/>
-          <Page_stakeholders currentPage={this.state.foucusedPage}/>
+          <Page_corporate_governance_ch currentPage={this.state.foucusedPage}/>
+          <Page_board_of_directors_ch currentPage={this.state.foucusedPage}/>
+          <Page_compensation_committee_ch currentPage={this.state.foucusedPage}/>
+          <Page_organization_ch currentPage={this.state.foucusedPage}/>
+          <Page_regulations_ch currentPage={this.state.foucusedPage}/>
+          <Page_internal_audit_ch currentPage={this.state.foucusedPage}/>
+          <Page_social_ch currentPage={this.state.foucusedPage}/>
+          <Page_suppliers_ch currentPage={this.state.foucusedPage}/>
+          <Page_customer_service_ch currentPage={this.state.foucusedPage}/>
+          <Page_investor_relations_ch currentPage={this.state.foucusedPage}/>
+          <Page_human_resources_ch currentPage={this.state.foucusedPage}/>
+          <Page_stakeholders_ch currentPage={this.state.foucusedPage}/>
 
 
           <Page_corporate_governance_eng currentPage={this.state.foucusedPage}/>

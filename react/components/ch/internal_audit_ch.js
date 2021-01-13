@@ -1,5 +1,5 @@
-function Page_internal_audit(props) {
-    const myPage = "internal_audit";
+function Page_internal_audit_ch(props) {
+    const myPage = "internal_audit_ch";
     var data = {
         table1 : [
             {date: "109.06.05", type: "座談會", items: ["1. 109年1~4月稽核業務執行情形、查核追蹤報告。","2. 就現行內控運作情形報告。"], results:["獨立董事、監察人洽悉。"]},

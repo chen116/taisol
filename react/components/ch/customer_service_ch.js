@@ -1,5 +1,5 @@
-function Page_customer_service(props) {
-    const myPage = "customer_service";
+function Page_customer_service_ch(props) {
+    const myPage = "customer_service_ch";
     if (myPage != props.currentPage){return null;}
 
       var data =  {      

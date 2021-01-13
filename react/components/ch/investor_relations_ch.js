@@ -1,5 +1,5 @@
-function Page_investor_relations(props) {
-    const myPage = "investor_relations";
+function Page_investor_relations_ch(props) {
+    const myPage = "investor_relations_ch";
     if (myPage != props.currentPage){return null;}
 
       var data =  {      

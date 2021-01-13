@@ -1,8 +1,8 @@
-class Page_board_of_directors extends React.Component {
+class Page_board_of_directors_ch extends React.Component {
     constructor(props){
         super(props);
         this.state={
-        myPage : "board_of_directors",
+        myPage : "board_of_directors_ch",
         data : {
             table1 : [
                 {title:"董事長",from:"臺灣",name:"余清松",sex:"男",start_date:"107.06.19",duration:"3年",first_start_date:"88.11.06",stock1:"11,799,516",stock_per1:"16.9",stock2:"14,155,046",stock_per2:"16.37",stock3:"773.431",stock_per3:"0.89",stock4:"3151000",stock_per4:"3.64",exps:["大同工學院工商管理系畢"],other_titles:["泰碩電子(香港)有限公司 董事","世窗電子(香港)有限公司 董事","TAISOL ELEC. JAPAN 董事","衡國企業(股)公司 董事長"],relative_title:"-",relative_name:"-",relative_relation:"-"},

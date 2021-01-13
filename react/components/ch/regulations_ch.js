@@ -1,5 +1,5 @@
-function Page_regulations(props) {
-    const myPage = "regulations";
+function Page_regulations_ch(props) {
+    const myPage = "regulations_ch";
     var data = {
         links: [
 

@@ -1,5 +1,5 @@
-function Page_corporate_governance(props) {
-    const myPage = "corporate_governance";
+function Page_corporate_governance_ch(props) {
+    const myPage = "corporate_governance_ch";
     var data = {
         items: [
 

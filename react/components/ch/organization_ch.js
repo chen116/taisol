@@ -1,5 +1,5 @@
-function Page_organization(props) {
-    const myPage = "organization";
+function Page_organization_ch(props) {
+    const myPage = "organization_ch";
     if (myPage != props.currentPage){return null;}
 
       var data = {
