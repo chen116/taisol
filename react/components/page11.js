@@ -194,8 +194,8 @@ function Page11(props) {
         <ActiveTable1 data={data.table1} />
         <p><span>&nbsp;&nbsp;</span></p>
 
-        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span> 聯絡窗口</h5>
-         <div class="container">
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>與利害關係人聯絡窗口</h5>
+         {/* <div class="container">
           
         <div class="row">
           <div class="col-sm">
@@ -216,15 +216,14 @@ function Page11(props) {
             <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:talk@taisol.com">talk@taisol.com</a></li> </ul>
           </div>
         </div>
-      </div> 
-{/* 
+      </div>  */}
       <ul class="list-group list-group-flush "> 
-        <li class="list-group-item list-group-flush">投資人:<li class="list-group-item list-group-flush"><a href="mailto:talk@taisol.com">talk@taisol.com</a></li></li>
-        <li class="list-group-item list-group-flush">客戶:<li class="list-group-item list-group-flush"><a href="mailto:sales@taisol.com">sales@taisol.com</a></li></li>
-        <li class="list-group-item list-group-flush">供應商:<li class="list-group-item list-group-flush"><a href="mailto:sales@taisol.com">sales@taisol.com</a></li></li>
-        <li class="list-group-item list-group-flush">員工:<li class="list-group-item list-group-flush"><a href="mailto:talk@taisol.com">talk@taisol.com</a></li></li>
+        <li class="list-group-item list-group-flush">投資人: <a href="mailto:talk@taisol.com">investor@taisol.com</a></li>
+        <li class="list-group-item list-group-flush">客戶: <a href="mailto:sales@taisol.com">customer@taisol.com</a></li>
+        <li class="list-group-item list-group-flush">供應商: <a href="mailto:sales@taisol.com">supplier@taisol.com</a></li>
+        <li class="list-group-item list-group-flush">員工: <a href="mailto:talk@taisol.com">talk@taisol.com</a></li>
       
-      </ul> */}
+      </ul>
 
 
         <p><span>&nbsp;&nbsp;</span></p>

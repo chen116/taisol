@@ -289,9 +289,9 @@ function Page10(props) {
       <p>泰碩重視員工安全，並致力提供一個安全、衛生與舒適的工作環境予全體同仁，工作環境與員工人身安全保護措施彙整如下：  </p>
       <ActiveList3 data={data.list3} />
       <div class="row justify-content-md-center">
-      <div class="col-md-auto">
+      {/* <div class="col-md-auto">
         <img src="http://w3.taisol.com.tw/important/notice-2-9.jpg" class="card-img-top img-thumbnail rounded " alt="..." />
-      </div>
+      </div> */}
       </div>
       <p><span>&nbsp;&nbsp;</span></p>
 
