@@ -193,6 +193,41 @@ function Page11(props) {
         </p>
         <ActiveTable1 data={data.table1} />
         <p><span>&nbsp;&nbsp;</span></p>
+
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span> 聯絡窗口</h5>
+         <div class="container">
+          
+        <div class="row">
+          <div class="col-sm">
+           投資人
+           <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:talk@taisol.com">talk@taisol.com</a></li> </ul>
+            
+          </div>
+          <div class="col-sm">
+          客戶
+          <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:sales@taisol.com">sales@taisol.com</a></li> </ul>
+          </div>
+          <div class="col-sm">
+            供應商
+            <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:sales@taisol.com">sales@taisol.com</a></li> </ul>
+          </div>
+          <div class="col-sm">
+            員工
+            <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:talk@taisol.com">talk@taisol.com</a></li> </ul>
+          </div>
+        </div>
+      </div> 
+{/* 
+      <ul class="list-group list-group-flush "> 
+        <li class="list-group-item list-group-flush">投資人:<li class="list-group-item list-group-flush"><a href="mailto:talk@taisol.com">talk@taisol.com</a></li></li>
+        <li class="list-group-item list-group-flush">客戶:<li class="list-group-item list-group-flush"><a href="mailto:sales@taisol.com">sales@taisol.com</a></li></li>
+        <li class="list-group-item list-group-flush">供應商:<li class="list-group-item list-group-flush"><a href="mailto:sales@taisol.com">sales@taisol.com</a></li></li>
+        <li class="list-group-item list-group-flush">員工:<li class="list-group-item list-group-flush"><a href="mailto:talk@taisol.com">talk@taisol.com</a></li></li>
+      
+      </ul> */}
+
+
+        <p><span>&nbsp;&nbsp;</span></p>
         <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span> 檢舉信箱作業辦法</h5>
 
         <ActiveList1 data={data.list1} />
