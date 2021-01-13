@@ -18,8 +18,8 @@
             "social_ch","suppliers_ch","customer_service_ch","shareholder_relations_ch","human_resources_ch","stakeholders_ch"],
           eng:["corporate_governance_eng","board_of_directors_eng","compensation_committee_eng","organization_eng","regulations_eng","internal_audit_eng",
             "social_eng","suppliers_eng","customer_service_eng","shareholder_relations_eng","human_resources_eng","stakeholders_eng"  ]
-      }
-
+      },
+      qq:-1
 
       };
     }
