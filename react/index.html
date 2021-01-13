@@ -49,10 +49,10 @@
         },
         
         navItemsPageFile : {
-          ch: ["corporate_governance","board_of_directors","compensation_committee","organization","regulations","internal_audit",
-            "social","suppliers","customer_service","investor_relations","human_resources","stakeholders"],
-          eng:["corporate_governance_eng","board_of_directors_eng","compensation_committee_eng","organization_eng","regulations_eng","internal_audit_eng",
-            "social_eng","suppliers_eng","customer_service_eng","investor_relations_eng","human_resources_eng","stakeholders_eng"  ]
+          // ch: ["corporate_governance","board_of_directors","compensation_committee","organization","regulations","internal_audit",
+          //   "social","suppliers","customer_service","investor_relations","human_resources","stakeholders"],
+          // eng:["corporate_governance_eng","board_of_directors_eng","compensation_committee_eng","organization_eng","regulations_eng","internal_audit_eng",
+          //   "social_eng","suppliers_eng","customer_service_eng","investor_relations_eng","human_resources_eng","stakeholders_eng"  ]
       }
 
 
@@ -107,10 +107,15 @@
         var foo = this.getParameterByName('foo'); 
         console.log("foo:",foo)
 
-        var lang = window.location.href.split('?')[1];
+        var lang =  this.getParameterByName('lang'); 
         if (lang==null){this.state.lang="ch"}
         else{this.state.lang=lang}
         console.log("initLang:",this.state.lang)
+
+        var page =  this.getParameterByName('page'); 
+        if (page==null){this.state.foucusedPage=this.state.navItemsPageFile[lang][]}
+
+
         this.state.foucusedPage=this.state.navItemsPageFile[this.state.lang][0];
         this.state.foucusedPageIndex=0;
         console.log("initFoucusedPage:",this.state.foucusedPage)
