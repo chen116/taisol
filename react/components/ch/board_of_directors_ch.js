@@ -33,7 +33,9 @@ class Page_board_of_directors_ch extends React.Component {
         };
         // this.toggleExpandTable=this.toggleExpandTable.bind(this);
     }
-
+    handleChange(e) {
+        this.props.onChange(e.target.value);
+      }
     render(){
 
  
@@ -245,7 +247,8 @@ class Page_board_of_directors_ch extends React.Component {
     if (this.state.myPage != this.props.currentPage){return null;}
     return [
         <div class="content">
-            <p>qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq{props.qq}</p>
+          <p>qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq{this.props.qq}</p>
+
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>董事會 </h4>
             <p><span>&nbsp;&nbsp;</span></p>
             <p class="content-p">

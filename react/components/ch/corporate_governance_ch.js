@@ -56,7 +56,6 @@ function Page_corporate_governance_ch(props) {
 
     return [
         <div class="content">
-          <p>qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq{props.qq}</p>
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>公司治理 </h4>
             <p><span>&nbsp;&nbsp;</span></p> 
 

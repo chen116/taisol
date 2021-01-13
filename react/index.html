@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>TaiSol 公司治理</title>
-  <script type="application/javascript" src="./assets/js/react.production.min.js"></script>
-  <script type="application/javascript" src="./assets/js/react-dom.production.min.js"></script>
+  <!-- <script type="application/javascript" src="./assets/js/react.production.min.js"></script>
+  <script type="application/javascript" src="./assets/js/react-dom.production.min.js"></script> -->
+
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
   <script type="application/javascript" src="./assets/js/babel.min.js"></script>
   <!-- <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script> -->
 
@@ -37,25 +41,29 @@
 class Test extends React.Component {
     constructor(props){
         super(props);
-        this.state={dd:1}
+        this.state={qq:1}
+    }
+    handleData = (data) => {
+        this.props.onPassingChildData(data);            
     }
 
     sayhi(){
-        this.state.dd=this.state.dd+1;
+        // this.state.dd=this.state.dd+1;
+        this.setState({dd:this.state.dd+1 });
         console.log("inside test dd: ",this.state.dd)
     }
-
+    
     render(){
         
-        this.props.handleLoad(this.state);
+        return <div>{this.handleData(1)}</div>};        
 
-        return                      <button class="btn btn-secondary btn-sm" type="button"   onClick={()=>
-            {
-                this.sayhi();
-                this.props.handleLoad(this.state);
-            }}>
-            {this.state.dd}
-            </button>;}
+        // return <button class="btn btn-secondary btn-sm" type="button"   onClick={()=>
+        //     {
+        //         this.sayhi();
+        //         this.props.handleLoad(this.state);
+        //     }}>
+        //     {this.state.dd}
+        //     </button>;}
 }
   //singlePageApp.js
 
@@ -101,15 +109,6 @@ class Test extends React.Component {
       });
     };
 
-    handleLoad(data){
-      this.state.qq = data;
-      
-
-        console.log(this.state.qq);
-
- 
-
-    }
 
      getParameterByName(name, url = window.location.href) {
       name = name.replace(/[\[\]]/g, '\\$&');
@@ -175,6 +174,9 @@ class Test extends React.Component {
 
         this.state.init=true
       }
+
+
+
       return [
         
           <nav class="navbar navbar-expand-sm navbar-dark fixedTopHeader" >
@@ -270,10 +272,11 @@ class Test extends React.Component {
             </div>
           </nav> */}
 
-          <Test handleLoad={this.handleLoad.bind(this)}/>
+          {/* <Test onPassingChildData={this.handleChild}/> */}
 
-          <Page_corporate_governance_ch currentPage={this.state.foucusedPage} qq={this.state.qq} handleLoad={this.handleLoad.bind(this)}/>
-          <Page_board_of_directors_ch currentPage={this.state.foucusedPage}/>
+
+          <Page_corporate_governance_ch currentPage={this.state.foucusedPage} />
+          <Page_board_of_directors_ch currentPage={this.state.foucusedPage}  qq={this.state.qq}/>
           <Page_compensation_committee_ch currentPage={this.state.foucusedPage}/>
           <Page_organization_ch currentPage={this.state.foucusedPage}/>
           <Page_regulations_ch currentPage={this.state.foucusedPage}/>
@@ -344,7 +347,9 @@ class Page_board_of_directors_ch extends React.Component {
         };
         // this.toggleExpandTable=this.toggleExpandTable.bind(this);
     }
-
+    handleChange(e) {
+        this.props.onChange(e.target.value);
+      }
     render(){
 
  
@@ -556,6 +561,8 @@ class Page_board_of_directors_ch extends React.Component {
     if (this.state.myPage != this.props.currentPage){return null;}
     return [
         <div class="content">
+          <p>qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq{this.props.qq}</p>
+
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>董事會 </h4>
             <p><span>&nbsp;&nbsp;</span></p>
             <p class="content-p">
@@ -2859,7 +2866,6 @@ function Page_corporate_governance_ch(props) {
 
     return [
         <div class="content">
-          <p>qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq{props.qq}</p>
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>公司治理 </h4>
             <p><span>&nbsp;&nbsp;</span></p> 
 
