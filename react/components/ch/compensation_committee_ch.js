@@ -1,5 +1,7 @@
 function Page_compensation_committee_ch(props) {
     const myPage = "compensation_committee_ch";
+    if (myPage != props.currentPage){return null;}
+
     var data = {
       salary_regulations: [
         {   
@@ -416,7 +418,6 @@ function Page_compensation_committee_ch(props) {
             )
         }
       }  
-    if (myPage != props.currentPage){return null;}
     return [
         <div class="content">
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>

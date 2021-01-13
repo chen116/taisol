@@ -243,7 +243,7 @@ function Page_organization_eng(props) {
         }
       return [
       <div class="content">
-        <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>組織及職掌 </h4>
+        <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Organization &#38; Responsibility </h4>
         <p><span>&nbsp;&nbsp;</span></p>
     
         <div class="accordion" id="accordionExample">

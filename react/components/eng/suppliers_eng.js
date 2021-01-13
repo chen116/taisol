@@ -1,5 +1,5 @@
 function Page_suppliers_eng(props) {
-    const myPage = "suppliers_eng";
+  const myPage = "suppliers_eng";
     if (myPage != props.currentPage){return null;}
 
       var data =  {          list1:[
@@ -36,7 +36,7 @@ function Page_suppliers_eng(props) {
       return  [
       <div class="content">
 
-<h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>供應商管理 </h4>
+<h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Supplier Management </h4>
 <p><span>&nbsp;&nbsp;</span></p>  
 <p>泰碩公司重視企業社會責任，已要求採購「非衝突(conflict-free)」的原物料; 提倡人道精神與實踐人性尊嚴的社會道德準則，是泰碩公司理應善盡的企業社會責任。目前係以符合經濟合作暨發展組織(OECD)於 2011 年所發布之「受衝突影響與高風險地區之全球責任礦物供應鏈模範政策(Model Supply Chain Policy for a Responsible Global Supply Chain of Mineral from Conflict-Affected and High Risk Areas)」的盡職調查(due diligence)架構為依據。
 </p>
@@ -48,7 +48,8 @@ function Page_suppliers_eng(props) {
 <p><span>&nbsp;&nbsp;</span></p>
 
 <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>對供應商有關環境保護之要求 (2018年-已完成共37家供應商評鑑) </h5>
-<p><span>&nbsp;&nbsp;</span></p>  
+
+<spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
 
 <ul class="list-group list-group-flush" >
@@ -58,7 +59,8 @@ function Page_suppliers_eng(props) {
 
 <p><span>&nbsp;&nbsp;</span></p>
 <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>客戶及供應商投訴中心 </h5>
-<p><span>&nbsp;&nbsp;</span></p>
+<spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
 
 <h6><b>違反從業道德行為舉報系統</b></h6>
 

@@ -1,5 +1,7 @@
 function Page_corporate_governance_ch(props) {
     const myPage = "corporate_governance_ch";
+    if (myPage != props.currentPage){return null;}
+
     var data = {
         items: [
 
@@ -52,7 +54,6 @@ function Page_corporate_governance_ch(props) {
       }
     }  
 
-    if (myPage != props.currentPage){return null;}
     return [
         <div class="content">
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>公司治理 </h4>

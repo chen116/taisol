@@ -55,7 +55,7 @@ function Page_corporate_governance_eng(props) {
     if (myPage != props.currentPage){return null;}
     return [
         <div class="content">
-            <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>公司治理 </h4>
+            <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Corporate Governance </h4>
             <p><span>&nbsp;&nbsp;</span></p> 
 
             <img class="rounded" src="./assets/images/investor04_8.png"/>

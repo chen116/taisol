@@ -1,5 +1,6 @@
 function Page_customer_service_eng(props) {
-    const myPage = "customer_service_eng";
+  const myPage = "customer_service_eng";
+
     if (myPage != props.currentPage){return null;}
 
       var data =  {      
@@ -42,9 +43,13 @@ function Page_customer_service_eng(props) {
       return  [
       <div class="content">
 
-        <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>客戶及供應商投訴中心 </h4>
+        <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Customer Service </h4>
         <p><span>&nbsp;&nbsp;</span></p>  
-        <p><b>違反從業道德行為舉報系統:</b></p>
+
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>違反從業道德行為舉報系統 </h5>
+
+        <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
         <p>在泰碩電子股份有限公司，誠信正直是公司文化最重要之核心價值， 也是公司經營理念之首。泰碩公司一向承諾以誠信從事所有業務活動 ，絕不允許貪污及任何形式之舞弊行為。
         </p>
         <p>若您發現泰碩公司員工或任何代表泰碩公司的相關人士進行可疑行為 或可能違反泰碩公司的道德行為準則時，請告訴我們。

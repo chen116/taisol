@@ -252,7 +252,7 @@ function Page_board_of_directors_eng(props) {
     return [
         <div class="content">
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>
-            董事會(Board of Directors) </h4>
+            Board of Directors</h4>
             <p><span>&nbsp;&nbsp;</span></p>
             <p class="content-p">
                 Company's Directors and supervisors are composed of 2 female and 7 male with professional experiences and qualification in marketing planning, operation management, industry knowledge and financial accounting, who respectively involve in various industries including electronic components and appliances, industrial rubber, banking, electro-optical, glass and ceramics, communication network, cement, securities, telecommunications etc.

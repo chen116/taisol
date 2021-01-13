@@ -1,5 +1,7 @@
 function Page_regulations_ch(props) {
     const myPage = "regulations_ch";
+    if (myPage != props.currentPage){return null;}
+
     var data = {
         links: [
 
@@ -46,7 +48,6 @@ function Page_regulations_ch(props) {
       }
     }  
 
-    if (myPage != props.currentPage){return null;}
     return [
         <div class="content">
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>規章 </h4>

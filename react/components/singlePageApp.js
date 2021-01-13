@@ -10,14 +10,14 @@
 
         navItems:{ 
           ch:['公司治理','董事會','薪酬委員會','組織及職掌','規章','內部稽核','企業社會責任','供應商管理','客戶服務','投資人關係','人力資源','與利害關係人對話'],
-          eng:['Corporate Governance','Board of Directors','Compensation Committee','Organization','Regulations','Internal Audit','Social Responsibility','Shareholder Relations','Human Resources','Stakeholders Relations']
+          eng:['Corporate Governance','Board of Directors','Compensation Committee','Organization & Responsibility','Regulations & Legislations','Internal Audit','Social Responsibility','Supplier Management','Customer Service','Shareholder Relations','Human Resources','Stakeholders Relations']
         },
         
         navItemsPageFile : {
           ch: ["corporate_governance_ch","board_of_directors_ch","compensation_committee_ch","organization_ch","regulations_ch","internal_audit_ch",
-            "social_ch","suppliers_ch","customer_service_ch","investor_relations_ch","human_resources_ch","stakeholders"],
+            "social_ch","suppliers_ch","customer_service_ch","shareholder_relations_ch","human_resources_ch","stakeholders_ch"],
           eng:["corporate_governance_eng","board_of_directors_eng","compensation_committee_eng","organization_eng","regulations_eng","internal_audit_eng",
-            "social_eng","suppliers_eng","customer_service_eng","investor_relations_eng","human_resources_eng","stakeholders_eng"  ]
+            "social_eng","suppliers_eng","customer_service_eng","shareholder_relations_eng","human_resources_eng","stakeholders_eng"  ]
       }
 
 
@@ -109,14 +109,14 @@
         
           <nav class="navbar navbar-expand-sm navbar-dark fixedTopHeader" >
      
-     <a class="navbar-brand" href="https://www.taisol.com"><img src='./assets/images/logo.png' /></a>
+     <a class="navbar-brand" href={this.state.lang=='eng' ? "https://www.taisol.com?lang=eng" : "https://www.taisol.com?lang=zh"}><img src='./assets/images/logo.png' /></a>
 
 
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
        <ul class="navbar-nav me-auto mb-2 mb-lg-0 header-nav">
          <li class="nav-item">
-           <a class="nav-link" aria-current="page" href="https://www.taisol.com/?lang=zh">{this.state.lang=='eng' ? 'Home' : '首頁'}</a>
+           <a class="nav-link" aria-current="page" href={this.state.lang=='eng' ? "https://www.taisol.com?lang=eng" : "https://www.taisol.com?lang=zh"}>{this.state.lang=='eng' ? 'Home' : '首頁'}</a>
          </li>
          <li class="nav-item dropdown">
  
@@ -124,12 +124,12 @@
            {this.state.lang=='eng' ? 'About TaiSol' : '關於泰碩'}
            </a>
            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-             <li><a class="dropdown-item" href="https://www.taisol.com/about/about-taisol?lang=zh">{this.state.lang=='eng' ? 'Company Profile':'公司簡介'}</a></li>
-             <li><a class="dropdown-item" href="https://www.taisol.com/about/global-location?lang=zh">{this.state.lang=='eng' ? 'Global Operation':'據點分佈圖'}</a></li>
-             <li><a class="dropdown-item" href="https://www.taisol.com/about/company-yearbook?lang=zh">{this.state.lang=='eng' ? 'Milestone':'大事年鑑'}</a></li>
-             <li><a class="dropdown-item" href="https://www.taisol.com/about/patents/2018?lang=zh">{this.state.lang=='eng' ? 'D&B D-U-N-S Registered':'鄧白氏專區'}</a></li>
-             <li><a class="dropdown-item" href="https://www.taisol.com/about/china-factory?lang=zh">{this.state.lang=='eng' ? 'Quality':'品質政策'}</a></li>
-             <li><a class="dropdown-item" href="https://www.taisol.com/about/company-location?lang=zh">{this.state.lang=='eng' ? 'TaiSol Access Information':'公司位置圖'}</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ? "https://www.taisol.com/about/about-taisol?lang=eng":"https://www.taisol.com/about/about-taisol?lang=zh"}>{this.state.lang=='eng' ? 'Company Profile':'公司簡介'}</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ?"https://www.taisol.com/about/global-location?lang=eng" :"https://www.taisol.com/about/global-location?lang=zh"}>{this.state.lang=='eng' ? 'Global Operation':'據點分佈圖'}</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ?"https://www.taisol.com/about/company-yearbook?lang=eng" :"https://www.taisol.com/about/company-yearbook?lang=zh"}>{this.state.lang=='eng' ? 'Milestone':'大事年鑑'}</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ?"https://www.taisol.com/about/patents/2018?lang=eng" :"https://www.taisol.com/about/patents/2018?lang=zh"}>{this.state.lang=='eng' ? 'D&B D-U-N-S Registered':'鄧白氏專區'}</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ?"https://www.taisol.com/about/china-factory?lang=eng" :"https://www.taisol.com/about/china-factory?lang=zh"}>{this.state.lang=='eng' ? 'Quality':'品質政策'}</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ?"https://www.taisol.com/about/company-location?lang=eng" :"https://www.taisol.com/about/company-location?lang=zh"}>{this.state.lang=='eng' ? 'TaiSol Access Information':'公司位置圖'}</a></li>
            </ul>
          </li>
   
@@ -138,7 +138,7 @@
            {this.state.lang=='eng' ? 'News':'最新消息'} 
            </a>
            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-             <li><a class="dropdown-item" href="https://www.taisol.com/news?lang=zh">{this.state.lang=='eng' ? 'News & Events':'新聞中心'}</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ?"https://www.taisol.com/news?lang=eng":"https://www.taisol.com/news?lang=zh"}>{this.state.lang=='eng' ? 'News & Events':'新聞中心'}</a></li>
            </ul>
          </li>
  
@@ -149,12 +149,12 @@
            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
              <li><a class="dropdown-item" href={this.state.lang=='eng' ? "https://www.taisol.com/product/product-list/1?lang=eng" : "https://www.taisol.com/product/product-list/1?lang=zh "}>
                {this.state.lang=='eng' ? 'Thermal Management Solution': '散熱管理解決方案'  }</a></li>
-             <li><a class="dropdown-item" href="https://www.taisol.com/product/product-list/1/37?lang=zh">{this.state.lang=='eng' ? 'Consumer Electronics': '消費性電子產品'  }</a></li>
-             <li><a class="dropdown-item" href="https://www.taisol.com/product/product-list/1/38?lang=zh">{this.state.lang=='eng' ? 'Enterprise Computing & Data Center': '企業運算系統'  }</a></li>
-             <li><a class="dropdown-item" href="https://www.taisol.com/product/product-list/1/39?lang=zh">{this.state.lang=='eng' ? 'LED Lighting': 'LED照明'  }</a></li>
-             <li><a class="dropdown-item" href="https://www.taisol.com/product/product-list/1/40?lang=zh">{this.state.lang=='eng' ? 'Telecommunication': '無線通訊系統'  }</a></li>
-             <li><a class="dropdown-item" href="https://www.taisol.com/product/product-list/1/41?lang=zh">{this.state.lang=='eng' ? 'Industrial Application': '工業應用'  }</a></li>
-             <li><a class="dropdown-item" href="https://www.taisol.com/product/product-list/1/42?lang=zh">{this.state.lang=='eng' ? 'Heat Pipe/Vapor Chamber': '散熱技術'  }</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ? "https://www.taisol.com/product/product-list/1/37?lang=eng" :"https://www.taisol.com/product/product-list/1/37?lang=zh"}>{this.state.lang=='eng' ? 'Consumer Electronics': '消費性電子產品'  }</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ? "https://www.taisol.com/product/product-list/1/38?lang=eng":"https://www.taisol.com/product/product-list/1/38?lang=zh"}>{this.state.lang=='eng' ? 'Enterprise Computing & Data Center': '企業運算系統'  }</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ? "https://www.taisol.com/product/product-list/1/39?lang=eng":"https://www.taisol.com/product/product-list/1/39?lang=zh"}>{this.state.lang=='eng' ? 'LED Lighting': 'LED照明'  }</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ? "https://www.taisol.com/product/product-list/1/40?lang=eng":"https://www.taisol.com/product/product-list/1/40?lang=zh"}>{this.state.lang=='eng' ? 'Telecommunication': '無線通訊系統'  }</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ? "https://www.taisol.com/product/product-list/1/41?lang=eng":"https://www.taisol.com/product/product-list/1/41?lang=zh"}>{this.state.lang=='eng' ? 'Industrial Application': '工業應用'  }</a></li>
+             <li><a class="dropdown-item" href={this.state.lang=='eng' ? "https://www.taisol.com/product/product-list/1/42?lang=eng":"https://www.taisol.com/product/product-list/1/42?lang=zh"}>{this.state.lang=='eng' ? 'Heat Pipe/Vapor Chamber': '散熱技術'  }</a></li>
            </ul>
          </li>
          {this.state.lang=='ch' ?
@@ -174,7 +174,7 @@
          : null}
  
          <li class="nav-item">
-           <a class="nav-link" href="https://www.taisol.com/contact/contact-us?lang=zh"> {this.state.lang=='eng' ? 'Contact Us' :'聯絡我們'} </a>
+           <a class="nav-link"href={this.state.lang=='eng' ? "https://www.taisol.com/investor/contact-us?lang=eng" :"https://www.taisol.com/contact/contact-us?lang=zh"}> {this.state.lang=='eng' ? 'Contact Us' :'聯絡我們'} </a>
          </li>
  
        </ul>
@@ -208,7 +208,7 @@
           <Page_social_ch currentPage={this.state.foucusedPage}/>
           <Page_suppliers_ch currentPage={this.state.foucusedPage}/>
           <Page_customer_service_ch currentPage={this.state.foucusedPage}/>
-          <Page_investor_relations_ch currentPage={this.state.foucusedPage}/>
+          <Page_shareholder_relations_ch currentPage={this.state.foucusedPage}/>
           <Page_human_resources_ch currentPage={this.state.foucusedPage}/>
           <Page_stakeholders_ch currentPage={this.state.foucusedPage}/>
 
@@ -222,7 +222,7 @@
           <Page_social_eng currentPage={this.state.foucusedPage}/>
           <Page_suppliers_eng currentPage={this.state.foucusedPage}/>
           <Page_customer_service_eng currentPage={this.state.foucusedPage}/>
-          <Page_investor_relations_eng currentPage={this.state.foucusedPage}/>
+          <Page_shareholder_relations_eng currentPage={this.state.foucusedPage}/>
           <Page_human_resources_eng currentPage={this.state.foucusedPage}/>
           <Page_stakeholders_eng currentPage={this.state.foucusedPage}/>
 
