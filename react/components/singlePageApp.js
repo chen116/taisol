@@ -41,6 +41,16 @@
       });
     };
 
+    handleLoad(data){
+      this.state.qq = data;
+      
+
+        console.log(this.state.qq);
+
+ 
+
+    }
+
      getParameterByName(name, url = window.location.href) {
       name = name.replace(/[\[\]]/g, '\\$&');
       var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -199,7 +209,10 @@
               </ul>
             </div>
           </nav> */}
-          <Page_corporate_governance_ch currentPage={this.state.foucusedPage}/>
+
+          <Test handleLoad={this.handleLoad.bind(this)}/>
+
+          <Page_corporate_governance_ch currentPage={this.state.foucusedPage} qq={this.state.qq} handleLoad={this.handleLoad.bind(this)}/>
           <Page_board_of_directors_ch currentPage={this.state.foucusedPage}/>
           <Page_compensation_committee_ch currentPage={this.state.foucusedPage}/>
           <Page_organization_ch currentPage={this.state.foucusedPage}/>
@@ -225,6 +238,7 @@
           <Page_shareholder_relations_eng currentPage={this.state.foucusedPage}/>
           <Page_human_resources_eng currentPage={this.state.foucusedPage}/>
           <Page_stakeholders_eng currentPage={this.state.foucusedPage}/>
+
 
         </div>  
       ]

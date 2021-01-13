@@ -32,6 +32,31 @@
 
 <script type="text/babel">
     const rootElement = document.getElementById('app')
+
+  //test.js
+class Test extends React.Component {
+    constructor(props){
+        super(props);
+        this.state={dd:1}
+    }
+
+    sayhi(){
+        this.state.dd=this.state.dd+1;
+        console.log("inside test dd: ",this.state.dd)
+    }
+
+    render(){
+        
+        this.props.handleLoad(this.state);
+
+        return                      <button class="btn btn-secondary btn-sm" type="button"   onClick={()=>
+            {
+                this.sayhi();
+                this.props.handleLoad(this.state);
+            }}>
+            {this.state.dd}
+            </button>;}
+}
   //singlePageApp.js
 
   class SinglePageApp extends React.Component {
@@ -75,6 +100,16 @@
         });
       });
     };
+
+    handleLoad(data){
+      this.state.qq = data;
+      
+
+        console.log(this.state.qq);
+
+ 
+
+    }
 
      getParameterByName(name, url = window.location.href) {
       name = name.replace(/[\[\]]/g, '\\$&');
@@ -234,7 +269,10 @@
               </ul>
             </div>
           </nav> */}
-          <Page_corporate_governance_ch currentPage={this.state.foucusedPage}/>
+
+          <Test handleLoad={this.handleLoad.bind(this)}/>
+
+          <Page_corporate_governance_ch currentPage={this.state.foucusedPage} qq={this.state.qq} handleLoad={this.handleLoad.bind(this)}/>
           <Page_board_of_directors_ch currentPage={this.state.foucusedPage}/>
           <Page_compensation_committee_ch currentPage={this.state.foucusedPage}/>
           <Page_organization_ch currentPage={this.state.foucusedPage}/>
@@ -260,6 +298,7 @@
           <Page_shareholder_relations_eng currentPage={this.state.foucusedPage}/>
           <Page_human_resources_eng currentPage={this.state.foucusedPage}/>
           <Page_stakeholders_eng currentPage={this.state.foucusedPage}/>
+
 
         </div>  
       ]
@@ -305,6 +344,12 @@ class Page_board_of_directors_ch extends React.Component {
         };
         // this.toggleExpandTable=this.toggleExpandTable.bind(this);
     }
+    componentDidUpdate(prevProps) {
+        // Typical usage (don't forget to compare props):
+        if (this.props.userID !== prevProps.userID) {
+          this.fetchData(this.props.userID);
+        }
+      }
     render(){
 
  
@@ -2819,6 +2864,7 @@ function Page_corporate_governance_ch(props) {
 
     return [
         <div class="content">
+          <p>qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq{props.qq}</p>
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>公司治理 </h4>
             <p><span>&nbsp;&nbsp;</span></p> 
 
