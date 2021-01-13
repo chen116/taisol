@@ -257,8 +257,9 @@ function Page10(props) {
       <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>人力資源 </h4>
       <p><span>&nbsp;&nbsp;</span></p>
 
+      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>福利制度</h5>
+      <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
-      <p ><b>福利制度:</b> </p>
       <p>本公司秉持尊重及關心員工的理念，致力於提供高品質的友善職場環境及員工福利，並於88年5月1日正式成立職工福利委員會組織，負責員工福利規劃與活動辦理，我們期許透過完善的福利制度，全方位照顧員工的身、心、靈健康與平衡。員工福利措施及制度包含：
       </p>
       <ActiveList1 data={data.list1} />
@@ -266,7 +267,8 @@ function Page10(props) {
       <p><span>&nbsp;&nbsp;</span></p>
 
       <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>人才培育 </h5>
-      <p><span>&nbsp;&nbsp;</span></p>
+      <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
       <p>泰碩瞭解『員工』是公司最重要的資產，而持續的人才培育正是提升員工技能及服務品質的重要策略。本公司訂有教育訓練相關辦法，並配合公司短中長期之發展需要，辦理內外訓相關課程，不斷增進員工專業知識及管理技能。  
       </p>
       <ActiveList2 data={data.list2} />
@@ -282,7 +284,8 @@ function Page10(props) {
       </div>
       <p><span>&nbsp;&nbsp;</span></p>
       <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>員工工作環境與人身安全的保護措施 </h5>
-      <p><span>&nbsp;&nbsp;</span></p>
+      <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
       <p>泰碩重視員工安全，並致力提供一個安全、衛生與舒適的工作環境予全體同仁，工作環境與員工人身安全保護措施彙整如下：  </p>
       <ActiveList3 data={data.list3} />
       <div class="row justify-content-md-center">
@@ -298,7 +301,8 @@ function Page10(props) {
         <ActiveTable1 data={data.table2} />
       <p><span>&nbsp;&nbsp;</span></p>
       <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>人權政策 </h5>
-      <p><span>&nbsp;&nbsp;</span></p>
+      <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
       <p>泰碩電子股份有限公司(以下稱「泰碩」)，為善盡企業社會責任並落實人權保障，尊重並遵循「聯合國世界人權宣言」、「聯合國全球盟約」及國際勞工組織的「工作基本原則與權利宣言」等各項國際人權公約所揭橥之人權保護精神與基本原則，特制定本政策，並遵守《中華民國勞動基準法》、《性別工作平等法》、《就業服務法》等勞動相關法規，杜絕任何侵犯及違反人權之行為，有尊嚴的對待及尊重所有同仁。  </p>
       <p>本公司人權政策適用範圍包括本公司及相關企業，落實方針如下：</p>
       <ActiveList4 data={data.list4}/>

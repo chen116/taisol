@@ -48,7 +48,8 @@ function Page7(props) {
 <p><span>&nbsp;&nbsp;</span></p>
 
 <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>對供應商有關環境保護之要求 (2018年-已完成共37家供應商評鑑) </h5>
-<p><span>&nbsp;&nbsp;</span></p>  
+
+<spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
 
 <ul class="list-group list-group-flush" >
@@ -58,7 +59,8 @@ function Page7(props) {
 
 <p><span>&nbsp;&nbsp;</span></p>
 <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>客戶及供應商投訴中心 </h5>
-<p><span>&nbsp;&nbsp;</span></p>
+<spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
 
 <h6><b>違反從業道德行為舉報系統</b></h6>
 

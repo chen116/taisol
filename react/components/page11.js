@@ -194,11 +194,12 @@ function Page11(props) {
         <ActiveTable1 data={data.table1} />
         <p><span>&nbsp;&nbsp;</span></p>
         <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span> 檢舉信箱作業辦法</h5>
-        <p><span>&nbsp;&nbsp;</span></p>
+
         <ActiveList1 data={data.list1} />
         <p><span>&nbsp;&nbsp;</span></p>
         <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>員工申訴中心 </h5>
-        <p><span>&nbsp;&nbsp;</span></p>
+        <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
 
 
         <p>員工是公司主要的利害關係人之一，更是泰碩珍視的資產。
@@ -213,7 +214,8 @@ function Page11(props) {
         
 
         <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>客戶及供應商投訴中心 </h5>
-        <p><span>&nbsp;&nbsp;</span></p>  
+        <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
         <p><b>違反從業道德行為舉報系統:</b></p>
         <p>在泰碩電子股份有限公司，誠信正直是公司文化最重要之核心價值， 也是公司經營理念之首。泰碩公司一向承諾以誠信從事所有業務活動 ，絕不允許貪污及任何形式之舞弊行為。
         </p>

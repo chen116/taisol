@@ -71,8 +71,9 @@ function Page9(props) {
 
         <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>投資人關係 </h4>
         <p><span>&nbsp;&nbsp;</span></p>
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>股權結構 </h5>
+        <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
-        <p><b>股權結構:</b></p>
         <p><span>&nbsp;&nbsp;</span>本公司股權比例占前十大之股東： </p>
         <p style={{textAlign:`right`}}>109 年 4 月 7 日  單位：股</p>
         <ActiveTable1 data={data.table1} />

@@ -41,6 +41,11 @@ function Page6(props) {
         {title:"緊急應變手冊",href:"http://w3.taisol.com.tw/file/%E7%B7%8A%E6%80%A5%E6%87%89%E8%AE%8A%E6%89%8B%E5%86%8A.pdf"},
         {title:"重要環境因素評價管理辦法",href:"http://w3.taisol.com.tw/file/%E9%87%8D%E8%A6%81%E7%92%B0%E5%A2%83%E5%9B%A0%E7%B4%A0%E8%A9%95%E5%83%B9%E7%AE%A1%E7%90%86%E8%BE%A6%E6%B3%95.pdf"},
         {title:"承包商、服務商環境影響評價管理辦法",href:"http://w3.taisol.com.tw/file/%E6%89%BF%E5%8C%85%E5%95%86%E3%80%81%E6%9C%8D%E5%8B%99%E5%95%86%E7%92%B0%E5%A2%83%E5%BD%B1%E9%9F%BF%E8%A9%95%E5%83%B9%E7%AE%A1%E7%90%86%E8%BE%A6%E6%B3%95.pdf"},
+      ],
+      table1: [
+        {date:"2019.09",event:"新南田董米(友善農耕)－中秋活動贈禮"},
+        {date:"2020.01",event:"育成社會福利基金會/集賢庇護工場－春節活動贈禮"},
+        {date:"2020.01",event:"臺中市身心障礙者福利關懷協會/微笑天使烘焙坊－春節活動贈禮"},
       ]
     };
     class ActiveList1 extends React.Component {
@@ -84,12 +89,41 @@ function Page6(props) {
           )
       }
     } 
+    class ActiveTable1 extends React.Component {
+      constructor(props){
+          super(props);
+          this.state={};
+      }
+        render() {
+            const table =  this.props.data.map( (item,index) => [
+              <tr>
+                <td> {item.date}</td>
+                <td> {item.event}</td>
+              </tr> 
+            ]);
+            return (
+              <table  class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                      <th rowspan="1">時間</th>
+                      <th rowspan="1">愛心採購</th>
+                  </tr>
+                </thead>
+              <tbody>
+                  {table}
+              </tbody>
+              </table>
+            )
+        }
+      }
     if (myPage != props.currentPage){return null;}
     return [
         <div class="content">
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>企業社會責任 </h4>
             <p><span>&nbsp;&nbsp;</span></p>  
-            <p><b>環境永續:</b></p>
+            <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>環境永續 </h5>
+
+            {/* <p><b>環境永續:</b></p> */}
             <ul class="list-group list-group-flush" >
               <li class="list-group-item" >
                 <img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span><b>ISO14001 環境管理體系 </b> 
@@ -119,7 +153,8 @@ function Page6(props) {
             <p><span>&nbsp;&nbsp;</span></p>
 
             <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>相關作業辦法 </h5>
-            <p><span>&nbsp;&nbsp;</span></p>
+            <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
 
             <div class="col-12 container" >
               <ActiveList2 data={data.list2} />
@@ -127,7 +162,8 @@ function Page6(props) {
 
             <p><span>&nbsp;&nbsp;</span></p>
             <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>公益關懷 </h5>
-            <p><span>&nbsp;&nbsp;</span></p>
+            <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
 
             <p> <b>｢散發熱情，傳愛千里｣ </b></p>
             <p>2020年是泰碩的公益啟動年，泰碩電子秉持著「取之於社會、回饋於社會」的公益理念，在董事長余清松的支持下，由總經理梁竣興親自率領成立了泰碩志工團，並開啟了第一屆【耶誕圓夢鞋盒】活動。 </p>
@@ -170,7 +206,8 @@ function Page6(props) {
 
             <p><span>&nbsp;&nbsp;</span></p>
             <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>環境關懷 </h5>
-            <p><span>&nbsp;&nbsp;</span></p>
+            <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
 
             <p> <b>｢關懷土地，用行動支持在地友善農業｣</b></p>
               <p>隨著環保意識抬頭，在台灣有越來越多的小農秉持著無毒無化肥的環保理念，致力將環保生態與農業發展進行結合，而這群在地友善農友就是泰碩要支持的對象。  </p>
@@ -183,6 +220,13 @@ function Page6(props) {
                   <img src="http://w3.taisol.com.tw/image/notice2-5/E.JPG" class="card-img-top img-thumbnail rounded " alt="..." />
                 </div>
               </div> 
+
+              <p><span>&nbsp;&nbsp;</span></p>
+            <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>愛心採購 </h5>
+            <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
+            <p> 泰碩電子以行動支持在地友善農友及弱勢團體，每年透過愛心採購向在地小農及公益團體採買各大年節活動贈禮，讓愛傳遞到台灣各個需要的角落。</p>
+            <ActiveTable1 data={data.table1} />
 
 
         </div>

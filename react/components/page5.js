@@ -90,8 +90,9 @@ function Page5(props) {
             <p>內部稽核單位執行內部控制制度的稽核工作，檢查並評估公司的營運記錄有無缺失。對於發現之內部控制制度可能缺失及提出改善建議，做成稽核報告，定期向董事會報告。</p>
             <p>內部稽核單位督促內部各單位及子公司每年定期自行檢查內部控制制度之有效性，再由內部稽核單位覆核各單位及子公司之自行檢查報告，並綜合自行檢查結果，做為董事會及總經理出具內部控制制度聲明書之依據。</p>
             <p><span>&nbsp;&nbsp;</span></p>
-            <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>獨立董事、監察人與內部稽核主管之溝通方式:</h5>
-            <p><span>&nbsp;&nbsp;</span></p>
+            <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>獨立董事、監察人與內部稽核主管之溝通方式</h5>
+            <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
             <p>1. 每年定期召開2次溝通會議，就本公司內部稽核業務執行狀況及內控運作情形提出報告。</p>
             <p>2. 若有重大或緊急事項時，召開不定期會議討論之。平時以電話及電子郵件等方式進行溝通。</p>
             <p>3. 稽核報告及追蹤報告陳核後，於次月底前交付各監察人、獨立董事查閱。</p>

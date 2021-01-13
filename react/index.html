@@ -2121,8 +2121,9 @@ function Page5(props) {
             <p>內部稽核單位執行內部控制制度的稽核工作，檢查並評估公司的營運記錄有無缺失。對於發現之內部控制制度可能缺失及提出改善建議，做成稽核報告，定期向董事會報告。</p>
             <p>內部稽核單位督促內部各單位及子公司每年定期自行檢查內部控制制度之有效性，再由內部稽核單位覆核各單位及子公司之自行檢查報告，並綜合自行檢查結果，做為董事會及總經理出具內部控制制度聲明書之依據。</p>
             <p><span>&nbsp;&nbsp;</span></p>
-            <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>獨立董事、監察人與內部稽核主管之溝通方式:</h5>
-            <p><span>&nbsp;&nbsp;</span></p>
+            <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>獨立董事、監察人與內部稽核主管之溝通方式</h5>
+            <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
             <p>1. 每年定期召開2次溝通會議，就本公司內部稽核業務執行狀況及內控運作情形提出報告。</p>
             <p>2. 若有重大或緊急事項時，召開不定期會議討論之。平時以電話及電子郵件等方式進行溝通。</p>
             <p>3. 稽核報告及追蹤報告陳核後，於次月底前交付各監察人、獨立董事查閱。</p>
@@ -2186,6 +2187,11 @@ function Page6(props) {
         {title:"緊急應變手冊",href:"http://w3.taisol.com.tw/file/%E7%B7%8A%E6%80%A5%E6%87%89%E8%AE%8A%E6%89%8B%E5%86%8A.pdf"},
         {title:"重要環境因素評價管理辦法",href:"http://w3.taisol.com.tw/file/%E9%87%8D%E8%A6%81%E7%92%B0%E5%A2%83%E5%9B%A0%E7%B4%A0%E8%A9%95%E5%83%B9%E7%AE%A1%E7%90%86%E8%BE%A6%E6%B3%95.pdf"},
         {title:"承包商、服務商環境影響評價管理辦法",href:"http://w3.taisol.com.tw/file/%E6%89%BF%E5%8C%85%E5%95%86%E3%80%81%E6%9C%8D%E5%8B%99%E5%95%86%E7%92%B0%E5%A2%83%E5%BD%B1%E9%9F%BF%E8%A9%95%E5%83%B9%E7%AE%A1%E7%90%86%E8%BE%A6%E6%B3%95.pdf"},
+      ],
+      table1: [
+        {date:"2019.09",event:"新南田董米(友善農耕)－中秋活動贈禮"},
+        {date:"2020.01",event:"育成社會福利基金會/集賢庇護工場－春節活動贈禮"},
+        {date:"2020.01",event:"臺中市身心障礙者福利關懷協會/微笑天使烘焙坊－春節活動贈禮"},
       ]
     };
     class ActiveList1 extends React.Component {
@@ -2229,12 +2235,41 @@ function Page6(props) {
           )
       }
     } 
+    class ActiveTable1 extends React.Component {
+      constructor(props){
+          super(props);
+          this.state={};
+      }
+        render() {
+            const table =  this.props.data.map( (item,index) => [
+              <tr>
+                <td> {item.date}</td>
+                <td> {item.event}</td>
+              </tr> 
+            ]);
+            return (
+              <table  class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                      <th rowspan="1">時間</th>
+                      <th rowspan="1">愛心採購</th>
+                  </tr>
+                </thead>
+              <tbody>
+                  {table}
+              </tbody>
+              </table>
+            )
+        }
+      }
     if (myPage != props.currentPage){return null;}
     return [
         <div class="content">
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>企業社會責任 </h4>
             <p><span>&nbsp;&nbsp;</span></p>  
-            <p><b>環境永續:</b></p>
+            <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>環境永續 </h5>
+
+            {/* <p><b>環境永續:</b></p> */}
             <ul class="list-group list-group-flush" >
               <li class="list-group-item" >
                 <img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span><b>ISO14001 環境管理體系 </b> 
@@ -2264,7 +2299,8 @@ function Page6(props) {
             <p><span>&nbsp;&nbsp;</span></p>
 
             <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>相關作業辦法 </h5>
-            <p><span>&nbsp;&nbsp;</span></p>
+            <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
 
             <div class="col-12 container" >
               <ActiveList2 data={data.list2} />
@@ -2272,7 +2308,8 @@ function Page6(props) {
 
             <p><span>&nbsp;&nbsp;</span></p>
             <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>公益關懷 </h5>
-            <p><span>&nbsp;&nbsp;</span></p>
+            <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
 
             <p> <b>｢散發熱情，傳愛千里｣ </b></p>
             <p>2020年是泰碩的公益啟動年，泰碩電子秉持著「取之於社會、回饋於社會」的公益理念，在董事長余清松的支持下，由總經理梁竣興親自率領成立了泰碩志工團，並開啟了第一屆【耶誕圓夢鞋盒】活動。 </p>
@@ -2315,7 +2352,8 @@ function Page6(props) {
 
             <p><span>&nbsp;&nbsp;</span></p>
             <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>環境關懷 </h5>
-            <p><span>&nbsp;&nbsp;</span></p>
+            <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
 
             <p> <b>｢關懷土地，用行動支持在地友善農業｣</b></p>
               <p>隨著環保意識抬頭，在台灣有越來越多的小農秉持著無毒無化肥的環保理念，致力將環保生態與農業發展進行結合，而這群在地友善農友就是泰碩要支持的對象。  </p>
@@ -2328,6 +2366,13 @@ function Page6(props) {
                   <img src="http://w3.taisol.com.tw/image/notice2-5/E.JPG" class="card-img-top img-thumbnail rounded " alt="..." />
                 </div>
               </div> 
+
+              <p><span>&nbsp;&nbsp;</span></p>
+            <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>愛心採購 </h5>
+            <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
+            <p> 泰碩電子以行動支持在地友善農友及弱勢團體，每年透過愛心採購向在地小農及公益團體採買各大年節活動贈禮，讓愛傳遞到台灣各個需要的角落。</p>
+            <ActiveTable1 data={data.table1} />
 
 
         </div>
@@ -2388,7 +2433,8 @@ function Page7(props) {
 <p><span>&nbsp;&nbsp;</span></p>
 
 <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>對供應商有關環境保護之要求 (2018年-已完成共37家供應商評鑑) </h5>
-<p><span>&nbsp;&nbsp;</span></p>  
+
+<spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
 
 <ul class="list-group list-group-flush" >
@@ -2398,7 +2444,8 @@ function Page7(props) {
 
 <p><span>&nbsp;&nbsp;</span></p>
 <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>客戶及供應商投訴中心 </h5>
-<p><span>&nbsp;&nbsp;</span></p>
+<spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
 
 <h6><b>違反從業道德行為舉報系統</b></h6>
 
@@ -2475,7 +2522,11 @@ function Page8(props) {
 
         <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>客戶及供應商投訴中心 </h4>
         <p><span>&nbsp;&nbsp;</span></p>  
-        <p><b>違反從業道德行為舉報系統:</b></p>
+
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>違反從業道德行為舉報系統 </h5>
+
+        <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
         <p>在泰碩電子股份有限公司，誠信正直是公司文化最重要之核心價值， 也是公司經營理念之首。泰碩公司一向承諾以誠信從事所有業務活動 ，絕不允許貪污及任何形式之舞弊行為。
         </p>
         <p>若您發現泰碩公司員工或任何代表泰碩公司的相關人士進行可疑行為 或可能違反泰碩公司的道德行為準則時，請告訴我們。
@@ -2567,8 +2618,9 @@ function Page9(props) {
 
         <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>投資人關係 </h4>
         <p><span>&nbsp;&nbsp;</span></p>
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>股權結構 </h5>
+        <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
-        <p><b>股權結構:</b></p>
         <p><span>&nbsp;&nbsp;</span>本公司股權比例占前十大之股東： </p>
         <p style={{textAlign:`right`}}>109 年 4 月 7 日  單位：股</p>
         <ActiveTable1 data={data.table1} />
@@ -2839,8 +2891,9 @@ function Page10(props) {
       <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>人力資源 </h4>
       <p><span>&nbsp;&nbsp;</span></p>
 
+      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>福利制度</h5>
+      <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
-      <p ><b>福利制度:</b> </p>
       <p>本公司秉持尊重及關心員工的理念，致力於提供高品質的友善職場環境及員工福利，並於88年5月1日正式成立職工福利委員會組織，負責員工福利規劃與活動辦理，我們期許透過完善的福利制度，全方位照顧員工的身、心、靈健康與平衡。員工福利措施及制度包含：
       </p>
       <ActiveList1 data={data.list1} />
@@ -2848,7 +2901,8 @@ function Page10(props) {
       <p><span>&nbsp;&nbsp;</span></p>
 
       <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>人才培育 </h5>
-      <p><span>&nbsp;&nbsp;</span></p>
+      <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
       <p>泰碩瞭解『員工』是公司最重要的資產，而持續的人才培育正是提升員工技能及服務品質的重要策略。本公司訂有教育訓練相關辦法，並配合公司短中長期之發展需要，辦理內外訓相關課程，不斷增進員工專業知識及管理技能。  
       </p>
       <ActiveList2 data={data.list2} />
@@ -2864,7 +2918,8 @@ function Page10(props) {
       </div>
       <p><span>&nbsp;&nbsp;</span></p>
       <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>員工工作環境與人身安全的保護措施 </h5>
-      <p><span>&nbsp;&nbsp;</span></p>
+      <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
       <p>泰碩重視員工安全，並致力提供一個安全、衛生與舒適的工作環境予全體同仁，工作環境與員工人身安全保護措施彙整如下：  </p>
       <ActiveList3 data={data.list3} />
       <div class="row justify-content-md-center">
@@ -2880,7 +2935,8 @@ function Page10(props) {
         <ActiveTable1 data={data.table2} />
       <p><span>&nbsp;&nbsp;</span></p>
       <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>人權政策 </h5>
-      <p><span>&nbsp;&nbsp;</span></p>
+      <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
       <p>泰碩電子股份有限公司(以下稱「泰碩」)，為善盡企業社會責任並落實人權保障，尊重並遵循「聯合國世界人權宣言」、「聯合國全球盟約」及國際勞工組織的「工作基本原則與權利宣言」等各項國際人權公約所揭橥之人權保護精神與基本原則，特制定本政策，並遵守《中華民國勞動基準法》、《性別工作平等法》、《就業服務法》等勞動相關法規，杜絕任何侵犯及違反人權之行為，有尊嚴的對待及尊重所有同仁。  </p>
       <p>本公司人權政策適用範圍包括本公司及相關企業，落實方針如下：</p>
       <ActiveList4 data={data.list4}/>
@@ -3087,11 +3143,12 @@ function Page11(props) {
         <ActiveTable1 data={data.table1} />
         <p><span>&nbsp;&nbsp;</span></p>
         <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span> 檢舉信箱作業辦法</h5>
-        <p><span>&nbsp;&nbsp;</span></p>
+
         <ActiveList1 data={data.list1} />
         <p><span>&nbsp;&nbsp;</span></p>
         <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>員工申訴中心 </h5>
-        <p><span>&nbsp;&nbsp;</span></p>
+        <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
 
 
         <p>員工是公司主要的利害關係人之一，更是泰碩珍視的資產。
@@ -3106,7 +3163,8 @@ function Page11(props) {
         
 
         <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>客戶及供應商投訴中心 </h5>
-        <p><span>&nbsp;&nbsp;</span></p>  
+        <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
         <p><b>違反從業道德行為舉報系統:</b></p>
         <p>在泰碩電子股份有限公司，誠信正直是公司文化最重要之核心價值， 也是公司經營理念之首。泰碩公司一向承諾以誠信從事所有業務活動 ，絕不允許貪污及任何形式之舞弊行為。
         </p>
