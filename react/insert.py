@@ -1,6 +1,11 @@
 from os import listdir
 from os.path import isfile, join
+import os
 
+PATH='./components/'
+onlyfiles = [os.path.join(dp, f) for dp, dn, filenames in os.walk(PATH) for f in filenames ]
+for i in range(len(onlyfiles)):
+    onlyfiles[i]=onlyfiles[i].replace("\\", '/')
 
 with open("index_template.html", encoding="utf8") as f:
     lines = f.readlines()
@@ -8,11 +13,10 @@ with open("index_template.html", encoding="utf8") as f:
         f1.writelines(lines)
 
 
-mypath = './components/'
-onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
-
-print(onlyfiles)
-
+# mypath = './components/'
+# onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+# print(onlyfiles)
+# exit()
 
 
 
@@ -36,6 +40,7 @@ def insert_to_file(file_name,pattern,content):
 
 
 for eachFile in onlyfiles:
-    with open(mypath+eachFile,encoding="utf8") as f:
+    # print(os.path.getsize(eachFile))
+    with open(eachFile,encoding="utf8") as f:
         content = f.read()
-        insert_to_file("index.html",eachFile,content)
+        insert_to_file("index.html",eachFile.split("/")[-1],content)
