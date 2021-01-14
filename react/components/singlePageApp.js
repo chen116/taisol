@@ -13,18 +13,23 @@
           eng:['Corporate Governance','Board of Directors','Compensation Committee','Organization & Responsibility','Regulations & Legislations','Internal Audit','Social Responsibility','Supplier Management','Customer Service','Shareholder Relations','Human Resources','Stakeholders Relations']
         },
         
-        navItemsPageFile : {
-          ch: ["corporate_governance_ch","board_of_directors_ch","compensation_committee_ch","organization_ch","regulations_ch","internal_audit_ch",
-            "social_ch","suppliers_ch","customer_service_ch","shareholder_relations_ch","human_resources_ch","stakeholders_ch"],
-          eng:["corporate_governance_eng","board_of_directors_eng","compensation_committee_eng","organization_eng","regulations_eng","internal_audit_eng",
-            "social_eng","suppliers_eng","customer_service_eng","shareholder_relations_eng","human_resources_eng","stakeholders_eng"  ]
-      },
-      qq:-1
+        navItemsPageFile : 
+          ["corporate_governance","board_of_directors","compensation_committee","organization","regulations","internal_audit",
+            "social","suppliers","customer_service","shareholder_relations","human_resources","stakeholders"]
+        
+
 
       };
     }
+    getPageData = (pageData, whichPage) => {
+      this.setState({[whichPage]: pageData},function(){
+        console.log("in singleApp:",whichPage,this.state[whichPage])
+      });
+
+    }
+
     focusThisPage(index){
-      var page = this.state.navItemsPageFile[this.state.lang][index];
+      var page = this.state.navItemsPageFile[index];
       this.setState({foucusedPage: page},function(){
         this.setState({foucusedPageIndex: index}, function(){
           console.log("FoucusThisPage:",this.state.foucusedPage,"FoucusThisPageIndex:",this.state.foucusedPageIndex);
@@ -33,11 +38,13 @@
         
       });
     };
+
     changeLang(lang){
       this.setState({lang: lang},function(){
-        this.setState({foucusedPage: this.state.navItemsPageFile[this.state.lang][this.state.foucusedPageIndex]},function(){
-          console.log("change lang to:",this.state.lang,"FoucusThisPage:",this.state.foucusedPage,"FoucusThisPageIndex:",this.state.foucusedPageIndex);
-        });
+        console.log("change lang to:",this.state.lang,"FoucusThisPage:",this.state.foucusedPage);
+        // this.setState({foucusedPage: this.state.navItemsPageFile[this.state.lang][this.state.foucusedPageIndex]},function(){
+        //   console.log("change lang to:",this.state.lang,"FoucusThisPage:",this.state.foucusedPage,"FoucusThisPageIndex:",this.state.foucusedPageIndex);
+        // });
       });
     };
 
@@ -64,14 +71,6 @@
       );
       if (!this.state.init)
       {
-
-
-        // var initFoucusedPage=window.location.href.split('?')[1];
-        // if (initFoucusedPage==null){initFoucusedPage=this.state.navItemsPageFile["ch"][0]}
-        // else {initFoucusedPage=initFoucusedPage; this.state.lang="ch" }
-        // this.state.foucusedPage=initFoucusedPage;
-        // console.log("initFoucusedPage:",this.state.foucusedPage)
-
         var lang =  this.getParameterByName('lang'); 
         if (lang==null){this.state.lang="ch"}
         else{this.state.lang=lang}
@@ -79,20 +78,12 @@
 
         var page =  this.getParameterByName('page'); 
         if (page==null){
-          this.state.foucusedPage=this.state.navItemsPageFile[this.state.lang][0];
-          this.state.foucusedPageIndex=0;     
+          this.state.foucusedPage=this.state.navItemsPageFile[0];
           console.log("initFoucusedPage:",this.state.foucusedPage)
-          console.log("initFoucusedPageIndex:",this.state.foucusedPageIndex)   
         }
         else{
-          if(this.state.lang=="ch"){
-            page=page+"_ch";
-          }
-          if(this.state.lang=="eng"){
-            page=page+"_eng";
-          }
             this.setState({foucusedPage: page},function(){
-              var initPageIndex=this.state.navItemsPageFile[this.state.lang].indexOf(page);
+              var initPageIndex=this.state.navItemsPageFile.indexOf(page);
                   this.setState({foucusedPageIndex:initPageIndex},function(){
                     console.log("initFoucusedPage:",this.state.foucusedPage)
                     console.log("initFoucusedPageIndex:",this.state.foucusedPageIndex)
@@ -106,7 +97,6 @@
 
         this.state.init=true
       }
-
 
 
       return [
@@ -205,10 +195,21 @@
           </nav> */}
 
           {/* <Test onPassingChildData={this.handleChild}/> */}
+          
+          <Content_corporate_governance onLoadData={this.getPageData} />
+          <Content_board_of_directors onLoadData={this.getPageData} />
+          <Content_compensation_committee onLoadData={this.getPageData} />
+          
+
+          <Page_corporate_governance currentPage={this.state.foucusedPage} data={this.state.corporate_governance} lang={this.state.lang}/>
+          <Page_board_of_directors currentPage={this.state.foucusedPage} data={this.state.board_of_directors} lang={this.state.lang} />
+          <Page_compensation_committee currentPage={this.state.foucusedPage} data={this.state.compensation_committee} lang={this.state.lang} />
 
 
-          <Page_corporate_governance_ch currentPage={this.state.foucusedPage} />
-          <Page_board_of_directors_ch currentPage={this.state.foucusedPage}  qq={this.state.qq}/>
+
+
+          {/* <Page_corporate_governance_ch currentPage={this.state.foucusedPage} />
+          <Page_board_of_directors_ch currentPage={this.state.foucusedPage} data={this.state.qq} lang={this.state.lang} />
           <Page_compensation_committee_ch currentPage={this.state.foucusedPage}/>
           <Page_organization_ch currentPage={this.state.foucusedPage}/>
           <Page_regulations_ch currentPage={this.state.foucusedPage}/>
@@ -232,7 +233,7 @@
           <Page_customer_service_eng currentPage={this.state.foucusedPage}/>
           <Page_shareholder_relations_eng currentPage={this.state.foucusedPage}/>
           <Page_human_resources_eng currentPage={this.state.foucusedPage}/>
-          <Page_stakeholders_eng currentPage={this.state.foucusedPage}/>
+          <Page_stakeholders_eng currentPage={this.state.foucusedPage}/> */}
 
 
         </div>  

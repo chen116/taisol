@@ -247,7 +247,8 @@ class Page_board_of_directors_ch extends React.Component {
     if (this.state.myPage != this.props.currentPage){return null;}
     return [
         <div class="content">
-          <p>qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq{this.props.qq}</p>
+         
+             {/* <p>qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq {this.props.qq} {this.props.lang} </p> */}
 
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>董事會 </h4>
             <p><span>&nbsp;&nbsp;</span></p>
