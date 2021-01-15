@@ -115,7 +115,8 @@
      
      <a class="navbar-brand" href={this.state.lang=='eng' ? "https://www.taisol.com?lang=eng" : "https://www.taisol.com?lang=zh"}><img src='./assets/images/logo.png' /></a>
 
-
+     <a class="nav-link"  href="javascript:void(0);" onClick={()=>{ this.changeLang('ch');}}>中文</a>
+     <a class="nav-link"  href="javascript:void(0);" onClick={()=>{ this.changeLang('eng');}}>English</a>
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
        <ul class="navbar-nav me-auto mb-2 mb-lg-0 header-nav">
@@ -183,13 +184,12 @@
  
        </ul>
      </div>
-     <a class="nav-link"  href="javascript:void(0);" onClick={()=>{ this.changeLang('ch');}}>中文</a>
-     <a class="nav-link"  href="javascript:void(0);" onClick={()=>{ this.changeLang('eng');}}>English</a>
+
  </nav> 
 
         ,
         <div>
-          <nav class="navbar navbar-expand-lg navbar-dark sub-navbar ">
+          <nav class="navbar navbar-expand-lg navbar-dark sub-navbar fixedTopHeader ">
             <div class="container-fluid">
               <ul class="list-group list-group-horizontal">
               {this.state.lang=='eng' ? navItems_eng : navItems}

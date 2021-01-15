@@ -16,6 +16,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   color: white;
+  min-width: 1576px;
 
 }
 h5 {
@@ -60,9 +61,14 @@ margin-bottom: 70px;
 .banner {
   padding-top:220px;
 }
-@media screen and (max-width: 1420px) {
+
+.fixedTopHeader {
+  min-width: 1576px;
+
+}
+@media screen and (max-width: 1576) {
   .fixedTopHeader {
-    min-width: 1420px;
+    min-width: 1576;
     z-index: 999;
   }
 }
