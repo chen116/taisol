@@ -10,23 +10,33 @@
 
         navItems:{ 
           ch:['公司治理','董事會','薪酬委員會','組織及職掌','規章','內部稽核','企業社會責任','供應商管理','客戶服務','投資人關係','人力資源','與利害關係人對話'],
-          eng:['Corporate Governance','Board of Directors','Compensation Committee','Organization & Responsibility','Regulations & Legislations','Internal Audit','Social Responsibility','Supplier Management','Customer Service','Shareholder Relations','Human Resources','Stakeholders Relations']
+          eng:['Corporate Governance','Board of Directors','Compensation Committee','Organization and Responsibility','Regulations and Legislations','Internal Audit','Social Responsibility','Supplier Management','Customer Service','Shareholder Relations','Human Resources','Stakeholder Relations']
         },
         
         navItemsPageFile : 
           ["corporate_governance","board_of_directors","compensation_committee","organization","regulations","internal_audit",
-            "social","suppliers","customer_service","shareholder_relations","human_resources","stakeholders"]
+            "social","supplier","customer_service","shareholder_relations","human_resources","stakeholder"]
         
 
 
       };
     }
-    getPageData = (pageData, whichPage) => {
+    getPageData = (pageData, whichPage,lang) => {
       this.setState({[whichPage]: pageData},function(){
         console.log("in singleApp:",whichPage,this.state[whichPage])
       });
 
+
     }
+
+    getPageDataWithLang = (pageData, whichPage,lang) => {
+      const newData = { ...this.state[whichPage], [lang]: pageData }
+      this.setState({[whichPage]: newData},function(){
+        console.log("in singleApp:",whichPage,this.state[whichPage])
+      });
+    }
+
+
 
     focusThisPage(index){
       var page = this.state.navItemsPageFile[index];
@@ -179,7 +189,7 @@
 
         ,
         <div>
-          <nav class="navbar navbar-expand-lg navbar-dark sub-navbar fixedheader">
+          <nav class="navbar navbar-expand-lg navbar-dark sub-navbar ">
             <div class="container-fluid">
               <ul class="list-group list-group-horizontal">
               {this.state.lang=='eng' ? navItems_eng : navItems}
@@ -196,14 +206,43 @@
 
           {/* <Test onPassingChildData={this.handleChild}/> */}
           
-          <Content_corporate_governance onLoadData={this.getPageData} />
-          <Content_board_of_directors onLoadData={this.getPageData} />
-          <Content_compensation_committee onLoadData={this.getPageData} />
-          
+          <Content_corporate_governance_ch onLoadData={this.getPageDataWithLang} />
+          <Content_corporate_governance_eng onLoadData={this.getPageDataWithLang} />
+          <Content_board_of_directors_ch onLoadData={this.getPageDataWithLang} />
+          <Content_board_of_directors_eng onLoadData={this.getPageDataWithLang} />
+          <Content_compensation_committee_ch onLoadData={this.getPageDataWithLang} />
+          <Content_compensation_committee_eng onLoadData={this.getPageDataWithLang} />
+          <Content_organization_ch onLoadData={this.getPageDataWithLang} />
+          <Content_organization_eng onLoadData={this.getPageDataWithLang} />
+          <Content_regulations_ch onLoadData={this.getPageDataWithLang} />
+          <Content_regulations_eng onLoadData={this.getPageDataWithLang} />
+          <Content_internal_audit_ch onLoadData={this.getPageDataWithLang} />
+          <Content_internal_audit_eng onLoadData={this.getPageDataWithLang} />
+          <Content_social_eng onLoadData={this.getPageDataWithLang} />
+          <Content_social_ch onLoadData={this.getPageDataWithLang} />
+          <Content_supplier_ch onLoadData={this.getPageDataWithLang} />
+          <Content_supplier_eng onLoadData={this.getPageDataWithLang} />
+          <Content_customer_service_ch onLoadData={this.getPageDataWithLang} />
+          <Content_customer_service_eng onLoadData={this.getPageDataWithLang} />
+          <Content_shareholder_relations_ch onLoadData={this.getPageDataWithLang} />
+          <Content_shareholder_relations_eng onLoadData={this.getPageDataWithLang} />
+          <Content_human_resources_ch onLoadData={this.getPageDataWithLang} />
+          <Content_human_resources_eng onLoadData={this.getPageDataWithLang} />
+          <Content_stakeholder_ch onLoadData={this.getPageDataWithLang} />
+          <Content_stakeholder_eng onLoadData={this.getPageDataWithLang} />
 
           <Page_corporate_governance currentPage={this.state.foucusedPage} data={this.state.corporate_governance} lang={this.state.lang}/>
           <Page_board_of_directors currentPage={this.state.foucusedPage} data={this.state.board_of_directors} lang={this.state.lang} />
           <Page_compensation_committee currentPage={this.state.foucusedPage} data={this.state.compensation_committee} lang={this.state.lang} />
+          <Page_organization currentPage={this.state.foucusedPage} data={this.state.organization} lang={this.state.lang}/>
+          <Page_regulations currentPage={this.state.foucusedPage} data={this.state.regulations} lang={this.state.lang} />
+          <Page_internal_audit currentPage={this.state.foucusedPage} data={this.state.internal_audit} lang={this.state.lang} />
+          <Page_social currentPage={this.state.foucusedPage} data={this.state.social} lang={this.state.lang} />
+          <Page_supplier currentPage={this.state.foucusedPage} data={this.state.supplier} lang={this.state.lang} />
+          <Page_customer_service currentPage={this.state.foucusedPage} data={this.state.customer_service} lang={this.state.lang} />
+          <Page_shareholder_relations currentPage={this.state.foucusedPage} data={this.state.shareholder_relations} lang={this.state.lang} />
+          <Page_human_resources currentPage={this.state.foucusedPage} data={this.state.human_resources} lang={this.state.lang} />
+          <Page_stakeholder currentPage={this.state.foucusedPage} data={this.state.stakeholder} lang={this.state.lang} />
 
 
 

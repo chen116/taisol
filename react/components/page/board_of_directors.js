@@ -1,6 +1,7 @@
 function Page_board_of_directors(props) {
     const myPage = "board_of_directors";
-    if ((myPage != props.currentPage ) || (props.data==null)){return null;}
+    if ((myPage != props.currentPage ) || (props.data==null) || (props.data["ch"]==null) || props.data["eng"]==null) {return null;}
+    
 
     class ActiveTable1 extends React.Component {
         constructor(props){
@@ -209,9 +210,9 @@ function Page_board_of_directors(props) {
                         
                             <tr>
                             <th rowspan="2">Criteria Name (Note 1)</th>
-                            <th colspan="3">Having Met One of the Following Professional Qualifications combined with at Least Five Years Work Experience</th>
-                            <th colspan="10">Independence Criteria (Note2)</th>
-                            <th rowspan="2">Number of Other Public Companies in Which the Individual is Concurrently Serving as an Independent Director</th>
+                            <th colspan="3">Have more than five years of work experience in the listed professional qualifications</th>
+                            <th colspan="10">Meet the independence criteria (Note 2)</th>
+                            <th rowspan="2">Number of other public companies in which the individual is concurrently serving as independent director</th>
                         </tr>,
                         <tr>
                             <th>An Instructor or Higher Position in a Department of Commerce, Law, Finance, Accounting, or Other Academic Department Related to the Business Needs of the Company in a Public or Private Junior College, College or University</th>

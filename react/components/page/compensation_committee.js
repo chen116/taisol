@@ -1,6 +1,8 @@
 function Page_compensation_committee(props) {
     const myPage = "compensation_committee";
-    if ((myPage != props.currentPage ) || (props.data==null)){return null;}
+    if ((myPage != props.currentPage ) || (props.data==null) || (props.data["ch"]==null) || props.data["eng"]==null) {return null;}
+    
+    
 
     var data = {
       salary_regulations: [
@@ -317,6 +319,9 @@ function Page_compensation_committee(props) {
         return (
             <table  class="table table-bordered table-hover">
                 <thead>
+
+                    {props.lang=="ch"? [ 
+
                     <tr>
                       <th rowspan="2">身份別（註1）</th>
                       <th rowspan="2">姓名</th>
@@ -324,7 +329,7 @@ function Page_compensation_committee(props) {
                       <th colspan="10">符合獨立性情形（註2）</th>
                       <th rowspan="2"  style={{width: `10%`}}>兼任其他公開發行公司獨立董事家數</th>
                       <th rowspan="2">備註</th>
-                    </tr>
+                    </tr>,
                     <tr>
                         <th>商務、法務、財務、會計或公司業務所須相關科系之公私立大專院校講師以上</th>
                         <th>法官、檢察官、律師、會計師或其他與公司業務所需之國家考試及格領有證書之專門職業及技術人員</th>
@@ -340,6 +345,33 @@ function Page_compensation_committee(props) {
                         <th>9</th>
                         <th>10</th>
                     </tr>
+                    ]: [
+
+                        <tr>
+                        <th rowspan="2">Title（Note 1）</th>
+                        <th rowspan="2">Name</th>
+                        <th colspan="3" style={{width: `50%`}}>Have more than five years of work experience in the listed professional qualifications</th>
+                        <th colspan="10">Meet the independence criteria (Note 2)</th>
+                        <th rowspan="2"  style={{width: `10%`}}>Number of other public companies in which the individual is concurrently serving as independent director</th>
+                        <th rowspan="2">Note</th>
+                      </tr>,
+                      <tr>
+                            <th>Instructor or higher position for department of commerce, law, finance, accounting, or other field related to the company's business' need in a public or private college or institution</th>
+                            <th>Judge, public prosecutor, attorney, certified public accountant, or other professional or technical cpecialist that has passed any national qualification and/or been awarded a certificate in a profession that is needed by the company</th>
+                            <th>Work Experience in commerce, law, finance, accounting, or other field related to the company's business' need </th>
+                          <th>1</th>
+                          <th>2</th>
+                          <th>3</th>
+                          <th>4</th>
+                          <th>5</th>
+                          <th>6</th>
+                          <th>7</th>
+                          <th>8</th>
+                          <th>9</th>
+                          <th>10</th>
+                      </tr>
+
+                    ]}
                 </thead>
                 <tbody>
                     {table}

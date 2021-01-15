@@ -1,7 +1,8 @@
 
 function Page_corporate_governance(props) {
     const myPage = "corporate_governance";
-    if ((myPage != props.currentPage ) || (props.data==null)){return null;}
+    if ((myPage != props.currentPage ) || (props.data==null) || (props.data["ch"]==null) || props.data["eng"]==null) {return null;}
+   
 
     
     class ActiveList1 extends React.Component {
