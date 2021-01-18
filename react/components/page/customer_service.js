@@ -20,9 +20,6 @@ function Page_customer_service(props) {
               return (
                 <ul class="list-group list-group-flush ">
                   {list}
-                  <li  class="list-group-item">   郭尚仁 先生
-                  (副總經理暨發言人) <img src="./assets/images/investor04_6.jpg"  />：<a href="mailto:sales@taisol.com">sales@taisol.com</a>
-                  </li>
                 </ul>
     
               )
@@ -30,7 +27,7 @@ function Page_customer_service(props) {
         }  
   
   
-  
+        if (props.lang=='ch') {
         return  [
         <div class="content">
   
@@ -51,9 +48,41 @@ function Page_customer_service(props) {
           <p><span>&nbsp;&nbsp;</span></p>
           <p><b>提醒您：</b></p>
           <ActiveList1 data={props.data[props.lang].list1} />
-  
+          <ul class="list-group list-group-flush ">
+          <li  class="list-group-item">  
+             郭尚仁 先生 (副總經理暨發言人)  <img src="./assets/images/investor04_6.jpg"  />：<a href="mailto:sales@taisol.com">sales@taisol.com</a>
+            </li>
+            </ul>
         </div>
         ];
+      }
+      else{
+        return [
+          <div class="content">
+  
+          <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title} </h4>
+          <p><span>&nbsp;&nbsp;</span></p>  
+  
+          <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Violation of professional ethics reporting system  </h5>
+  
+          <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+  
+          <p>At TaiSol Electronics Co., Ltd., integrity is the most important core value of the company's culture and the top of the company's business philosophy. TaiSol has always promised to conduct all business activities in good faith, and will never allow corruption and any form of fraud.</p>
+
+          <p>If you find that an employee of TaiSol or any related person acting on behalf of TaiSol has performed suspicious behavior or may violate the ethics code of TaiSol, please let us know. Your report will be handled directly by the deputy general manager of the company.</p>
+
+          <p>Unless otherwise provided by law, we will keep the personal information you provide about you confidential and take appropriate protective measures in accordance with the law to protect your personal information and privacy.</p>
+          <p><span>&nbsp;&nbsp;</span></p>
+          <p><b>Reminders:</b></p>
+          <ActiveList1 data={props.data[props.lang].list1} />
+          <ul class="list-group list-group-flush ">
+          <li  class="list-group-item">  
+            Mr. Guo Shangren (Deputy General Manager and Spokesperson)  <img src="./assets/images/investor04_6.jpg"  />：<a href="mailto:sales@taisol.com">sales@taisol.com</a>
+            </li>
+            </ul>
+        </div>
+        ]
+      }
       
      
       

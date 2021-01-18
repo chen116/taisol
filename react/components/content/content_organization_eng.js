@@ -10,72 +10,107 @@ class Content_organization_eng extends React.Component {
                 p2:"Departments",
                 p3:"Management",
                 table1 : [
-                    {   "name": "HQO",
-                        "summary" : "秉承總經理之命令，執行專案業務之推動及落實並負責對投資人公共關係之維繫。",
-                        "details" : [] 
+                    {   name: "HQO",
+                        summary: "Adhere to the orders of the general manager, carry out the promotion and implementation of the project business, and be responsible for maintaining the public relations of investors.",
+                        details : [] 
                         
                     },
-                    {   "name": "稽核室", 
-                        "summary" : "執行內部控制制度的稽核工作，檢查並評估公司的營運記錄有無缺失並提出改善建議。",
-                        "details" : [] 
+                    {   name: "Aduit", 
+                        summary: "Carry out the audit work of the internal control system, check and evaluate whether the company's operating records are missing and make suggestions for improvement.",
+                        details : [] 
                         
                     },
-                    {   "name": "財管處",
-                        "summary" : "秉承總經理之命令，掌管公司之財務、人事、總務、公關等事宜。下設財務部、管理部。主要內容為：",
-                        "details" : ["(1)規劃公司的營運方針並執行董事會的決議，建立公司營運體制及監督日常運作。","(2)處理公司對內及對外公共關係及跨部門之溝通與協調情事。"] 
+                    {   name: "Financial Management",
+                        summary: "Adhering to the orders of the general manager, in charge of the company's financial, personnel, general affairs, public relations and other matters. There are financial department and management department. The main content is:",
+                        details : ["(1) Plan the company's operating policy and implement the resolutions of the board of directors, establish the company's operating system and supervise daily operations.",
+                        "(2) Handle the company's internal and external public relations and inter-departmental communication and coordination."] 
                         
                     },
                     {   
-                        "name": "資訊室", 
-                        "summary" : "",
-                        "details" : ["(1)ERP系統的維護及軟體整合。","(2)內部網路的架設及電子郵件系統的更新及修護。","(3)軟、硬體設備的更新及維護。","(4)資訊安全維護及推動。"] 
+                        name: "Management Information System", 
+                        summary: "",
+                        details : ["(1) Maintenance and software integration of ERP system.",
+                        "(2) The establishment of the internal network and the update and maintenance of the email system.",
+                        "(3) Update and maintenance of software and hardware equipment.",
+                        "(4) Information security maintenance and promotion."]
+                    },
+                    {   
+                        name: "Finance", 
+                        summary: "",
+                        details : ["(1) Responsible for the management and promotion of company personnel, administration, general affairs, stock affairs and fixed assets.",
+                        "(2) The maintenance and litigation of the company's intellectual property rights.",
+                        "(3) Responsible for labor safety and health planning and management and formulating the company's occupational disaster prevention measures."] 
                     
                     },
                     {   
-                        "name": "財務部", 
-                        "summary" : "",
-                        "details" : ["(1)負責公司人事、行政、總務、股務及固定資產之管理與推動工作。","(2)公司智慧財產權利之維護與訴訟。","(3)負責勞工安全衛生規劃與管理並釐訂公司職業災害防治措施。"] 
-                    
-                    },
-                    {   
-                        "name": "業務行銷處", 
-                        "summary" : "秉承總經理之命令，以創造公司之最大利潤為目標，依產品別區分為散熱器、通訊﹑連接器及讀卡器四大行銷部。",
-                        "details" : ["(1)蒐集市場資訊，提供給主管及研發處。","(2)售價政策之擬訂及市場規劃、預估。","(3)規劃並辦理廣告及參展事宜。","(4)執行新產品開發建議之審查。","(5)擬定產品初期規格及成本分析。"] 
-                    
-                    },
-                    
-                    {   
-                        "name": "業務處", 
-                        "summary" : "秉承總經理之命令，以達成業績，創造公司之最大利潤為目標，其下區分日本、通訊、熱傳、連接器、讀卡器等五大產品線業務：",
-                        "details" : ["(1)客戶之開發、調查、選定、聯繫及服務客戶。"
-                        ,"(2)合約、訂單之審查、產銷、出貨控制之聯繫協調。","(3)客戶抱怨及維修之聯繫處理。","(4)反應品質異常資訊給品保單位，蒐集並提供技術資料給客戶。","(5)安排出貨交運事宜。"] 
+                        name: "Martketing", 
+                        summary: "Adhering to the orders of the general manager, with the goal of creating the company's maximum profit, the four marketing departments are divided into radiator, communication, connector and card reader according to the product.",
+                        details : [
+                            "(1) Collect market information and provide it to the supervisor and R&D department.",
+                            "(2) Formulating and market planning and estimation of selling price policy.",
+                            "(3) Planning and handling advertising and exhibition matters.",
+                            "(4) Carry out the review of new product development suggestions.",
+                            "(5) Draft initial product specifications and cost analysis.",
+                        ]
                     
                     },
                     
+                    {   
+                        name: "Business", 
+                        summary: "Following the orders of the general manager and aiming at achieving performance and creating the company's maximum profit, it has five major product lines including Japan, communications, heat transfer, connectors, and card readers:",
+                        details : [
+                            "(1) Development, investigation, selection, contact and service of customers.",
+                            "(2) Contact and coordination of contract and order review, production and sales, and shipment control.",
+                            "(3) Contact handling of customer complaints and maintenance.",
+                            "(4) Reflect the abnormal quality information to the quality assurance unit, collect and provide technical information to the customer.",
+                            "(5) Arrange for shipment and delivery matters."
+                        ]
+                    
+                    },
+                    
                     
                     {   
-                        "name": "研發處", 
-                        "summary" : "秉承總經理之命令，負責本公司產品開發、製造技術支援、銷售技術支援、及對客戶支援事宜。下設通訊研發部、熱傳研發部、連接器研發部、讀卡器研發部、研發管理部。",
-                        "details" : 
-                        ["通訊研發部：","(1)通訊散熱產品設計及相關零件之承認。","(2)模具開發、試產。","(3)協助解決客戶技術問題。","熱傳研發部：","(1)散熱器設計及相關零件之承認。","(2)模具開發、試產。","(3)協助解決客戶技術問題。","連接器研發部：","(1)連接器設計及相關零件之承認。","(2)模具開發、試產。","(3)協助解決客戶技術問題。","讀卡器研發部：","(1)讀卡器設計及相關零件之承認。","(2)產品開發、試產。","(3)協助解決客戶技術問題。"]
+                        name: "R&D", 
+                        summary: "Following the orders of the general manager, he is responsible for the company's product development, manufacturing technical support, sales technical support, and customer support. There are communication research and development department, heat transfer research and development department, connector research and development department, card reader research and development department, and research and development management department.",
+                        details : 
+                        [
+                            "Communication R&D Department:",
+                            "(1) Approval of the design of communication cooling products and related parts.",                          
+                            "(2) Mold development and trial production.",                          
+                            "(3) Assist in solving customer technical problems.",                          
+                            "Heat Transfer R&D Department:",                          
+                            "(1) Approval of radiator design and related parts.",                          
+                            "(2) Mold development and trial production.",                          
+                            "(3) Assist in solving customer technical problems.",                          
+                            "Connector R&D Department:",                          
+                            "(1) Approval of connector design and related parts.",                          
+                            "(2) Mold development and trial production.",                          
+                            "(3) Assist in solving customer technical problems.",                          
+                            "Reader R&D Department:",                          
+                            "(1) The recognition of card reader design and related parts.",                          
+                            "(2) Product development and trial production.",                          
+                            "(3) Assist in solving customer technical problems.",
+                        ]
         
                     
                     },
         
                     
                     {   
-                        "name": "資材部", 
-                        "summary" : "秉承總經理之命令，以達成業績，創造公司之最大利潤為目標，其下區分日本、通訊、熱傳、連接器、讀卡器等五大產品線業務：",
-                        "details" : ["(1)負責原物料、各項設備等採購事宜，做到適質、適量、適時與適價的採購策略。"
-                        ,"(2)對物料倉儲及存貨之管制與記錄，並維護廠區存貨之完整，達到適時供給所需。"] 
+                        name: "Materials", 
+                        summary: "Following the orders of the general manager and aiming at achieving performance and creating the company's maximum profit, it has five major product lines including Japan, communications, heat transfer, connectors, and card readers:",
+                        details : [
+                            "(1) Responsible for the procurement of raw materials, various equipment, etc., to achieve a procurement strategy of proper quality, quantity, time and price.",
+                            "(2) Control and record material storage and inventory, and maintain the integrity of the inventory in the factory to meet the timely supply requirements.",
+                        ] 
                     
                     },
         
                     {   
-                        "name": "生管部", 
-                        "summary" : "秉承總經理之命令，以達成業績，創造公司之最大利潤為目標，其下區分日本、通訊、熱傳、連接器、讀卡器等五大產品線業務：",
-                        "details" : [
-                            "(1)製造部門生產排程規劃。","(2)負責原物料請購、物料安排事宜。"]
+                        name: "Health Management", 
+                        summary: "Following the orders of the general manager and aiming at achieving performance and creating the company's maximum profit, it has five major product lines including Japan, communications, heat transfer, connectors, and card readers:",
+                        details : [
+                            "(1) Production scheduling planning for manufacturing department.","(2) Responsible for the purchase of raw materials and material arrangements."]
                         
                     
                     },       
@@ -83,44 +118,37 @@ class Content_organization_eng extends React.Component {
                     
                     
                     {   
-                        "name": "品保部", 
-                        "summary" : "秉承總經理之命令，以達成業績，創造公司之最大利潤為目標，其下區分日本、通訊、熱傳、連接器、讀卡器等五大產品線業務：",
-                        "details" : [
-                            "(1)執行公司品質政策、確保品質系統之實施及品質作業稽核、改善。","(2)提供經營者有關品質之建議，協助及協調各部門執行品保的工作並推行品質提升之活動與教育訓練以提供客戶滿意的服務。"
+                        name: "Quality Control", 
+                        summary: "Following the orders of the general manager and aiming at achieving performance and creating the company's maximum profit, it has five major product lines including Japan, communications, heat transfer, connectors, and card readers:",
+                        details : [
+                            "(1) Carry out the company's quality policy, ensure the implementation of the quality system and audit and improve quality operations.",
+                            "(2) Provide operators with quality suggestions, assist and coordinate various departments to implement quality assurance work, and implement quality improvement activities and education training to provide customers with satisfactory services."
                         ] 
                     
                     }, 
                             
                     {   
-                        "name": "製造部", 
-                        "summary" : "秉承總經理之命令，以達成業績，創造公司之最大利潤為目標，其下區分日本、通訊、熱傳、連接器、讀卡器等五大產品線業務：",
-                        "details" : ["(1)負責公司產品之製造及生產。",
-                            "(2)生產製程之改善及良率之提升。"] 
+                        name: "Manufacturing", 
+                        summary: "Following the orders of the general manager and aiming at achieving performance and creating the company's maximum profit, it has five major product lines including Japan, communications, heat transfer, connectors, and card readers:",
+                        details : ["(1) Responsible for the manufacture and production of company products.",
+                            "(2) Improvement of production process and increase of yield."] 
                     
                     },     
                   
                   
                 ],
                 table2 : [
-                    {"title": "董事長","name":"余清松","exps":["大同工學院工商管理系畢"]},
-                    {"title": "總經理","name":"梁俊興","exps":["東海大學經濟系","信邦電子股份有限公司總經理","信邦電子股份有限公司監察人","數碼醫療器材股份有限公司執行長"]}
+                    {"title": "Chairman",name:"Yu Qingsong","exps":["Department of Business Administration, Datong Institute of Technology"]},
+                    {"title": "General manager",name:"Liang Junxing","exps":[
+                        "Department of Economics, Tunghai University",
+                        "General Manager of SINBON Electronics Co., Ltd.",
+                        "Supervisor of SINBON Electronics Co., Ltd.",
+                        "CEO of Digital Medical Equipment Co., Ltd.",
+                    ]}
                 ],
         
         
-                table3:[
-                    {name: '余清松',self_stock:'14,155,046',self_stock_per:"16.22", fam_stock:"773,431",fam_stock_per:"0.89",other_stock:"2,698,000",other_stock_pre:'3.09', name2:'隆昕實業',relation:'關係人',note:''},
-                    {name: '隆昕實業股份有限公司法人代表：葉麗娟',self_stock:'2,698,000',self_stock_per:"3.09", fam_stock:"-",fam_stock_per:"-",other_stock:"-",other_stock_pre:'-', name2:'余清松',relation:'關係人',note:''},
-                    {name: '林千雅',self_stock:'1,844,321',self_stock_per:"2.11", fam_stock:"-",fam_stock_per:"-",other_stock:"-",other_stock_pre:'-', name2:'',relation:'',note:''},
-                    {name: '台灣企銀受託保管群益創新科技基金專戶',self_stock:'1,200,000',self_stock_per:"1.38", fam_stock:"-",fam_stock_per:"-",other_stock:"-",other_stock_pre:'-', name2:'',relation:'',note:''},
-                    {name: '群益馬拉基金專戶',self_stock:'1,030,000',self_stock_per:"1.18", fam_stock:"-",fam_stock_per:"-",other_stock:"-",other_stock_pre:'-', name2:'',relation:'',note:''},
-                    {name: '謝君山',self_stock:'1,022,276',self_stock_per:"1.17", fam_stock:"280,466",fam_stock_per:"0.32",other_stock:"",other_stock_pre:'-', name2:'',relation:'',note:''},
-                    {name: '元大人壽保險股份有限公司',self_stock:'956,000',self_stock_per:"1.10", fam_stock:"-",fam_stock_per:"-",other_stock:"-",other_stock_pre:'-', name2:'',relation:'',note:''},
-                    {name: '復華傳家二號基金專戶',self_stock:'863,000',self_stock_per:"0.99", fam_stock:"-",fam_stock_per:"-",other_stock:"-",other_stock_pre:'-', name2:'',relation:'',note:''},
-                    {name: '野村中小基金專戶',self_stock:'855,000',self_stock_per:"0.98", fam_stock:"-",fam_stock_per:"-",other_stock:"-",other_stock_pre:'-', name2:'',relation:'',note:''},
-                    {name: '復華數位經濟基金專戶',self_stock:'812,000',self_stock_per:"0.93", fam_stock:"-",fam_stock_per:"-",other_stock:"-",other_stock_pre:'-', name2:'',relation:'',note:''},
-                ]
-        
-        
+               
               }
         }
             

@@ -189,7 +189,7 @@
 
         ,
         <div>
-          <nav class="navbar navbar-expand-lg navbar-dark sub-navbar fixedTopHeader ">
+          <nav class="navbar navbar-expand-lg navbar-dark sub-navbar  ">
             <div class="container-fluid">
               <ul class="list-group list-group-horizontal">
               {this.state.lang=='eng' ? navItems_eng : navItems}

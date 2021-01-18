@@ -7,11 +7,11 @@ class Content_customer_service_eng extends React.Component {
             data :  {
                 title:"Customer Service" ,     
                list1:[
-                 "1. 您所提供的個人資料，包含姓名、電話、電子郵件地址，泰碩 公司於調查期間，得為調查舉報事項與聯繫用途而處理利用； 調查若有必要，泰碩公司得傳遞您必要的個人資訊予公司內部 及司法檢調等相關單位。",
-                 "2. 不得明知不實而故意捏造事實，倘舉報事後被證明是出於惡意 或有故意捏造虛偽陳述之情事，您必須自負相關法律責任。",
-                 "3. 為能盡早調查與解決問題，請您務必提供所有可能的相關具體 資訊與文件，若相關資訊與文件不齊備，泰碩公司將無法進行 調查。",
-                 "4. 泰碩公司提供予您的相關聯絡內容，其全部或一部分皆不可向 任何人揭露。除依法律之規定要求外，您不得以泰碩公司與您 之間的聯絡內容提出訴訟或以該聯絡內容作為訴訟相關資料。",
-                 
+
+"1. The personal data provided by you, including your name, telephone number, and email address, may be processed and used for the purpose of investigating and reporting matters and contacting during the investigation; if the investigation is necessary, the company may pass on what you need Personal information is given to relevant units such as the company's internal and judicial investigations.",
+"2. Do not knowingly false and deliberately fabricating facts, if the report is later proved to be malicious or deliberately fabricating false statements, you must bear the relevant legal responsibility.",
+"3. In order to investigate and solve the problem as soon as possible, please be sure to provide all possible relevant specific information and documents. If the relevant information and documents are not available, TaiSol will not be able to investigate.",
+"4. All or part of the relevant contact information provided by TaiSol Company to you shall not be disclosed to anyone. Except as required by law, you are not allowed to file a lawsuit based on the content of the contact between TaiSol and you or use the content of the contact as relevant information for the lawsuit.",
                ]
        
              }

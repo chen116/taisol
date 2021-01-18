@@ -7,21 +7,28 @@ class Content_stakeholder_eng extends React.Component {
             data :  {   
                 title: "Stakeholder Relations",   
                 table1:[
-                  {person: "投資人", topics:["獲利情形","風險管理"], jobs:["本公司定期召開股東常會，所有管理階層也均會全程參與，詳細報告及回覆投資人所關切的議題。我們也在網頁設置與投資人關係的專區，增加公司營運的透明度。通暢的溝通管道使我們能有效管理風險，資訊的透明亦可讓投資人得以明智決策。"],results:[{txt:"最新消息",href:"http://www.taisol.com.tw/news?lang=zh"}]},
-                  {person: "員工", topics:[
-                    "工作環境",
-                    "薪資福利",
-                    "晉升遷調"
+                  {person: "Investor", topics:["Profitability","Risk Management"], jobs:["The company holds regular shareholder meetings on a regular basis, and all management will also participate in the whole process, detailed reports and responses to investors’ concerns. We also set up a special section on the relationship with investors on our website to increase the transparency of company operations. Smooth communication channels enable us to effectively manage risks, and transparency of information also allows investors to make wise decisions."]
+                  ,results:[{txt:"latest news",href:"http://www.taisol.com.tw/news?lang=zh"}]},
+                  {person: "Employee", topics:[
+                    "Working Environment",
+                    "Salary and Benefits",
+                    "Promotion"
                   ]
-                  , jobs:["我們希望所有同仁都能感受到自己的聲音被傾聽、被重視。為此，我們特別建立了一套無障礙的員工發聲系統和程序，提供專人處理的電話線和信箱，讓員工的意見直達最高管理階層。"],results:[{txt:"員工福利、工作環境與人身安全",href:"index.html?notice-2-9"}]},
-                  {person: "客戶", topics:["產品品質"], jobs:[
-                    "本公司積極要求業務單位必須與客戶保持密切聯繫，即時告知客戶應有的權益，並確保產品達到預期的可靠性與品質。我們也致力於提供客戶綠色產品，並與原物料供應商簽署限用物質承諾保證書、不使用衝突礦產，提供客戶符合歐盟ROHS規範的產品。",
-                    "本公司除了已建立完整的客訴管理系統，另於網頁中提供讓客戶直接溝通的管道，凡客戶投訴的案件，皆由本公司副總經理直接處理。",
+                  , jobs:["We hope that all colleagues can feel that their voice is heard and valued. To this end, we have established a set of barrier-free employee voice systems and procedures, and provide dedicated telephone lines and mailboxes to allow employees’ opinions to reach the top management."]
+                  ,results:[{txt:"Employee welfare, working environment and personal safety",href:"index.html?lang=eng&page=human_resources"}]},
+                  {person: "Client", topics:["product quality"], jobs:[
+                    "The company actively requires business units to maintain close contact with customers, promptly inform customers of their due rights, and ensure that the products reach the expected reliability and quality. We are also committed to providing customers with green products, and signed a restricted substance commitment guarantee with raw material suppliers, not using conflict minerals, and providing customers with products that meet the EU ROHS specifications.",
+                    "In addition to establishing a complete customer complaint management system, the company also provides a channel for customers to communicate directly on the webpage. All customer complaints are handled directly by the company's deputy general manager."
                   ]
                   ,results:[]},
-                  {person: "供應商", topics:["採購條件","誠信經營"], jobs:["本公司嚴格落實誠信經營，採購單位每年檢討實際交易情形後，與供應商協調次年度之合約內容。並要求採購單位不得收受廠商以各種型式提供之不正當利益。","本公司已於網頁中提供供應商直接溝通的管道，對供應商投訴的案件，皆由本公司副總經理直接處理。"],results:[]},
+                  {person: "Supplier", topics:["Purchase conditions","Integrity management"], 
+                  jobs:["The company strictly implements honest operation. After the purchasing unit reviews the actual transaction situation every year, it coordinates with the supplier the content of the contract for the next year. It also requires the purchasing unit not to accept the illegitimate benefits provided by the manufacturer in various forms."
+                  ,"The company has provided a channel for direct communication with suppliers on its webpage, and complaints from suppliers are handled directly by the company's deputy general manager."],results:[]},
                   
-                  {person: "社會", topics:["環境保護","社會公益"], jobs:["本公司已通過ISO14001環境管理系統，並依ISO14064訂有多項作業辦法，積極推動對空氣、噪音、水資源等汙染防治管理及提高對溫室氣體管理之標準。","本公司於大學中設置獎助學金，給予品學兼優的年輕學子最實質的鼓勵。"],results:[{txt:"社會責任",href:"index.html?notice-2-5"}, {txt:"ISO14001證書",href:"http://w3.taisol.com.tw/important/EMS-ARES-ISO14001.pdf"} ]},
+                  {person: "Society", topics:["Environmental protection","Social welfare"], 
+                  jobs:["The company has passed the ISO14001 environmental management system, and has established a number of operating methods in accordance with ISO14064 to actively promote the management of air, noise, water pollution and other pollution prevention and control, and to improve the standards for greenhouse gas management.",
+                  "The company has set up scholarships and grants in universities to give the most substantial encouragement to young students with excellent academic performance."],
+                  results:[{txt:"Social responsibility",href:"index.html?lang=eng&page=social"}, {txt:"ISO14001 certificate",href:"http://w3.taisol.com.tw/important/EMS-ARES-ISO14001.pdf"} ]},
                   
                   
                
@@ -31,49 +38,52 @@ class Content_stakeholder_eng extends React.Component {
               list1:[
             
                 {
-                  title:"一、本公司為落實誠信經營政策，積極防範不誠信的行為，已設立檢舉信箱機制，嚴格禁止任何違反從業道德之行為及情事，如有違反各營運所在相關法令或本公司各項從業道德行為準則，一律秉公處理，絕不寬貸。", 
+                  title:"1. In order to implement the integrity management policy and actively prevent dishonest behaviors, the company has established a reporting mailbox mechanism to strictly prohibit any behavior and circumstances that violate business ethics. If there is a violation of the relevant laws and regulations of each business location or the company's various business ethics behaviors Standards are handled impartially and never lenient loans.", 
                   content:[]
                 },
                 {
-                  title:"二、本公司提供檢舉之獎勵：糾正或檢舉違反廉潔守則情事，凡經查證屬實者，將予適當之獎勵。另針對違反從業道德之行為，除所獲取之各項不正當利益均應追繳發還被索取人或公司外，並依情節之大小，予以處分或合併處分。",
+                  title:"2. The company provides rewards for reporting: correct or report violations of the Integrity Code, and those that are verified to be true will be rewarded appropriately. In addition, for violations of professional ethics, all illegitimate benefits obtained shall be recovered and returned to the person or company claimed, and sanctions or combined sanctions shall be imposed according to the size of the circumstances.",
                   content:[]
                 },
                 {
-                  title:"三、檢舉方式如下:",
-                  content:["檢舉信箱 : 如下方所示"]
+                  title:"3. The reporting method is as follows:",
+                  content:["Reporting mailbox: as shown below"]
                 },
                 {
-                  title:"四、檢舉人應至少提供下列資訊始得成立檢舉案件：",
+                  title:"4. The whistleblower should provide at least the following information to establish a whistleblower case:",
                   content: 
                   [
-                    "內部員工 : (1)廠別(2)工號(3)姓名。",
-            　　        "外部人 : (1)姓名(2)身分證字號。",
-            　　        "可聯絡到檢舉人之地址、電話、電子信箱。",
-            　　        "被檢舉人之姓名或其他足資識別被檢舉人身分特徵之資料。",
-            　　        "可供調查之具體事證。"
+                    "Internal employees: (1) factory category (2) job number (3) name.",
+                    "Outsider: (1) Name (2) ID number.",
+                    "The address, telephone and e-mail address of the informant can be contacted.",
+                    "The name of the informant or other information sufficient to identify the identity of the informant.",
+                    "Specific evidence available for investigation.",
                   ]
                 },
                 {
-                  title:"五、本公司依檢舉人及檢舉事項、對象，接受檢舉之窗口分別為管理部吳小姐或發言人郭副總，如下方所示。對於檢舉人之身份與所檢舉之內容，除依法律之規定要求外，絕對會予以保密，並承諾保護檢舉人及酌予適當獎勵。 ",
+                  title:"5. According to the informant, the report item, and the target, the window for accepting the report is Miss Wu of the Management Department or Vice President Guo, the spokesperson, as shown below. The identity of the whistleblower and the content reported will be kept confidential except in accordance with the requirements of the law, and promised to protect the whistleblower and appropriate rewards.",
                   content:[]
                 },
                 {
-                  title:"六、本公司對於檢舉案件一經成立即指派專人進行調查。其相關紙本文件、電子檔案等，除提供予司法檢調等單位外，將由專責人員上鎖、加密，妥善保管之。",
+                  title:"6. The company immediately assigns a special person to investigate the reported case. The relevant paper documents, electronic files, etc., in addition to being provided to judicial prosecutors and other units, will be locked and encrypted by dedicated personnel and kept properly.",
                             content:[]
                 },
                 {
-                  title:"七、作業流程：",
-                  content:["(1)受理窗口→董事長／總經理→管理部／稽核室→董事／監察人。" ,  "(2)管理部／稽核室→委任律師／司法及檢調等單位 。 "]
+                  title:"7. Operation process:",
+                  content:[
+                    "(1) Acceptance window→Chairman/General Manager→Management Department/Audit Office→Director/Supervisor.",
+                    "(2) Management Department / Audit Office → Appointment of lawyers / judicial and inspection units. "
+
+                  ]
                 }
             
               ],
             
               list2:[
-                "1. 您所提供的個人資料，包含姓名、電話、電子郵件地址，泰碩 公司於調查期間，得為調查舉報事項與聯繫用途而處理利用； 調查若有必要，泰碩公司得傳遞您必要的個人資訊予公司內部 及司法檢調等相關單位。",
-                "2. 不得明知不實而故意捏造事實，倘舉報事後被證明是出於惡意 或有故意捏造虛偽陳述之情事，您必須自負相關法律責任。",
-                "3. 為能盡早調查與解決問題，請您務必提供所有可能的相關具體 資訊與文件，若相關資訊與文件不齊備，泰碩公司將無法進行 調查。",
-                "4. 泰碩公司提供予您的相關聯絡內容，其全部或一部分皆不可向 任何人揭露。除依法律之規定要求外，您不得以泰碩公司與您 之間的聯絡內容提出訴訟或以該聯絡內容作為訴訟相關資料。",
-                
+                "1. The personal data provided by you, including your name, telephone number, and email address, may be processed and used for the purpose of investigating and reporting matters and contacting during the investigation; if the investigation is necessary, the company may pass on what you need Personal information is given to relevant units such as the company's internal and judicial investigations.",
+                "2. Do not knowingly false and deliberately fabricating facts, if the report is later proved to be malicious or deliberately fabricating false statements, you must bear the relevant legal responsibility.",
+                "3. In order to investigate and solve the problem as soon as possible, please be sure to provide all possible relevant specific information and documents. If the relevant information and documents are not available, Taishuo will not be able to investigate.",
+                "4. All or part of the relevant contact information provided by Taishuo Company to you shall not be disclosed to anyone. Except as required by law, you are not allowed to file a lawsuit based on the content of the contact between Taishuo and you or use the content of the contact as relevant information for the lawsuit.",
               ],
             
             

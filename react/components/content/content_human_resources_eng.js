@@ -6,59 +6,66 @@ class Content_human_resources_eng extends React.Component {
             lang: "eng",
             data : {      
                 title:"Human Resources",
+
+
                 list1:[
-                  "三節禮金、勞動節禮金、生日禮金、生育禮金、婚喪喜慶補助金、旅遊補助金、住院慰問金、退休慰問金等。",
-                  "除法定勞健保外，尚為同仁提供免費團保(含壽險、意外險、意外醫療、住院醫療等，優於一般公司團保)、旅平險。",
-                  "特定人員免費停車位、手機費、汽車津貼、油資等補助及投保團體年金。",
-                  "免費咖啡飲料。",
-                  "業績獎金、專利提案獎金、專利權獎金及專利應用獎金。",
-                  "週休二日、可彈性上下班。",
-                  "不定期舉辦運動競賽、國內外旅遊、員工電影票、冬至湯圓、部門聚餐等休閒活動。",
-                  "每年舉辦尾牙、抽獎活動、資深員工表揚等犒賞員工，並依營運狀況提供年終禮物(例如:高級GORE-TEX外套等)。",
-                  "優於勞基法規定(如增設訂婚假等)。",
-                  "其他各項有關員工福利事項。"],
-          
+                  "Three festival gifts, labor day gifts, birthday gifts, birth gifts, wedding and funeral subsidies, travel subsidies, hospitalization allowances, retirement allowances, etc.",
+                  "In addition to the statutory labor and health insurance, it also provides free group insurance (including life insurance, accident insurance, accident medical treatment, hospitalization, etc., which is better than general company group insurance) and travel insurance for colleagues.",
+                  "Free parking spaces, cell phone charges, car allowances, fuel allowances, and other subsidies for specific personnel and insured group annuities.",
+                  "Free coffee drinks.",
+                  "Performance bonus, patent proposal bonus, patent right bonus and patent application bonus.",
+                  "Two days off every week, flexible commuting.",
+                  "Sports competitions, domestic and foreign tourism, employee movie tickets, winter solstice dumplings, departmental dinners and other leisure activities are held irregularly.",
+                  "Every year, we will reward employees with end teeth, lucky draws, and senior employees' recognition, and provide year-end gifts (such as high-end GORE-TEX jackets, etc.) based on operating conditions.",
+                  "Superior to the provisions of the Labor Standards Law (such as adding engagement leave, etc.).",
+                  "Various other matters related to employee welfare."],
                   list2:[
           
-                    {title:"新人訓練"},
-                    {title:"專業職能培訓" },
-                    {title:"管理職能培訓"},
-                    {title:"共通職能培訓"},
-                    {title:"派外訓練補助"},
-                    {title:"誠信經營與內線交易防範培訓",content:"本公司除定期對全體同仁進行誠信經營與內線交易防範培訓外，針對所有新進同仁更於到職即進行相關訓練宣導，以徹底落實誠信經營政策。"}
+                    {title:"Newcomer training"},
+                    {title:"Professional function training" },
+                    {title:"Management function training"},
+                    {title:"Common function training"},
+                    {title:"Expat training subsidy"},
+                    {title:" Integrity management and insider trading prevention training :",
+                    content:"In addition to regular training on integrity management and insider transaction prevention for all colleagues, the company also conducts relevant training and advocacy for all new colleagues as soon as they arrive in order to thoroughly implement the integrity management policy."}
                   ],
           
                   list3: [ 
-                    {title: "一、工作環境",
+                    {title: "1. Working environment",
                     details:[
-                        "綠色採購(例如:環保文具、LED燈具、辦公設備等)。",
-                      "公司符合公共安全規定，例如採用防燃設備(地毯、窗簾、漆等)、防爆門、逃生設備等。",
-                      "公司門禁與新光保全公司合作，電腦控制並定期保全人員巡邏，維護員工安全。",
-                      "定期進行辦公室環境清潔及消毒。"]
+                    "Green procurement (for example: environmentally friendly stationery, LED lamps, office equipment, etc.).",
+                    "The company complies with public safety regulations, such as the use of flame-proof equipment (carpets, curtains, paint, etc.), explosion-proof doors, escape equipment, etc.",
+                    "The company's access control cooperates with Xinguang Security Company, computer-controlled and regular security personnel patrols to maintain employee safety.",
+                    "Clean and disinfect the office environment regularly."]
                     },
-                    {title:"二、人身安全的保護措施",
+                    {title:"2. Personal safety protection measures",
                     details:[
-                      "辦理免費員工健康檢查(優於法定規定年限及項目)，維護員工健康。",
-                      "定期舉辦消防演習，加強員工消防意識。",
-                      "實施夜間下班員工之免費特約企業計程車服務，保護夜歸員工之安全。"]
+
+                      "Handling free employee health checks (better than the legally prescribed years and items) to maintain employee health.",
+                      "Regular fire drills are held to strengthen employees’ awareness of fire fighting.",
+                      "Implement free special corporate taxi service for employees who leave work at night to protect the safety of employees who return at night.",]
                     }
                   ],
           
                   table1: [
-                    {date: "108年06月12日", content:"消防自我檢查"},
-                    {date: "108年07月25日", content:"急救訓練及消防逃生訓練"},
-                    {date: "108年09月17日", content:"大樓修繕消防缺失"},
-                    {date: "108年09月27日", content:"	市府消防隊安全復檢"},
+
+                    {date:"June 12, 2019"	,content:"Fire self-inspection"},
+                    {date:"July 25, 2019"	,content:"First aid training and fire escape training"},
+                    {date:"September 17, 2019"	,content:"Building repairs and lack of fire protection"},
+                    {date:"September 27, 2019"	,content:"Municipal fire brigade safety review"},
+
                   ],
                   table2: [
-          
-                    {date:"107年04月10日",content:	"1樓台中銀行--台北市消防局檢測"},
-                    {date:"107年05月11日",content:	"大樓及各公司自我檢測"},
-                    {date:"107年07月23日",content:	"大樓及各公司消防演練"},
-                    {date:"107年10月12日",content:	"大樓及各公司--台北市消防局檢測"},
-                    {date:"107年12月07日",content:	"1樓郵局自我檢測"},
-                    {date:"107年12月14日",content:	"1樓郵局--台北市消防局檢測"},
-                    {date:"108年01月14日",content:	"大樓及各公司消防演練"}
+
+                    {date:"April 10, 2018",content:	"Taichung Bank on the 1st floor-Taipei City Fire Department inspection"},
+                    {date:"May 11, 2018",content:	"Self-inspection of buildings and companies"},
+                    {date:"July 23, 2018",content:	"Fire drills for buildings and companies"},
+                    {date:"October 12, 2018",content:	"Building and various companies--Taipei Fire Department Inspection"},
+                    {date:"December 07, 2018",content:	"Post office self-test on the 1st floor"},
+                    {date:"December 14, 2018",content:	"Post Office on the 1st Floor-Taipei City Fire Department Inspection"},
+                    {date:"January 14, 2019",content:	"Fire drills for buildings and companies"},
+                              
+                        
                   
                   ],
           
@@ -67,22 +74,21 @@ class Content_human_resources_eng extends React.Component {
           
           
                   list4:[
-          
                     {
-                      title:"1.      多元包容性與平等機會", 
-                      content:"本公司落實職場多元性，不因種族、階級、語言、思想、宗教、黨派、籍貫、出生地、性別、性傾向、年齡、婚姻、容貌、五官、身心障礙、星座、血型或以往工會會員身分為由等，予以差別待遇或任何形式之歧視。"
+                      title:"1. Diversity, Inclusiveness and Equal Opportunity", 
+                      content:"The company implements workplace diversity, regardless of race, class, language, ideology, religion, party, national origin, place of birth, gender, sexual orientation, age, marriage, appearance, facial features, disability, horoscope, blood type, or previous union membership status Differential treatment or any form of discrimination is given for reasons, etc."
                     },
                     {
-                      title:"2.      合理工時",
-                      content:"為確保員工健康，泰碩明訂工作時間與延長工時之規範，並定期關懷及管理員工出勤狀況。"
+                      title:"2. Reasonable working hours",
+                      content:"In order to ensure the health of employees, Tai Shuo Ming stipulates working hours and extending working hours, and regularly cares and manages employees' attendance."
                     },
                     {
-                      title:" 3.      健康職場",
-                      content:"為關懷員工身心健康，泰碩定期提供員工免費健康檢查，並設有企業舒壓按摩服務及不定期辦理員工活動，如：員工旅遊、耶誕活動、專業及生活講座等來活絡員工人際互動，以達工作與生活平衡，全面照顧員工身心靈健康。"
+                      title:"3. Healthy Workplace",
+                      content:"In order to care for the physical and mental health of employees, Taishuo regularly provides employees with free health check-ups, and has corporate stress massage services and irregular employee activities, such as: employee travel, Christmas activities, professional and life lectures, etc. to activate employee interaction. To achieve work-life balance and take care of employees' physical, mental health."
                     },
                     {
-                      title:"4.      勞資關係",
-                      content:      "為提供員工順暢的溝通管道，本公司設有『員工建議與申訴信箱：talk@taisol.com』，並定期召開勞資會議，確保勞雇雙方權益。"
+                      title:"4. Labor Relations",
+                      content:      'In order to provide employees with a smooth communication channel, the company has set up "employee suggestion and complaint mailbox: talk@taisol.com", and regularly holds labor and management meetings to ensure the rights and interests of both employees and employees.'
                     }
           
                   ]

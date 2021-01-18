@@ -8,7 +8,6 @@ class Content_corporate_governance_ch extends React.Component {
                
                     title: "公司治理",
                     
-
                     p1:"本公司以管理部、財務部為公司治理之主要兼職單位，其部門主管已具備公開發行公司從事財務等管理工作經驗達三年以上；以協助提供董事、監察人執行業務所需之資料、協助董監事 遵循法令、依法辦理董事會及股東會之會議相關事宜等為職責。" ,                   
                     p2:"本年度業務執行情形如下： ",
                     items: [
@@ -30,7 +29,8 @@ class Content_corporate_governance_ch extends React.Component {
         
                
             
-                  ]
+                  ],
+                  
   
 
             }

@@ -209,15 +209,15 @@ function Page_board_of_directors(props) {
                         : [ 
                         
                             <tr>
-                            <th rowspan="2">Criteria Name (Note 1)</th>
+                            <th rowspan="2">Name (Note 1)</th>
                             <th colspan="3">Have more than five years of work experience in the listed professional qualifications</th>
                             <th colspan="10">Meet the independence criteria (Note 2)</th>
                             <th rowspan="2">Number of other public companies in which the individual is concurrently serving as independent director</th>
                         </tr>,
                         <tr>
-                            <th>An Instructor or Higher Position in a Department of Commerce, Law, Finance, Accounting, or Other Academic Department Related to the Business Needs of the Company in a Public or Private Junior College, College or University</th>
-                            <th>A Judge, Public Prosecutor, Attorney, Certified Public Accountant, or Other Professional or Technical Specialist Who has Passed a National Examination and been Awarded a Certificate in a Profession Necessary for the Business of the Company</th>
-                            <th>Having Work Experience in the Areas of Commerce, Law, Finance, or Accounting, or Otherwise Necessary for the Business of the Company</th>
+                            <th>Instructor or higher position for department of commerce, law, finance, accounting, or other field related to the company's business' need in a public or private college or institution</th>
+                            <th>Judge, public prosecutor, attorney, certified public accountant, or other professional or technical cpecialist that has passed any national qualification and/or been awarded a certificate in a profession that is needed by the company</th>
+                            <th>Work Experience in the areas of commerce, law, finance, accounting, or other fields related to the company's business' need </th>
                             <th>1</th>
                             <th>2</th>
                             <th>3</th>

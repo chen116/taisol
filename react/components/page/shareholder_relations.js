@@ -20,6 +20,8 @@ function Page_shareholder_relations(props) {
               return (
                 <table  class="table table-bordered table-hover">
                   <thead>
+
+                    {props.lang=='ch'?[
                     <tr>
                         <th rowspan="2">姓名（註一）</th>
                         <th colspan="2">本人持有股份</th>
@@ -27,7 +29,7 @@ function Page_shareholder_relations(props) {
                         <th colspan="2">利用他人名義合計持有股份</th>
                         <th colspan="2">前十大股東互相間具有財務會計準則公報第六號關係人或為配偶、二等親以內之親屬關係者，其名稱或姓名及關係（註三）</th>
                         <th rowspan="2">備註</th>
-                    </tr>
+                    </tr>,
                     <tr>
 
                       <th>股數</th>
@@ -39,6 +41,27 @@ function Page_shareholder_relations(props) {
                       <th>名稱(或姓名)</th>
                       <th>關係</th>
                     </tr>
+                    ]:[
+                      <tr>
+                      <th rowspan="2">Name (Note 1)</th>
+                      <th colspan="2">Self Shareholding</th>
+                      <th colspan="2">Spouse and minor children's shareholding</th>
+                      <th colspan="2">Total holding of shares in the name of others</th>
+                      <th colspan="2">The name and relationship of the top ten shareholders who have a relationship with each other in the Financial Accounting Standards Bulletin No. 6 or are a spouse or a second-class relative (Note 3)</th>
+                      <th rowspan="2">Note</th>
+                  </tr>,
+                  <tr>
+
+                    <th>Number of shares</th>
+                    <th>Shareholding Ratio(%)</th>
+                    <th>Number of shares</th>
+                    <th>Shareholding Ratio(%)</th>
+                    <th>Number of shares</th>
+                    <th>Shareholding Ratio(%)</th>
+                    <th>Name</th>
+                    <th>Relation</th>
+                  </tr>
+                    ]}
 
                     </thead>
                 <tbody>
@@ -50,6 +73,7 @@ function Page_shareholder_relations(props) {
         }
 
 
+      if (props.lang=='ch'){
 
       return  [
       <div class="content">
@@ -64,7 +88,21 @@ function Page_shareholder_relations(props) {
 
       </div>
       ];
-    
+    } else {
+      return  [
+        <div class="content">
+  
+          <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title} </h4>
+          <p><span>&nbsp;&nbsp;</span></p>
+          <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Ownership Structure </h5>
+          <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+          <p><span>&nbsp;&nbsp;</span>The company's top ten shareholders:  </p>
+          <p style={{textAlign:`right`}}>April 7, 2020  Unit：Share</p>
+          <ActiveTable1 data={props.data[props.lang].table1} />
+  
+        </div>
+        ];
+    }
    
     
   }

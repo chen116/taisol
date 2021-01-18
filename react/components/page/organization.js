@@ -29,10 +29,16 @@ function Page_organization(props) {
               return (
                 <table  class="table table-bordered table-hover">
                   <thead>
+                    {props.lang=="ch"?
                     <tr>
                         <th rowspan="1">部門</th>
                         <th rowspan="1">主要職掌</th>
-                    </tr>
+                    </tr> :
+                    <tr>
+                        <th rowspan="1">Department</th>
+                        <th rowspan="1">Main Duties</th>
+                    </tr> 
+                    }
                   </thead>
                 <tbody>
                    {table}
@@ -72,11 +78,19 @@ function Page_organization(props) {
               return (
                 <table  class="table table-bordered table-hover">
                   <thead>
+
+                    {props.lang=="ch"?
                     <tr>
                         <th rowspan="1">職稱</th>
                         <th rowspan="1">姓名</th>
                         <th rowspan="1">主要經(學)歷</th>
-                    </tr>
+                    </tr> :
+                    <tr>
+                        <th rowspan="1">Title</th>
+                        <th rowspan="1">Name</th>
+                        <th rowspan="1">Professional(edcucational) Background</th>
+                    </tr> 
+                    }
                   </thead>
                 <tbody>
                     {table}
@@ -85,48 +99,7 @@ function Page_organization(props) {
               )
           }
         }
-      class ActiveTable3 extends React.Component {
-        constructor(props){
-            super(props);
-            this.state={};
-        }
-          render() {
-              const table =  this.props.data.map( (item,index) => [
-                <tr>
-                  {Object.keys(item).map(function(keyName, keyIndex) {
-                      return <td>{item[keyName]}</td>
-                  })}
-                </tr>
-              ]);
-              return (
-                <table  class="table table-bordered table-hover">
-                  <thead>
-                    <tr>
-                      <th rowspan="2">姓名（註一）</th>
-                      <th colspan="2">本人持有股份</th>
-                      <th colspan="2">配偶、未成年子女持有股份</th>
-                      <th colspan="2">利用他人名義合計持有股份</th>
-                      <th colspan="2">前十大股東互相間具有財務會計準則公報第六號關係人或為配偶、二等親以內之親屬關係者，其名稱或姓名及關係（註三）</th>
-                      <th rowspan="2">備註</th>
-                    </tr>
-                    <tr>
-                          <th>股數</th>
-                          <th>持股比率(%)</th>
-                          <th>股數</th>
-                          <th>持股比率(%)</th>
-                          <th>股數</th>
-                          <th>持股比率(%)</th>
-                          <th>名稱(或姓名)</th>
-                          <th>關係</th>
-                        </tr>
-                  </thead>
-                <tbody>
-                    {table}
-                </tbody>
-                </table>
-              )
-          }
-        }
+
       return [
       <div class="content">
         <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title}</h4>
@@ -145,7 +118,7 @@ function Page_organization(props) {
 
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" >
               <div class="card-body" style={{overflow: `auto`}}>
-              <img class="rounded" src="./assets/images/img20.gif"/>
+              <img class="rounded" src={props.lang=='ch'?"./assets/images/img20.gif":"./assets/images/organ_small.png"}/>
               </div>
             </div>
           </div>

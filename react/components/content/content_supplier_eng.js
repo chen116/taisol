@@ -7,19 +7,19 @@ class Content_supplier_eng extends React.Component {
             data :  {          
                 title:"Supplier Management",
                 list1:[
-                      "1. 設立環境管理系統與環境目標:供應商必須擁有 ISO 14001 或 RC14001。",
-                      "2. 原物料有害物質禁用:供應商必須提供聲明，保證其產品不含對環境有害的國際禁用物質，確保產品符合客戶與國際相關法令的要求，如歐盟 RoHS。",
-                      "3. 環境保護法規符合性:供應商必須符合在地政府相關空氣污染防制、水污染防制、廢棄物與毒性物質管理等環境保護法規;經查證有違反法規之情事，必須及時提出改善計劃。",
-                      "4. 節能減碳:鼓勵供應商建置工廠的碳盤查資料、建立產品碳足跡、提供具體的減碳績效。",
-                      "5. 水資源與節水:鼓勵供應商建置工廠的水盤查資料、提供具體的水資源管理計劃。 ",
-                      "註:「非衝突(conflict-free)」之原物料係指該原物料係來自於經電子產業公民聯盟或其他同等組織所認可之供應商，或經合理查證和盡職調查後依相關法規足資認定為「非來自剛果衝突地區」(DRC conflict free)之供應商。 "
+                      "1. Set up an environmental management system and environmental goals: Suppliers must have ISO 14001 or RC14001.",
+                      "2. Prohibition of hazardous substances in raw materials: Suppliers must provide a statement to ensure that their products do not contain internationally banned substances that are harmful to the environment, and to ensure that the products meet the requirements of customers and relevant international laws and regulations, such as EU RoHS.",
+                      "3. Compliance with environmental protection laws and regulations: The supplier must comply with the local government's relevant air pollution prevention and control, water pollution prevention and control, waste and toxic substance management and other environmental protection laws; after verification of violations of laws and regulations, they must promptly propose improvement plans .",
+                      "4. Energy saving and carbon reduction: Encourage suppliers to build factory carbon inventory data, establish product carbon footprint, and provide specific carbon reduction performance.",
+                      "5. Water resources and water conservation: Encourage suppliers to build water inventory data for factories and provide specific water resources management plans. ",
+                      'Note: "Conflict-free" raw materials refer to the raw materials that come from suppliers approved by the Electronic Industry Citizenship Alliance or other equivalent organizations, or are fully funded in accordance with relevant laws and regulations after reasonable verification and due diligence Suppliers identified as "DRC conflict free" (DRC conflict free). '
                     ],
 
                     list2:[
-                      "1. 您所提供的個人資料，包含姓名、電話、電子郵件地址，泰碩 公司於調查期間，得為調查舉報事項與聯繫用途而處理利用； 調查若有必要，泰碩公司得傳遞您必要的個人資訊予公司內部 及司法檢調等相關單位。",
-                      "2. 不得明知不實而故意捏造事實，倘舉報事後被證明是出於惡意 或有故意捏造虛偽陳述之情事，您必須自負相關法律責任。",
-                      "3. 為能盡早調查與解決問題，請您務必提供所有可能的相關具體 資訊與文件，若相關資訊與文件不齊備，泰碩公司將無法進行 調查。",
-                      "4. 泰碩公司提供予您的相關聯絡內容，其全部或一部分皆不可向 任何人揭露。除依法律之規定要求外，您不得以泰碩公司與您 之間的聯絡內容提出訴訟或以該聯絡內容作為訴訟相關資料。",
+                      "1. The personal data provided by you, including your name, telephone number, and email address, may be processed and used for the purpose of investigating and reporting matters and contacting during the investigation; if the investigation is necessary, the company may pass on what you need Personal information is given to relevant units such as the company's internal and judicial investigations.",
+                      "2. Do not knowingly false and deliberately fabricating facts, if the report is later proved to be malicious or deliberately fabricating false statements, you must bear the relevant legal responsibility.",
+                      "3. In order to investigate and solve the problem as soon as possible, please be sure to provide all possible relevant specific information and documents. If the relevant information and documents are not available, TaiSol will not be able to investigate.",
+                      "4. All or part of the relevant contact information provided by TaiSol Company to you shall not be disclosed to anyone. Except as required by law, you are not allowed to file a lawsuit based on the content of the contact between TaiSol and you or use the content of the contact as relevant information for the lawsuit.",
                       
                     ]}
         }

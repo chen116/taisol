@@ -42,7 +42,7 @@ function Page_corporate_governance(props) {
             <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title} </h4>
             <p><span>&nbsp;&nbsp;</span></p>  
 
-            <img class="rounded" src="./assets/images/investor04_8.png"/>
+            <img class="rounded" src={props.lang=="ch"?'./assets/images/investor04_8.png':'./assets/images/corporate_governance.png'}/>
 
             <p>{props.data[props.lang].p1}</p>
             <p>{props.data[props.lang].p2} </p>

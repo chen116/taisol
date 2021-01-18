@@ -7,17 +7,18 @@ class Content_internal_audit_eng extends React.Component {
             data : {
                 title:"Internal Audit",
                table1 : [
-                   {date: "109.06.05", type: "座談會", items: ["1. 109年1~4月稽核業務執行情形、查核追蹤報告。","2. 就現行內控運作情形報告。"], results:["獨立董事、監察人洽悉。"]},
-                   {date: "109.11.06", type: "座談會", items: [
-                     "1. 109年5~10月稽核業務執行情形、查核追蹤報告。",
-                     "2. 就現行內控運作情形報告。",
-                     "3. 陳報110年稽核計畫。"
+                   {date: "2020/06/05", type: "forum", items: ["1. From January to April of 2009, audit business execution status and audit tracking report.",
+                                                               "2. Report on current internal control operations."], results:["Independent directors and supervisors acknowledged."]},
+                   {date: "2020/11/06", type: "forum", items: [
+                    "1. From May to October, 2020, audit business execution status and audit tracking report.",
+                    "2. Report on current internal control operations.",
+                    "3. Report the 2021-year audit plan."
                    ], results:[
-                     "1. 獨立董事、監察人洽悉。",
-                     "2. 獨立董事、監察人洽悉。",
-                     "3. 經審議後，送董事會決議。"
+                     "1. Independent directors and supervisors acknowledged.",
+                     "2. Independent directors and supervisors acknowledged.",
+                     "3. After deliberation, it is sent to the board of directors for resolution."
                    ]},
-                   {date: "109.12.17", type: "座談會", items: ["1. 109年11月稽核業務執行情形報告。","2. 就現行內控運作情形報告。"], results:["1. 獨立董事、監察人洽悉。","2. 獨立董事、監察人洽悉"]},
+                   {date: "109.12.17", type: "forum", items: ["1. Report on the implementation of audit business in November 2020","2. Report on current internal control operations."], results:["1. Independent directors and supervisors acknowledged.","2. Independent directors and supervisors acknowledged."]},
                  ]
        
        

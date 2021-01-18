@@ -45,12 +45,23 @@ function Page_stakeholder(props) {
           return (
             <table  class="table table-bordered table-hover">
               <thead>
+                {props.lang=='ch'?
+
                 <tr>
                   <th rowspan="1" >利害關係人</th>
                   <th rowspan="1" >關切的議題</th>
                   <th rowspan="1" style={{width: `50%`}}>我們的責任</th>
                   <th rowspan="1">我們的努力</th>
                 </tr>
+                :
+                <tr>
+                  <th rowspan="1" >Stakeholder</th>
+                  <th rowspan="1" >Issues of concern</th>
+                  <th rowspan="1" style={{width: `50%`}}>Responsibility</th>
+                  <th rowspan="1">Efforts</th>
+                </tr>
+
+          }
 
                 </thead>
             <tbody>
@@ -102,15 +113,25 @@ function Page_stakeholder(props) {
         return (
           <ul class="list-group list-group-flush ">
             {list}
+            {props.lang=='ch'?
+
             <li  class="list-group-item">   郭尚仁 先生
             (副總經理暨發言人) <img src="./assets/images/investor04_6.jpg"  />：<a href="mailto:sales@taisol.com">sales@taisol.com</a>
             </li>
+            :
+            <li  class="list-group-item">  
+            Mr. Guo Shangren (Deputy General Manager and Spokesperson) <img src="./assets/images/investor04_6.jpg"  />：<a href="mailto:sales@taisol.com">sales@taisol.com</a>
+            </li>
+        }
           </ul>
 
         )
     }
   }  
 
+
+  if(props.lang=='ch')
+  {
   return  [
   <div class="content">
 
@@ -196,6 +217,94 @@ function Page_stakeholder(props) {
 
   </div>
   ];
+}
+else{
+  return [
+  <div class="content">
+
+  <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title} </h4>
+  <p><span>&nbsp;&nbsp;</span></p>
+  <p>To pursue sustainable development, enterprises must understand the ideas of stakeholders. Transparent communication will not only reduce the company's internal management costs, but also an important reference for the pursuit of sustainable development. We believe that open and barrier-free communication methods can better understand the needs of stakeholders.
+  </p>
+  <ActiveTable1 data={props.data[props.lang].table1} />
+  <p><span>&nbsp;&nbsp;</span></p>
+
+  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Contact window with stakeholders</h5>
+  <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
+   {/* <div class="container">
+    
+  <div class="row">
+    <div class="col-sm">
+     投資人
+     <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:talk@taisol.com">talk@taisol.com</a></li> </ul>
+      
+    </div>
+    <div class="col-sm">
+    客戶
+    <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:sales@taisol.com">sales@taisol.com</a></li> </ul>
+    </div>
+    <div class="col-sm">
+      供應商
+      <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:sales@taisol.com">sales@taisol.com</a></li> </ul>
+    </div>
+    <div class="col-sm">
+      員工
+      <ul class="list-group list-group-flush "> <li class="list-group-item "><a href="mailto:talk@taisol.com">talk@taisol.com</a></li> </ul>
+    </div>
+  </div>
+</div>  */}
+<ul class="list-group list-group-flush "> 
+  <li class="list-group-item list-group-flush">Investor: <a href="mailto:talk@taisol.com">investor@taisol.com</a></li>
+  <li class="list-group-item list-group-flush">Customer: <a href="mailto:sales@taisol.com">customer@taisol.com</a></li>
+  <li class="list-group-item list-group-flush">Supplier: <a href="mailto:sales@taisol.com">supplier@taisol.com</a></li>
+  <li class="list-group-item list-group-flush">Staff: <a href="mailto:talk@taisol.com">talk@taisol.com</a></li>
+
+</ul>
+
+
+  <p><span>&nbsp;&nbsp;</span></p>
+  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Reporting mailbox operation method</h5>
+
+  <ActiveList1 data={props.data[props.lang].list1} />
+  <p><span>&nbsp;&nbsp;</span></p>
+  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Employee Appeal Center  </h5>
+  <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
+  <p>Employees are one of the company's main stakeholders, and they are also an asset that Taishuo cherishes.</p>
+
+  <p>Based on its commitment to employees, Taishuo believes that every employee should be treated fairly and respected; protect internationally recognized human rights, and strive to maintain and respect the core labor standards of the United Nations Universal Declaration of Human Rights and the basic conventions of the International Labor Organization.</p>
+
+  <p>In order to protect your rights and make you work more at ease, Taishuo has specially set up a dedicated employee complaint channel. <img src="./assets/images/investor04_6.jpg"  /> : <a href="mailto:talk@taisol.com">talk@taisol.com</a></p>
+
+
+  {/* <p><img src="./assets/images/investor04_6.jpg"  /> : <a href="mailto:talk@taisol.com">talk@taisol.com</a> </p> */}
+  <p><span>&nbsp;&nbsp;</span></p>  
+  
+
+  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Customer and Supplier Complaint Center  </h5>
+  <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
+
+  <p><b>Violation of professional ethics reporting system:</b></p>
+
+
+  <p>At Taishuo Electronics Co., Ltd., integrity is the most important core value of the company's culture and the top of the company's business philosophy. Taishuo has always promised to conduct all business activities in good faith, and will never allow corruption and any form of fraud.</p>
+
+  <p>If you find that an employee of Taishuo or any related person acting on behalf of Taishuo has performed suspicious behavior or may violate the ethics code of Taishuo, please let us know. Your report will be handled directly by the deputy general manager of the company.</p>
+
+  <p>Unless otherwise provided by law, we will keep the personal information you provide about you confidential and take appropriate protective measures in accordance with the law to protect your personal information and privacy.</p>
+
+
+  <p><span>&nbsp;&nbsp;</span></p>
+  <p><b>Reminders:</b></p>
+  <ActiveList2 data={props.data[props.lang].list2} />
+
+
+
+
+</div>
+];
+}
 
 
 
