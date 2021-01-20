@@ -34,7 +34,7 @@ function Page_customer_service(props) {
           <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title} </h4>
           <p><span>&nbsp;&nbsp;</span></p>  
   
-          <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>違反從業道德行為舉報系統 </h5>
+          <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>違反從業道德行為舉報系統 </h5>
   
           <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
@@ -63,7 +63,7 @@ function Page_customer_service(props) {
           <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title} </h4>
           <p><span>&nbsp;&nbsp;</span></p>  
   
-          <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Violation of professional ethics reporting system  </h5>
+          <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Violation of professional ethics reporting system  </h5>
   
           <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
@@ -71,7 +71,7 @@ function Page_customer_service(props) {
 
           <p>If you find that an employee of TaiSol or any related person acting on behalf of TaiSol has performed suspicious behavior or may violate the ethics code of TaiSol, please let us know. Your report will be handled directly by the deputy general manager of the company.</p>
 
-          <p>Unless otherwise provided by law, we will keep the personal information you provide about you confidential and take appropriate protective measures in accordance with the law to protect your personal information and privacy.</p>
+          <p>Unless otherwise provided by law, we will keep the personal information you provide confidential and take appropriate protective measures in accordance with the law to protect your personal information and privacy.</p>
           <p><span>&nbsp;&nbsp;</span></p>
           <p><b>Reminders:</b></p>
           <ActiveList1 data={props.data[props.lang].list1} />

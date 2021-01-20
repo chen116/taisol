@@ -84,7 +84,7 @@ function Page_social(props) {
           <div class="content">
               <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title} </h4>
               <p><span>&nbsp;&nbsp;</span></p>  
-              <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>環境永續 </h5>
+              <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>環境永續 </h5>
   
               {/* <p><b>環境永續:</b></p> */}
               <ul class="list-group list-group-flush" >
@@ -115,7 +115,7 @@ function Page_social(props) {
   
               <p><span>&nbsp;&nbsp;</span></p>
   
-              <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>相關作業辦法 </h5>
+              <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>相關作業辦法 </h5>
               <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
   
@@ -124,7 +124,7 @@ function Page_social(props) {
               </div>
   
               <p><span>&nbsp;&nbsp;</span></p>
-              <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>公益關懷 </h5>
+              <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>公益關懷 </h5>
               <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
   
@@ -168,7 +168,7 @@ function Page_social(props) {
                    
   
               <p><span>&nbsp;&nbsp;</span></p>
-              <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>環境關懷 </h5>
+              <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>環境關懷 </h5>
               <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
   
@@ -185,7 +185,7 @@ function Page_social(props) {
                 </div> 
   
                 <p><span>&nbsp;&nbsp;</span></p>
-              <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>愛心採購 </h5>
+              <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>愛心採購 </h5>
               <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
               <p> 泰碩電子以行動支持在地友善農友及弱勢團體，每年透過愛心採購向在地小農及公益團體採買各大年節活動贈禮，讓愛傳遞到台灣各個需要的角落。</p>
@@ -202,7 +202,7 @@ function Page_social(props) {
       <div class="content">
       <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title} </h4>
       <p><span>&nbsp;&nbsp;</span></p>  
-      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Environmental sustainability  </h5>
+      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Environmental Sustainability  </h5>
 
       {/* <p><b>環境永續:</b></p> */}
       <ul class="list-group list-group-flush" >
@@ -211,7 +211,7 @@ function Page_social(props) {
             <a href="http://w3.taisol.com.tw/important/EMS-ARES-ISO14001.pdf" target="_blank">   
             (Certificate)
             </a>: <br/ >
-            In order to improve the utilization efficiency of various resources, actively use recycled materials, and manage various pollution prevention and control such as air, noise, and water resources, a number of relevant operating methods have been formulated to support follow.
+            In order to improve the utilization efficiency of various resources, use recycled materials, and manage various pollution prevention and control such as air, noise, and water resources, a number of relevant operating methods have been formulated to follow.
         </li>
         <li class="list-group-item" >
           <img class="rounded" src="./assets/images/menu01.jpg"/><span>&nbsp;&nbsp;</span><b>EICC Electronic Industry Code of Conduct </b> 
@@ -233,7 +233,7 @@ function Page_social(props) {
 
       <p><span>&nbsp;&nbsp;</span></p>
 
-      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Related work methods</h5>
+      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Related Methods/Progams</h5>
       <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
 
@@ -242,16 +242,16 @@ function Page_social(props) {
       </div>
 
       <p><span>&nbsp;&nbsp;</span></p>
-      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Charity</h5>
+      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Charity</h5>
       <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
 
-      <p> <b>"Spread love for thousands of miles" </b></p>
-<p>020 is TaiSol's charity launch year. TaiSol Electronics adheres to the public welfare concept of "take from society and give back to society". With the support of chairman Yu Qingsong, general manager Liang Junxing personally led the establishment of TaiSol volunteers. Group, and opened the first [Shoebox for Christmas Dreams] event.</p>
+      <p> <b>"Spread love to thousands of miles" </b></p>
+<p>2020 is TaiSol's charity launch year. TaiSol Electronics adheres to the public welfare concept of "take from the society and give back to the society". With the support of chairman Ching-Sung Yu, general manager Chun-Hsin Liang personally led the establishment of TaiSol volunteers group, and opened the first [Shoebox for Christmas Dreams] event.</p>
 
-<p>n the first year for the Christmas Dream Shoebox Activity, Tai Shuo cooperated with the Welfare Foundation for the Bereaved Children and the Landi Children’s Home. The social worker teacher learned about the Christmas wishes of each bereaved or single child one by one. Shuo Lai assists the children in realizing their dreams. In 2020, we have given out a total of 118 Christmas dream-realizing shoe boxes. In addition to the children's wishing gifts, each shoe box also includes encouragement cards written by colleagues and supervisors. Hope Through kind interaction, warm the children's childhood, so that the children of these disadvantaged families can have a warm Christmas in their childhood.</p>
+<p>In the first year for the Christmas Dream Shoebox Activity, TaiSol cooperated with the Welfare Foundation for the Bereaved Children and the Landi Children’s Home. The social worker teachers learned about the Christmas wishes of each child. TaiSol helped the children in realizing their dreams. In 2020, we have given out a total of 118 Christmas dream-realizing shoe boxes. In addition to the children's wishing gifts, each shoe box also includes encouragement cards written by colleagues and supervisors. Hope through kind interaction, we warmed the children's childhood, so that the children of these disadvantaged families can have a warm Christmas.</p>
 
-<p>hrough this event, we deeply discovered that there are still many disadvantaged children in Taiwan who need to be cared for. Although the power of the first volunteer group is limited, we firmly believe that as long as we keep doing the right thing, the power of love will grow infinitely. , The cycle of goodness will be passed on from time to time, sending TaiSol's love for thousands of miles.</p>
+<p>Through this event, we discovered that there are still many disadvantaged children in Taiwan who need to be cared for. Although the power of the first volunteer group is limited, we firmly believe that as long as we keep doing the right thing, the power of love will grow stronger. The cycle of kindness will be passed on, sending TaiSol's love for thousands of miles.</p>
 
        <div class="container">
           <div class="row">
@@ -288,7 +288,7 @@ function Page_social(props) {
            
 
       <p><span>&nbsp;&nbsp;</span></p>
-      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Environmental care  </h5>
+      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Environmental Care  </h5>
       <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
 
@@ -296,11 +296,11 @@ function Page_social(props) {
 
 
 
-<p>With the rising awareness of environmental protection, more and more small farmers in Taiwan adhere to the environmental protection concept of non-toxic and non-chemical fertilizers, and are committed to combining environmental protection with agricultural development. This group of friendly local farmers is the object of TaiSol's support.</p>
+<p>With the rising awareness of environmental protection, more and more small farmers in Taiwan adopt to the environmental protection concept of non-toxic and non-chemical fertilizers, and are committed to combining environmental protection with agricultural development. This group of friendly local farmers is the object of TaiSol's support.</p>
 
-<p>On the Mid-Autumn Festival of 2020, TaiSol purchased Xinnantian Dongmi for the first time to support friendly farmers with actions!</p>
+<p>On the Mid-Autumn Festival of 2020, TaiSol purchased Xinnan Tian Dong Rice for the first time to support local farmers with actions!</p>
 
-<p>Different from ordinary rice harvesting, Tian Dongmi takes "water bird habitat conservation" as its brand mission, so it uses pesticide-free farming throughout the year and uses rice bran as fertilizer for irrigation to protect the paddy field in the most natural way and provide precious water birds. A natural and safe home achieves the concept of coexistence of ecology and farming.</p>
+<p>Different from ordinary rice harvesting, Tian Dong Rice takes "water bird habitat conservation" as its brand mission, so it uses pesticide-free farming throughout the year and uses rice bran as fertilizer for irrigation to protect the paddy field in the most natural way and provide precious water birds. A natural and safe home achieves the concept of coexistence of ecology and farming.</p>
 
 <p>Looking to the future, TaiSol will continue to support environmental protection, care for the land with actions, and pass on the concept of green happiness year after year.</p>
 
@@ -311,10 +311,10 @@ function Page_social(props) {
         </div> 
 
         <p><span>&nbsp;&nbsp;</span></p>
-      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Charitable Purchase  </h5>
+      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Charitable Purchase </h5>
       <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
-      <p>TaiSol Electronics supports local friendly farmers and disadvantaged groups with actions. Every year, through loving purchases, we purchase gifts from local farmers and public welfare organizations for major festival activities, so that love can be passed to all corners of Taiwan.</p>
+      <p>TaiSol Electronics supports local farmers and disadvantaged groups with actions. Every year, through charitable purchases, we purchase gifts from local farmers and public welfare organizations for major festival activities, so that love can be passed to all corners of Taiwan.</p>
       <ActiveTable1 data={props.data[props.lang].table1} />
 
 

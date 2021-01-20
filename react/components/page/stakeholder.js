@@ -142,7 +142,7 @@ function Page_stakeholder(props) {
     <ActiveTable1 data={props.data[props.lang].table1} />
     <p><span>&nbsp;&nbsp;</span></p>
 
-    <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>與利害關係人聯絡窗口</h5>
+    <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>與利害關係人聯絡窗口</h5>
     <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
      {/* <div class="container">
@@ -177,11 +177,11 @@ function Page_stakeholder(props) {
 
 
     <p><span>&nbsp;&nbsp;</span></p>
-    <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span> 檢舉信箱作業辦法</h5>
+    <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span> 檢舉信箱作業辦法</h5>
 
     <ActiveList1 data={props.data[props.lang].list1} />
     <p><span>&nbsp;&nbsp;</span></p>
-    <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>員工申訴中心 </h5>
+    <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>員工申訴中心 </h5>
     <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
 
@@ -197,7 +197,7 @@ function Page_stakeholder(props) {
     <p><span>&nbsp;&nbsp;</span></p>  
     
 
-    <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>客戶及供應商投訴中心 </h5>
+    <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>客戶及供應商投訴中心 </h5>
     <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
     <p><b>違反從業道德行為舉報系統:</b></p>
@@ -224,12 +224,13 @@ else{
 
   <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title} </h4>
   <p><span>&nbsp;&nbsp;</span></p>
-  <p>To pursue sustainable development, enterprises must understand the ideas of stakeholders. Transparent communication will not only reduce the company's internal management costs, but also an important reference for the pursuit of sustainable development. We believe that open and barrier-free communication methods can better understand the needs of stakeholders.
+  <p>To pursue sustainable development, enterprises must understand the ideas of stakeholders. Transparent communication will
+     reduce the company's internal management costs.  We believe that an open and barrier-free communication method can better understand the needs of stakeholders.
   </p>
   <ActiveTable1 data={props.data[props.lang].table1} />
   <p><span>&nbsp;&nbsp;</span></p>
 
-  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Contact window with stakeholders</h5>
+  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Contact window with stakeholders</h5>
   <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
    {/* <div class="container">
@@ -264,35 +265,40 @@ else{
 
 
   <p><span>&nbsp;&nbsp;</span></p>
-  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Reporting mailbox operation method</h5>
+  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Reporting through mail method</h5>
 
   <ActiveList1 data={props.data[props.lang].list1} />
   <p><span>&nbsp;&nbsp;</span></p>
-  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Employee Appeal Center  </h5>
+  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Employee Appeal Center  </h5>
   <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
-  <p>Employees are one of the company's main stakeholders, and they are also an asset that Taishuo cherishes.</p>
+  <p>Employees are one of the company's main stakeholders, and they are also an asset for TaiSol.</p>
 
-  <p>Based on its commitment to employees, Taishuo believes that every employee should be treated fairly and respected; protect internationally recognized human rights, and strive to maintain and respect the core labor standards of the United Nations Universal Declaration of Human Rights and the basic conventions of the International Labor Organization.</p>
+  <p>Based on its commitment to employees, TaiSol believes that every employee should be treated fairly and respected; 
+    we strive to maintain and respect the core labor standards of the United Nations Universal Declaration of 
+    Human Rights and the basic conventions of the International Labor Organization.</p>
 
-  <p>In order to protect your rights and make you work more at ease, Taishuo has specially set up a dedicated employee complaint channel. <img src="./assets/images/investor04_6.jpg"  /> : <a href="mailto:talk@taisol.com">talk@taisol.com</a></p>
+  <p>In order to protect your rights and make you work more at ease, TaiSol has specially set up a dedicated employee complaint channel. <img src="./assets/images/investor04_6.jpg"  /> : <a href="mailto:talk@taisol.com">talk@taisol.com</a></p>
 
 
   {/* <p><img src="./assets/images/investor04_6.jpg"  /> : <a href="mailto:talk@taisol.com">talk@taisol.com</a> </p> */}
   <p><span>&nbsp;&nbsp;</span></p>  
   
 
-  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Customer and Supplier Complaint Center  </h5>
+  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Customer and Supplier Complaint Center  </h5>
   <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
   <p><b>Violation of professional ethics reporting system:</b></p>
 
 
-  <p>At Taishuo Electronics Co., Ltd., integrity is the most important core value of the company's culture and the top of the company's business philosophy. Taishuo has always promised to conduct all business activities in good faith, and will never allow corruption and any form of fraud.</p>
+  <p>At TaiSol Electronics Co., Ltd., integrity is the most important core value of the company's culture and the top of the company's business philosophy. 
+    TaiSol has always promised to conduct all business activities in good faith, and will never allow corruption and any form of fraud.</p>
 
-  <p>If you find that an employee of Taishuo or any related person acting on behalf of Taishuo has performed suspicious behavior or may violate the ethics code of Taishuo, please let us know. Your report will be handled directly by the deputy general manager of the company.</p>
+  <p>If you find that an employee of TaiSol or any related person acting on behalf of TaiSol has performed suspicious behavior or may violate the 
+    ethics code of TaiSol, please let us know. Your report will be handled directly by the deputy general manager of the company.</p>
 
-  <p>Unless otherwise provided by law, we will keep the personal information you provide about you confidential and take appropriate protective measures in accordance with the law to protect your personal information and privacy.</p>
+  <p>Unless otherwise provided by law, we will keep the personal information you provide confidential and take appropriate protective measures 
+    in accordance with the law to protect your personal information and privacy.</p>
 
 
   <p><span>&nbsp;&nbsp;</span></p>

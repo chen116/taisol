@@ -10,7 +10,7 @@
 
         navItems:{ 
           ch:['公司治理','董事會','薪酬委員會','組織及職掌','規章','內部稽核','企業社會責任','供應商管理','客戶服務','投資人關係','人力資源','與利害關係人對話'],
-          eng:['Corporate Governance','Board of Directors','Compensation Committee','Organization and Responsibility','Regulations and Legislations','Internal Audit','Social Responsibility','Supplier Management','Customer Service','Shareholder Relations','Human Resources','Stakeholder Relations']
+          eng:['Corporate Governance','Board of Directors','Compensation Committee','Organization and Responsibility','Regulation and Legislation','Internal Audit','Social Responsibility','Supplier Management','Customer Service','Shareholder Relations','Human Resources','Stakeholder Relations']
         },
         
         navItemsPageFile : 

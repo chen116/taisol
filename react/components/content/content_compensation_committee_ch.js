@@ -225,9 +225,9 @@ class Content_compensation_committee_ch extends React.Component {
                   {title: "委  員/獨立董事","name":"陳志弘","pro_exp1":"-","pro_exp2":"-","pro_exp3":"✔","fit_item1":"✔","fit_item2":"✔","fit_item3":"✔","fit_item4":"✔","fit_item5":"✔","fit_item6":"✔","fit_item7":"✔","fit_item8":"✔","fit_item9":"✔","fit_item10":"✔","num_company":"-","note":"-"},
                 ],
                 table2 : [
-                    {title: "召集委員","name":"張文添","real_show":"5","asked_show":"","real_show_per":"100.00%", "note": "107.6.19連任。" },
-                    {title: "委員","name":" 曾天運","real_show":"5","asked_show":"","real_show_per":"100.00%", "note": "107.6.19連任。" },
-                    {title: "委員","name":"陳志弘","real_show":"5","asked_show":"","real_show_per":"100.00%", "note": "107.6.19連任。" },
+                    {title: "召集委員","name":"張文添","real_show":"5","asked_show":"5","real_show_per":"100.00%", "note": "107.6.19連任。" },
+                    {title: "委員","name":" 曾天運","real_show":"5","asked_show":"5","real_show_per":"100.00%", "note": "107.6.19連任。" },
+                    {title: "委員","name":"陳志弘","real_show":"5","asked_show":"5","real_show_per":"100.00%", "note": "107.6.19連任。" },
                   ],
 
                 list2:[

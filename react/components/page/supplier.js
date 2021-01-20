@@ -36,7 +36,7 @@ function Page_supplier(props) {
   
   <p><span>&nbsp;&nbsp;</span></p>
   
-  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>對供應商有關環境保護之要求 (2018年-已完成共37家供應商評鑑) </h5>
+  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>對供應商有關環境保護之要求 (2018年-已完成共37家供應商評鑑) </h5>
   
   <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
@@ -47,7 +47,7 @@ function Page_supplier(props) {
   
   
   <p><span>&nbsp;&nbsp;</span></p>
-  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>客戶及供應商投訴中心 </h5>
+  <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>客戶及供應商投訴中心 </h5>
   <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
   
@@ -87,13 +87,13 @@ function Page_supplier(props) {
 
       <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title} </h4>
       <p><span>&nbsp;&nbsp;</span></p>  
-      <p>TaiSol attaches great importance to corporate social responsibility, and has requested the procurement of "conflict-free" raw materials; the promotion of humanity and the social ethics of human dignity are the corporate social responsibility of TaiSol. It is currently in compliance with the ``Model Supply Chain Policy for a Responsible Global Supply Chain of Mineral from Conflict-Affected and High-risk Areas'' issued by the Organization for Economic Cooperation and Development (OECD) in 2011. Affected and High Risk Areas” is based on the due diligence framework.</p>
-      <p>TaiSol encourages suppliers to purchase from suppliers of raw materials that are recognized as non-conflict by specific industrial organizations (such as EICC, etc.), and requires suppliers to actively urge suppliers that have not yet obtained this recognition to accept EICC or other equivalent independent licenses. The tripartite audit plan is tested to comply with the principle of "non-conflict".</p>
-      <p>Through supplier management, the concept of environmental protection will be extended and promoted, so that supplier partners can also care about environmental issues and jointly promote a better environment and society.</p>
+      <p>TaiSol values the importance of corporate social responsibility, and has requested the procurement of "conflict-free" raw materials; the promotion of humanity and the social ethics of human dignity are the corporate social responsibility of TaiSol. The policy is in compliance with the 'Model Supply Chain Policy for a Responsible Global Supply Chain of Mineral from Conflict-Affected and High-risk Areas' issued by the Organization for Economic Cooperation and Development (OECD) in 2011.</p>
+      <p>TaiSol encourages suppliers to purchase raw materials that are recognized as non-conflict by specific industrial organizations (such as EICC, etc.), and requires suppliers to actively urge their suppliers that have not yet obtained this recognition to accept EICC or other equivalent independent licenses, to comply with the principle of "non-conflict".</p>
+      <p>Through supplier management, the concept of environmental protection will be extended and promoted, so that our supplier partners can also care about environmental issues and jointly promote a better environment for the society.</p>
 
       <p><span>&nbsp;&nbsp;</span></p>
 
-      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Requirements for suppliers on environmental protection (2018-a total of 37 supplier evaluations have been completed)  </h5>
+      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Requirements for suppliers on environmental protection (2018-a total of 37 supplier evaluations have been completed)  </h5>
 
       <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
@@ -104,16 +104,16 @@ function Page_supplier(props) {
 
 
       <p><span>&nbsp;&nbsp;</span></p>
-      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Customer and Supplier Complaint Center </h5>
+      <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Customer and Supplier Complaint Center </h5>
       <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
 
       <h6><b>Violation of professional ethics reporting system</b></h6>
 
 
-      <p>At TaiSol Electronics Co., Ltd., integrity is the most important core value of the company's culture and the top of the company's business philosophy. TaiSol has always promised to conduct all business activities in good faith, and will never allow corruption and any form of fraud.</p>
+      <p>At TaiSol Electronics Co., Ltd., integrity is the most important core value of the company's culture and business philosophy. TaiSol conducts all business activities in good faith, and will never allow corruption and any form of fraud.</p>
       <p>If you find that an employee of TaiSol or any related person acting on behalf of TaiSol has performed suspicious behavior or may violate the ethics code of TaiSol, please let us know. Your report will be handled directly by the deputy general manager of the company.</p>
-      <p>Unless otherwise provided by law, we will keep the personal information you provide about you confidential and take appropriate protective measures in accordance with the law to protect your personal information and privacy.</p>
+      <p>Unless otherwise provided by law, we will keep the personal information you provide confidential and take appropriate protective measures in accordance with the law to protect your personal information and privacy.</p>
 
 
 

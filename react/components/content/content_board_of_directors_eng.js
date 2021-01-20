@@ -76,10 +76,10 @@ class Content_board_of_directors_eng extends React.Component {
                         {name:"Ming-Chun, Chang",pro_exp1:"✔",pro_exp2:"✔",pro_exp3:"✔",fit_item1:"✔",fit_item2:"✔",fit_item3:"✔",fit_item4:"✔",fit_item5:"✔",fit_item6:"✔",fit_item7:"✔",fit_item8:"✔",fit_item9:"✔",fit_item10:"✔",num_company:"None"},
                     ], 
                     list1 : [
-                        {item:'1. In accordance with the "Measures for Performance Evaluation of Directors and Managers" approved by the Board of Directors in 107, the company regularly conducts annual performance evaluations of the Board and its members.',content:[]},
-                        {item:"2. The suitability of the above performance evaluation methods needs to be reviewed regularly every year.",content:[]},
-                        {item:"3. The measurement items for board performance evaluation are the following five aspects:",content:["1. The degree of participation in the company's operations.","2. Improve the quality of board decisions.","3. The composition and structure of the board of directors.","4. The selection and continuing education of directors.","5. Internal control."]},
-                        {item:"4. The measurement items for the performance evaluation of directors include the following six aspects:",content:["1. Understanding of the company's goals and tasks.","2. Awareness of directors' responsibilities.","3. The degree of participation in the company's operations.","4. Internal relationship management and communication.","5. Professional and continuing education of directors.","6. Internal control."]},
+                        {item:'1. In accordance with the "Methods for Performance Evaluation of Directors and Managers" approved by the Board of Directors in 2018, the company regularly conducts annual performance evaluations of the Board and its members.',content:[]},
+                        {item:"2. The suitability of the above performance evaluation methods needs to be reviewed annually.",content:[]},
+                        {item:"3. The following five aspects are evaluated for the performance of the board:",content:["1. The degree of participation in the company's operations.","2. Improvement of the quality of board decisions.","3. The composition and structure of the board of directors.","4. The selection and continuing education of directors.","5. Internal control."]},
+                        {item:"4. The following six aspects are evaluated for the performance of the board members:",content:["1. Understanding of the company's goals and tasks.","2. Awareness of directors' responsibilities.","3. The degree of participation in the company's operations.","4. Internal relationship management and communication.","5. Professionalism and continuing education of directors.","6. Internal control."]},
                     ],
                     list2: {
                         title:"Performance evaluation results:",

@@ -53,7 +53,7 @@ class Content_social_eng extends React.Component {
                  {title:"Environmental Impact Assessment Management Measures for Contractors and Service Providers ",href:"http://w3.taisol.com.tw/file/%E6%89%BF%E5%8C%85%E5%95%86%E3%80%81%E6%9C%8D%E5%8B%99%E5%95%86%E7%92%B0%E5%A2%83%E5%BD%B1%E9%9F%BF%E8%A9%95%E5%83%B9%E7%AE%A1%E7%90%86%E8%BE%A6%E6%B3%95.pdf"},
                ],
                table1: [
-                 {date:"2019.09",event:"Xinnantian Dongmi (Friendly Farming)-Gifts for Mid-Autumn Festival"},
+                 {date:"2019.09",event:"Xinnan Tian Dong Rice (Local Farming)-Gifts for Mid-Autumn Festival"},
                  {date:"2020.01",event:"Nurturing Social Welfare Foundation/Jixian Sheltered Workshop-Gifts for Spring Festival Activities"},
                  {date:"2020.01",event:"Taichung City Welfare and Care Association for the Disabled/Smiling Angel Bakery-Gifts for Spring Festival Activities"},
                ]

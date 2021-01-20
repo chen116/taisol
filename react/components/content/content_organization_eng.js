@@ -11,17 +11,17 @@ class Content_organization_eng extends React.Component {
                 p3:"Management",
                 table1 : [
                     {   name: "HQO",
-                        summary: "Adhere to the orders of the general manager, carry out the promotion and implementation of the project business, and be responsible for maintaining the public relations of investors.",
+                        summary: "Adhere to the orders of the general manager, carry out the promotion and implementation of the projected business, and be responsible for maintaining the public relations of investors.",
                         details : [] 
                         
                     },
                     {   name: "Aduit", 
-                        summary: "Carry out the audit work of the internal control system, check and evaluate whether the company's operating records are missing and make suggestions for improvement.",
+                        summary: "Carry out the audit work of the internal control system, check and evaluate the correctness of the company's operating records make suggestions for improvement.",
                         details : [] 
                         
                     },
                     {   name: "Financial Management",
-                        summary: "Adhering to the orders of the general manager, in charge of the company's financial, personnel, general affairs, public relations and other matters. There are financial department and management department. The main content is:",
+                        summary: "Adhering to the orders of the general manager, in charge of the company's financial, personnel, general affairs, public relations and other matters. Sub-divisions include financial office and management office.",
                         details : ["(1) Plan the company's operating policy and implement the resolutions of the board of directors, establish the company's operating system and supervise daily operations.",
                         "(2) Handle the company's internal and external public relations and inter-departmental communication and coordination."] 
                         
@@ -44,12 +44,12 @@ class Content_organization_eng extends React.Component {
                     },
                     {   
                         name: "Martketing", 
-                        summary: "Adhering to the orders of the general manager, with the goal of creating the company's maximum profit, the four marketing departments are divided into radiator, communication, connector and card reader according to the product.",
+                        summary: "Adhering to the orders of the general manager, with the goal of creating the company's maximum profit, the four marketing offices are divided into radiator, communication, connector and card reader.",
                         details : [
                             "(1) Collect market information and provide it to the supervisor and R&D department.",
-                            "(2) Formulating and market planning and estimation of selling price policy.",
-                            "(3) Planning and handling advertising and exhibition matters.",
-                            "(4) Carry out the review of new product development suggestions.",
+                            "(2) Price policy formulating and estimating, market planning and projection.",
+                            "(3) Manage product advertising and exhibition.",
+                            "(4) Review suggestions for new product development.",
                             "(5) Draft initial product specifications and cost analysis.",
                         ]
                     
@@ -71,20 +71,20 @@ class Content_organization_eng extends React.Component {
                     
                     {   
                         name: "R&D", 
-                        summary: "Following the orders of the general manager, he is responsible for the company's product development, manufacturing technical support, sales technical support, and customer support. There are communication research and development department, heat transfer research and development department, connector research and development department, card reader research and development department, and research and development management department.",
+                        summary: "Following the orders of the general manager, R&D is responsible for the company's product development, manufacturing technical support, sales technical support, and customer support. There are communication research and development department, heat transfer research and development department, connector research and development department, card reader research and development department, and management department.",
                         details : 
                         [
                             "Communication R&D Department:",
                             "(1) Approval of the design of communication cooling products and related parts.",                          
-                            "(2) Mold development and trial production.",                          
+                            "(2) Conduct development and trial production.",                          
                             "(3) Assist in solving customer technical problems.",                          
                             "Heat Transfer R&D Department:",                          
                             "(1) Approval of radiator design and related parts.",                          
-                            "(2) Mold development and trial production.",                          
+                            "(2) Conduct development and trial production.",                          
                             "(3) Assist in solving customer technical problems.",                          
                             "Connector R&D Department:",                          
                             "(1) Approval of connector design and related parts.",                          
-                            "(2) Mold development and trial production.",                          
+                            "(2) Conduct development and trial production.",                          
                             "(3) Assist in solving customer technical problems.",                          
                             "Reader R&D Department:",                          
                             "(1) The recognition of card reader design and related parts.",                          
@@ -138,8 +138,8 @@ class Content_organization_eng extends React.Component {
                   
                 ],
                 table2 : [
-                    {"title": "Chairman",name:"Yu Qingsong","exps":["Department of Business Administration, Datong Institute of Technology"]},
-                    {"title": "General manager",name:"Liang Junxing","exps":[
+                    {"title": "Chairman",name:"Ching-Sung Yu","exps":["Department of Business Administration, Datong Institute of Technology"]},
+                    {"title": "General manager",name:"Chun-Hsin Liang","exps":[
                         "Department of Economics, Tunghai University",
                         "General Manager of SINBON Electronics Co., Ltd.",
                         "Supervisor of SINBON Electronics Co., Ltd.",

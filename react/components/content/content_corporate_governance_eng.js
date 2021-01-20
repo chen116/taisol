@@ -9,25 +9,24 @@ class Content_corporate_governance_eng extends React.Component {
                
                    
                     title: "Corporate Governance",
-  
-                    p1: " The company takes the management department and the finance department as the main part-time units of corporate governance, and its department heads have more than three years of management experience in public offering companies engaged in financial management;to assist in providing information required by directors and supervisors to perform their business and assist directors Supervisors are responsible for complying with laws and regulations, and handling matters related to meetings of the board of directors and shareholders meeting in accordance with the law.",
-                    p2: "The business execution situation this year is as follows:",
+                    p1: "The company utilizes the management department and the finance department for corporate governance, and their department directors have more than three years of management experience in public companies; the duties include to assist in providing information required by the directors and supervisor, to help head supervisor to comply with laws and regulations, and to handle matters related to board of directors meetings and shareholders meeting in accordance with laws.",
+                    p2: "Results and progress for this year:",
 
                     
                     items: [
 
                     {item: '1. Assisting directors and supervisors in performing their duties:',
-                        content: ['(1) Amending laws and regulations, assisting in formulating company-related operating methods, so as to provide directors with knowledge and reference.',
-                        "(2) Assist in maintaining communication and exchanges between directors, supervisors and the company's various business executives.",
-                        ' (3) Assist in maintaining communication and exchanges between directors, supervisors and certified accountants.']},
+                        content: ["(1) Assist in amending company's regulations which shall complies with laws and regulations, and deliver to directors for reference.",
+                        "(2) Assist in maintaining clear communication channels between directors, supervisors and various company's business executive",
+                        ' (3) Assist in maintaining communication channels between directors, supervisors and certified public accountants.']},
 
-                     {item: '2. Assist in the convening, agenda and other related matters of the board of directors and shareholder meetings :',
-                        content:['(1) Assist in the notice, convening, and agenda of the board of directors and shareholder meetings in compliance with laws and regulations and corporate governance standards.',
-                        '(2) Assist in providing information on the board of directors and shareholders meeting.',
-                        ' (3) Confirm that the major information announcements of important resolutions after the board of directors and shareholders meeting are correct and comply with laws and regulations.',
-                        '(4) Complete the minutes of the board of directors and shareholders meeting and other relevant materials within the time limit prescribed by the law.',
-                        '(5) Advising members of the board of directors from time to time, including laws and regulations that should not engage in insider trading and corporate governance regulations.']},
-                      {item: '3. Assist directors in arranging advanced training courses according to laws and regulations and job needs. ',
+                     {item: '2. Assist in initiating and managing meetins for board of directors and shareholder:',
+                        content:['(1)Assist in arranging meetings for the board of directors and shareholders in compliance with laws, regulations,and corporate governance standards.',
+                        '(2) Assist in providing information needed for the meetings of board of directors and shareholders.',
+                        ' (3) Confirm the correctness of major announcements in important issues resolved from the board of directors and shareholders meeting and make sure the information released complies with laws and regulations.',
+                        '(4) Within the the time frame set by the law, finish the meeting records and other materials that are related to the board of directors and shareholders meetings.',
+                        '(5) Irregularly remind the members of the board of directors not to engage in insider trading and inform them about corporate governance regulations.']},
+                      {item: '3. Assist directors in arranging training courses for job requirement in compliance with laws and regulations. ',
                         content:[]
                         }           
         

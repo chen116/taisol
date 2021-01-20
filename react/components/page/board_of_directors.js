@@ -118,7 +118,7 @@ function Page_board_of_directors(props) {
 
                                 <tr>
                                 <th rowspan="2">Title (Note1) </th>
-                                <th rowspan="2">Nationality or Place of registration</th>
+                                <th rowspan="2">Nationality or Place of Registration</th>
                                 <th rowspan="2">Name</th>
                                 <th rowspan="2">Gender</th>
                                 <th rowspan="2">Date Elected</th>
@@ -127,12 +127,12 @@ function Page_board_of_directors(props) {
                                 
                                 <th colspan="2">Shares Held When Elected</th>
                                 <th colspan="2">Shares Currently Held</th>
-                                <th colspan="2">Shares held by spouse and underage children Current shareholding</th>
-                                <th colspan="2">Shares held by proxy</th>
-                                <th rowspan="2">Major career (academic) achievements (Note3)</th>
+                                <th colspan="2">Shares Currently Held by Spouse and Underage Children</th>
+                                <th colspan="2">Shares Held by Proxy</th>
+                                <th rowspan="2">Major Career(Academic) Achievements (Note3)</th>
 
-                                <th rowspan="2">Selected Current Position sheldcon currently in the company and/or anyother companies</th>
-                                <th colspan="3">Spouse or relatives of second degree or closer acting as Directors, Supervisors, or department heads</th>
+                                <th rowspan="2">Position Concurrently Held in the Company and/or Other Companies</th>
+                                <th colspan="3">Spouse or Relatives of Second Degree or Closer Acting as Directors, Supervisors, or Department Heads</th>
                             </tr>,
                             <tr>
                                 <th>Shares</th>
@@ -210,14 +210,14 @@ function Page_board_of_directors(props) {
                         
                             <tr>
                             <th rowspan="2">Name (Note 1)</th>
-                            <th colspan="3">Have more than five years of work experience in the listed professional qualifications</th>
-                            <th colspan="10">Meet the independence criteria (Note 2)</th>
-                            <th rowspan="2">Number of other public companies in which the individual is concurrently serving as independent director</th>
+                            <th colspan="3">Have More than Five Years of Work Experience in the Listed Professional Qualifications</th>
+                            <th colspan="10">Have Met the Independence Requirement (Note 2)</th>
+                            <th rowspan="2">Number of Other Companies in Which the Individual is Concurrently Serving as an Independent Director</th>
                         </tr>,
                         <tr>
-                            <th>Instructor or higher position for department of commerce, law, finance, accounting, or other field related to the company's business' need in a public or private college or institution</th>
-                            <th>Judge, public prosecutor, attorney, certified public accountant, or other professional or technical cpecialist that has passed any national qualification and/or been awarded a certificate in a profession that is needed by the company</th>
-                            <th>Work Experience in the areas of commerce, law, finance, accounting, or other fields related to the company's business' need </th>
+                            <th>Instructor or Higher Position in Department of Commerce, Law, Finance, Accounting, or Other Field Related to the Company's Business' Need in a Public or Private Institution</th>
+                            <th>Judge, Public Prosecutor, Attorney, Certified Public Accountant, or Other Professional or Technical Specialist that has Passed Any National Qualification and/or Been Awarded a Certificate in a Profession that is Needed by the Company</th>
+                            <th>Work Experience in the Areas of Commerce, Law, Finance, Accounting, or Other Fields Related to the Company's Business' Need </th>
                             <th>1</th>
                             <th>2</th>
                             <th>3</th>

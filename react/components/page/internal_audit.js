@@ -85,7 +85,7 @@ function Page_internal_audit(props) {
             <p>內部稽核單位執行內部控制制度的稽核工作，檢查並評估公司的營運記錄有無缺失。對於發現之內部控制制度可能缺失及提出改善建議，做成稽核報告，定期向董事會報告。</p>
             <p>內部稽核單位督促內部各單位及子公司每年定期自行檢查內部控制制度之有效性，再由內部稽核單位覆核各單位及子公司之自行檢查報告，並綜合自行檢查結果，做為董事會及總經理出具內部控制制度聲明書之依據。</p>
             <p><span>&nbsp;&nbsp;</span></p>
-            <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>獨立董事、監察人與內部稽核主管之溝通方式</h5>
+            <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>獨立董事、監察人與內部稽核主管之溝通方式</h5>
             <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
 
             <p>1. 每年定期召開2次溝通會議，就本公司內部稽核業務執行狀況及內控運作情形提出報告。</p>
@@ -119,7 +119,7 @@ function Page_internal_audit(props) {
           <p>The internal audit unit performs the audit work of the internal control system, inspects and evaluates whether the company's operating records are missing. For possible deficiencies in the internal control system discovered and suggestions for improvement, make an audit report and report to the board of directors on a regular basis.</p>
           <p>The internal audit unit urges all internal units and subsidiaries to check the effectiveness of the internal control system on a regular basis each year, and then the internal audit unit reviews the self-inspection reports of the units and subsidiaries, and integrates the results of the self-examination, as the board of directors and general manager The basis for issuing the declaration of internal control system.</p>
           <p><span>&nbsp;&nbsp;</span></p>
-          <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span> Communication methods between independent directors, supervisors and internal audit supervisors</h5>
+          <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span> Communication methods between independent directors, supervisors and internal audit supervisors</h5>
           <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
           <p>1. Convene two regular communication meetings every year to report on the company's internal audit business execution status and internal control operation status.</p>
           <p>2. If there are major or urgent matters, hold irregular meetings to discuss them. Usually communicate via telephone and email.</p>

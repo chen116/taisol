@@ -118,14 +118,19 @@ function Page_human_resources(props) {
                   </li>
                   <li class="list-group-item list-group-flush"><b>2. Employee Stock Options</b>
                     <li class="list-group-item list-group-flush" >
-                    <img class="rounded" src="./assets/images/menu01.jpg"  /><span>&nbsp;&nbsp;</span>In order to pursue the sustainable growth of the company, the company shares its operating results with its employees, implements employee stock subscriptions and dividends, and implements the concept of "employees as shareholders".
+                    <img class="rounded" src="./assets/images/menu01.jpg"  /><span>&nbsp;&nbsp;</span>In order to pursue a sustainable growth of the company, the company shares its profit with its employees, implements employee stock subscriptions and dividends, and implements the concept of "employees as shareholders".
                     </li>
                   </li>
                   <li class="list-group-item list-group-flush"><b>3. Retirement System</b>
                     <li class="list-group-item list-group-flush" >	
                       <img class="rounded" src="./assets/images/menu01.jpg"  /><span>&nbsp;&nbsp;</span>Implementation status:
                       <br />
-                      The company’s employee retirement measures are formulated in accordance with the Labor Standards Law. The company allocates a monthly retirement reserve of 3% of the total employee’s salary and deposits it in the special pension account of the Central Trust Bureau; in addition, since the Republic of 1994 Since July 1, 2016, in conjunction with the implementation of the Labor Pension Regulations (hereinafter referred to as the "new system"), employees who originally applied to the company’s retirement system will have their service years changed if they choose to apply the service years after the new system or employees who take up the job after the implementation of the new system. The definite allocation system is adopted, and the pension payment is paid by the company on a monthly basis at 6% of the monthly salary and stored in the individual labor pension account.
+                      The company’s employee retirement measures are formulated in accordance with the Labor Standards Law. 
+                      The company allocates a monthly retirement reserve of 3% of the total employee’s salary and deposits it in the special pension account of the Central Trust Bureau; 
+                      in addition, since july 1, 2005, in conjunction with the implementation of the Labor Pension Regulations (hereinafter referred to as the "new system"), 
+                      employees who originally applied to the company’s retirement system will have their service years changed if they choose to apply the service years after 
+                      the new system or employees who take up the job after the implementation of the new system. The definite allocation system is adopted, and the pension payment 
+                      is paid by the company on a monthly basis at 6% of the monthly salary and stored in the individual labor pension account.
                     </li>
                   
                     <li class="list-group-item list-group-flush" >	
@@ -133,17 +138,17 @@ function Page_human_resources(props) {
                       <br />
                       All employees of the company who meet one of the following requirements can apply for retirement by themselves or apply for mandatory retirement:
                       <ul class="list-group list-group-flush" >(1) Self-retired:
-                        <li class="list-group-item list-group-flush" >a. Those who have served the company for more than fifteen years and over fifty-five years old.
+                        <li class="list-group-item list-group-flush" >a. Those who have served the company for more than 15 years and are over 55 years old.
                         </li>
                         <li class="list-group-item list-group-flush" >b. Those who have served the company for more than 25 years.
                         </li>
-                        <li class="list-group-item list-group-flush" >c. Those who have served the company for more than ten years and are over 60 years old.
+                        <li class="list-group-item list-group-flush" >c. Those who have served the company for more than 10 years and are over 60 years old.
                         </li>
                       </ul>
                       <ul class="list-group list-group-flush" >(2) Mandatory retirement:
-                        <li class="list-group-item list-group-flush" >a. Those who are over sixty-five years old.
+                        <li class="list-group-item list-group-flush" >a. Those who are over 65 years old.
                         </li>
-                        <li class="list-group-item list-group-flush" >b. Those who have lost their mind or are physically disabled and are incapable of performing their duties.
+                        <li class="list-group-item list-group-flush" >b. Those who are mentally ill or are physically disabled and are incapable of performing their duties.
                         </li>
                       </ul>
                     </li>
@@ -228,7 +233,7 @@ function Page_human_resources(props) {
                       <th rowspan="1" style={{width: `50%`}}>計畫內容</th>
                   </tr>:
                   <tr>
-                  <th rowspan="1" style={{width: `50%`}}>Inspection Time</th>
+                  <th rowspan="1" style={{width: `50%`}}>Inspection Date</th>
                   <th rowspan="1" style={{width: `50%`}}>Plan</th>
               </tr>
               }
@@ -277,7 +282,7 @@ if(props.lang=='ch')
         <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title} </h4>
         <p><span>&nbsp;&nbsp;</span></p>
   
-        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>福利制度</h5>
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>福利制度</h5>
         <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
         <p>本公司秉持尊重及關心員工的理念，致力於提供高品質的友善職場環境及員工福利，並於88年5月1日正式成立職工福利委員會組織，負責員工福利規劃與活動辦理，我們期許透過完善的福利制度，全方位照顧員工的身、心、靈健康與平衡。員工福利措施及制度包含：
@@ -286,7 +291,7 @@ if(props.lang=='ch')
   
         <p><span>&nbsp;&nbsp;</span></p>
   
-        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>人才培育 </h5>
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>人才培育 </h5>
         <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
         <p>泰碩瞭解『員工』是公司最重要的資產，而持續的人才培育正是提升員工技能及服務品質的重要策略。本公司訂有教育訓練相關辦法，並配合公司短中長期之發展需要，辦理內外訓相關課程，不斷增進員工專業知識及管理技能。  
@@ -303,7 +308,7 @@ if(props.lang=='ch')
           </div>
         </div>
         <p><span>&nbsp;&nbsp;</span></p>
-        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>員工工作環境與人身安全的保護措施 </h5>
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>員工工作環境與人身安全的保護措施 </h5>
         <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
         <p>泰碩重視員工安全，並致力提供一個安全、衛生與舒適的工作環境予全體同仁，工作環境與員工人身安全保護措施彙整如下：  </p>
@@ -320,7 +325,7 @@ if(props.lang=='ch')
         <p><b>亞洲科技大樓107年消防及安全檢測計畫：</b></p>
           <ActiveTable1 data={props.data[props.lang].table2} />
         <p><span>&nbsp;&nbsp;</span></p>
-        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>人權政策 </h5>
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>人權政策 </h5>
         <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
         <p>泰碩電子股份有限公司(以下稱「泰碩」)，為善盡企業社會責任並落實人權保障，尊重並遵循「聯合國世界人權宣言」、「聯合國全球盟約」及國際勞工組織的「工作基本原則與權利宣言」等各項國際人權公約所揭橥之人權保護精神與基本原則，特制定本政策，並遵守《中華民國勞動基準法》、《性別工作平等法》、《就業服務法》等勞動相關法規，杜絕任何侵犯及違反人權之行為，有尊嚴的對待及尊重所有同仁。  </p>
@@ -336,19 +341,25 @@ if(props.lang=='ch')
         <h4 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>{props.data[props.lang].title} </h4>
         <p><span>&nbsp;&nbsp;</span></p>
   
-        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Welfare System</h5>
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Welfare System</h5>
         <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
-        <p>The company upholds the concept of respecting and caring for employees, and is committed to providing a high-quality and friendly workplace environment and employee benefits. On May 1, 1988, the employee welfare committee was formally established to be responsible for employee welfare planning and activities. We hope to improve The welfare system of the company takes full care of the physical, mental and spiritual health and balance of employees. Staff welfare measures and systems include:
+        <p>The company upholds the concept of respecting and caring for employees, and is committed to providing a high-quality and friendly
+           workplace environment and employee benefits. On May 1, 1988, the employee welfare committee was formally established to be responsible for 
+           employee welfare planning and activities. We hope to improve The welfare system of the company takes full care of the physical, mental and 
+           spiritual health and balance of employees. Staff welfare measures and systems include:
         </p>
         <ActiveList1 data={props.data[props.lang].list1} />
   
         <p><span>&nbsp;&nbsp;</span></p>
   
-        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Talent Recruitment  </h5>
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Talent Recruitment  </h5>
         <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
-        <p>TaiSol understands that "employees" are the company's most important asset, and continuous talent cultivation is an important strategy to improve employee skills and service quality. The company has established education and training related methods, and in line with the company's short, medium and long-term development needs, handles internal and external training related courses to continuously improve employees' professional knowledge and management skills.  
+        <p>TaiSol understands that "employees" are the company's most important asset, and continuous talent cultivation is an important
+           strategy to improve employee skills and service quality. The company has established education and training related programs,
+            and in line with the company's short, medium and long-term development needs, handles internal and external training related 
+            courses to continuously improve employees' professional knowledge and management skills.  
         </p>
         <ActiveList2 data={props.data[props.lang].list2} />
         <p><span>&nbsp;&nbsp;</span></p>
@@ -362,10 +373,10 @@ if(props.lang=='ch')
           </div>
         </div>
         <p><span>&nbsp;&nbsp;</span></p>
-        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Protective measures for the working environment and personal safety of employees  </h5>
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Protective measures for the working environment and personal safety of employees  </h5>
         <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
   
-        <p>Taishuo attaches great importance to employee safety and is committed to providing a safe, hygienic and comfortable working environment for all colleagues. The working environment and employee personal safety protection measures are summarized as follows:  </p>
+        <p>TaiSol attaches great importance to employee safety and is committed to providing a safe, hygienic and comfortable working environment for all colleagues. The working environment and employee personal safety protection measures are summarized as follows:  </p>
         <ActiveList3 data={props.data[props.lang].list3} />
         <div class="row justify-content-md-center">
         {/* <div class="col-md-auto">
@@ -374,14 +385,19 @@ if(props.lang=='ch')
         </div>
         <p><span>&nbsp;&nbsp;</span></p>
   
-        <p><b>The 108-year fire and safety inspection plan of Asia Science and Technology Building:</b></p>
+        <p><b>2019 fire and safety inspection plan of Asia Science and Technology Building:</b></p>
           <ActiveTable1 data={props.data[props.lang].table1} />
-        <p><b>The 107-year fire and safety inspection plan of Asia Science and Technology Building:</b></p>
+        <p><b>2018 fire and safety inspection plan of Asia Science and Technology Building:</b></p>
           <ActiveTable1 data={props.data[props.lang].table2} />
         <p><span>&nbsp;&nbsp;</span></p>
-        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/bullet.jpg"/><span>&nbsp;&nbsp;</span>Human rights policy  </h5>
+        <h5 style={{color:`blue`}}><img class="rounded" src="./assets/images/common01.jpg"/><span>&nbsp;&nbsp;</span>Human rights policy  </h5>
         <spacer type="horizontal" width="100" height="100">&nbsp;</spacer>
-        <p>Taishuo Electronics Co., Ltd. (hereinafter referred to as "Taishuo"), in order to fulfill corporate social responsibility and implement human rights protection, respect and follow the "United Nations Universal Declaration of Human Rights", "United Nations Global Covenant" and the "Basic Principles of Work" of the International Labor Organization The spirit and basic principles of human rights protection revealed in various international human rights conventions such as the Declaration of Rights and Rights. This policy is formulated and complies with the Labor Standards Law of the Republic of China, the Gender Work Equality Law, the Employment Service Law and other labor Relevant laws and regulations, to prevent any violations and violations of human rights, treat all colleagues with dignity and respect. </p>
+        <p>TaiSol Electronics Co., Ltd. (hereinafter referred to as "TaiSol"), in order to fulfill corporate social responsibility and implement human rights protection, 
+          respects and follows the "United Nations Universal Declaration of Human Rights", "United Nations Global Covenant" and the "Basic Principles of Work" of the International 
+          Labor Organization.
+          The spirit and basic principles of human rights protection revealed in various international human rights conventions such as the Declaration of Rights.
+           This policy is formulated and complies with the Labor Standards Law of the Republic of China, the Gender Work Equality Law, the Employment Service Law and other 
+           labor Relevant laws and regulations, to prevent any violations and violations of human rights, treat all colleagues with dignity and respect. </p>
         <p>The scope of application of the company's human rights policy includes the company and related companies. The implementation guidelines are as follows:</p>
         <ActiveList4 data={props.data[props.lang].list4}/>
       </div>

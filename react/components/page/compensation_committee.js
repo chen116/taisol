@@ -123,15 +123,17 @@ function Page_compensation_committee(props) {
                         <tr>
                         <th rowspan="2">Title（Note 1）</th>
                         <th rowspan="2">Name</th>
-                        <th colspan="3" style={{width: `50%`}}>Have more than five years of work experience in the listed professional qualifications</th>
-                        <th colspan="10">Meet the independence criteria (Note 2)</th>
-                        <th rowspan="2"  style={{width: `10%`}}>Number of other public companies in which the individual is concurrently serving as independent director</th>
+                        <th colspan="3" style={{width: `50%`}}>Have More than Five Years of Work Experience in the Listed Professional Qualifications</th>
+                        <th colspan="10">Have Met the Independence Requirement (Note 2)</th>
+                        <th rowspan="2"  style={{width: `10%`}}>Number of Other Companies in Which the Individual is Concurrently Serving as an Independent Director</th>
                         <th rowspan="2">Note</th>
                       </tr>,
                       <tr>
-                            <th>Instructor or higher position for department of commerce, law, finance, accounting, or other field related to the company's business' need in a public or private college or institution</th>
-                            <th>Judge, public prosecutor, attorney, certified public accountant, or other professional or technical cpecialist that has passed any national qualification and/or been awarded a certificate in a profession that is needed by the company</th>
-                            <th>Work Experience in commerce, law, finance, accounting, or other field related to the company's business' need </th>
+ 
+
+                            <th>Instructor or Higher Position in Department of Commerce, Law, Finance, Accounting, or Other Field Related to the Company's Business' Need in a Public or Private Institution</th>
+                            <th>Judge, Public Prosecutor, Attorney, Certified Public Accountant, or Other Professional or Technical Specialist that has Passed Any National Qualification and/or Been Awarded a Certificate in a Profession that is Needed by the Company</th>
+                            <th>Work Experience in the Areas of Commerce, Law, Finance, Accounting, or Other Fields Related to the Company's Business' Need </th>
                           <th>1</th>
                           <th>2</th>
                           <th>3</th>
@@ -177,8 +179,8 @@ function Page_compensation_committee(props) {
                       <tr>
                         <th rowspan="1">職稱</th>
                         <th rowspan="1">姓名</th>
-                        <th rowspan="1">實際出(列)席次數B</th>
-                        <th rowspan="1">委託出席次數</th>
+                        <th rowspan="1">實際出(列)席次數 (B)</th>
+                        <th rowspan="1">委託出席次數 (A)</th>
                         <th rowspan="1">實際出(列)席率(%)【B/A】</th>
                         <th rowspan="1">備註</th>
       
@@ -187,9 +189,9 @@ function Page_compensation_committee(props) {
                         <tr>
                         <th rowspan="1">Title</th>
                         <th rowspan="1">Name</th>
-                        <th rowspan="1">Actual number of attendance (B)</th>
-                        <th rowspan="1">Requested attendance (A)</th>
-                        <th rowspan="1">Attendance rate (%)【B/A】</th>
+                        <th rowspan="1">Actual Number of Attendance (B)</th>
+                        <th rowspan="1">Requested Attendance (A)</th>
+                        <th rowspan="1">Attendance Rate (%)【B/A】</th>
                         <th rowspan="1">Note</th>
       
                       </tr>
@@ -307,24 +309,25 @@ function Page_compensation_committee(props) {
                     <div id="collapseFour" class="collapse" aria-labelledby="headingOne" >
                         <div class="card-body"  style={{overflow: `auto`}}>
                           <ul class="list-group list-group-flush ">
-                              <li class="list-group-item">{props.lang=='ch'?"(1)   本公司之薪資報酬委員會委員計3人。":"(1) There are 3 members of the compensation committee of the company."}
+                              <li class="list-group-item">{props.lang=='ch'?"(1)   本公司之薪資報酬委員會委員計3人。":"(1) There are 3 members in the compensation committee."}
                               </li>
                               <li class="list-group-item">{props.lang=='ch'?"(2)   本屆委員任期：107年6月19日至110年6月18日，最近年度(108年度至年報刊印日止)薪資報酬委員會開會 5 次(Ａ)，委員資格及出席情形如下：":
-                                    "(2) The term of office of the current members: June 19, 2018 to June 18, 2021, the salary and remuneration committee met 5 times in the most recent year (from the year 108 to the publication date of the annual report) (A). The qualifications and attendance of the members are as follows:"}
+                                    "(2) The term of the current members: June 19, 2018 to June 18, 2021, the compensation committee met 5 times in the most recent year (from the year 2019 to the publication date of the annual report) (A). The qualifications and attendance of the members are as follows:"}
                                   <ActiveTable2 data={props.data[props.lang].table2} />
                                   <ul class="list-group list-group-flush ">
-                                    <li class="list-group-item">{props.lang=='ch'?"其他應記載事項":"Other matters to be recorded:"}：
+                                    <li class="list-group-item">{props.lang=='ch'?"其他應記載事項":"Other Remarks:"}：
                                       </li>
-                                      <li class="list-group-item">{props.lang=='ch'?"一、108年度至年報刊印日止薪資報酬委員會開會討論議案如下":"1. The Salary and Compensation Committee met to discuss the following proposals from the year 2008 to the date of publication of the annual report:"}：
+                                      <li class="list-group-item">{props.lang=='ch'?"一、108年度至年報刊印日止薪資報酬委員會開會討論議案如下":
+                                                                                          "1. Matters the remuneartion committee discussed from the year 2019 to the date of publication of the annual report:"}：
                                       </li>
                                       <li class="list-group-item">
                                           <ActiveList3 data={props.data[props.lang].meetings} />
                                       </li>
                                       <li class="list-group-item">{props.lang=='ch'?"二、董事會如不採納或修正薪資報酬委員會之建議，應敘明董事會日期、期別、議案內容、董事會決議結果以及公司對薪資報酬委員會意見之處理 (如董事會通過之薪資報酬優於薪資報酬委員會之建議，應敘明其差異情形及原因)：無。":
-                                      "2. If the board of directors does not adopt or amend the salary and compensation committee’s recommendations, it shall state the date of the board of directors, the date, the content of the proposal, the resolution of the board of directors, and the company’s handling of the opinions of the compensation committee (if the compensation approved by the board is better than the compensation committee The proposal should state the differences and reasons): None."}
+                                      "2. If the board of directors does not adopt or amend the compensation committee’s recommendations, it shall state the date the date, the content of the proposal, the resolution of the board of directors, and the company’s response to the compensation committee's recommendations (if the compensation approved by the board is better than the compensation committee, the proposal should state the differences and reasons): None."}
                                       </li>
                                       <li class="list-group-item">{props.lang=='ch'?"三、薪資報酬委員會之議決事項，如成員有反對或保留意見且有紀錄或書面聲明者，應敘明薪資報酬委員會日期、期別、議案內容、所有成員意見及對成員意見之處理：無。":
-                                      "3. The resolutions of the Salary and Compensation Committee. If members have objections or reservations and have records or written statements, the Salary and Compensation Committee should state the date, period, proposal content, all members' opinions and the handling of members' opinions: none."}
+                                      "3. If members have objections or reservations on the resolutions of the compensation committee and have records or written statements, the compensation committee should state the date, period, proposal content, all members' opinions and the handling of members' opinions: None."}
                                       </li>
                                   </ul>
                               </li>
